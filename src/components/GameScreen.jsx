@@ -17,6 +17,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [bossHp, setBossHp] = useState(GAME.BOSS_HP);
   const [isInBoss, setIsInBoss] = useState(false);
   const [bossSkipped, setBossSkipped] = useState(false);
+  const [example, setExample] = useState('');
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
@@ -35,6 +36,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     setCorrectIndex(correctIndex);
     setSelectedIndex(-1);
     setFeedback(null);
+    setExample(next.word.examples[Math.floor(Math.random() * next.word.examples.length)]);
     if (next.stat.status === 'new') {
       setNewCardsUsed(u => u + 1);
     }
@@ -60,6 +62,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       setCorrectIndex(correctIndex);
       setSelectedIndex(-1);
       setFeedback(null);
+      setExample(boss.word.examples[Math.floor(Math.random() * boss.word.examples.length)]);
       return;
     }
     pickNextNormal();
@@ -240,7 +243,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
           {currentWord.word.word}
         </div>
         <div className="text-xs text-zinc-600 italic mb-8 text-center max-w-md">
-          {currentWord.word.example}
+          {example}
         </div>
 
         {/* === FEEDBACK TOAST === */}
