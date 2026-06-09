@@ -1,0 +1,22 @@
+[
+  { "id": "advocate", "word": "advocate", "meaning": "สนับสนุน / ผู้สนับสนุน", "example": "She advocates for equal rights." },
+  { "id": "ambiguous", "word": "ambiguous", "meaning": "กำกวม / ไม่ชัดเจน", "example": "His answer was ambiguous." },
+  { "id": "analyze", "word": "analyze", "meaning": "วิเคราะห์", "example": "We need to analyze the data carefully." },
+  { "id": "assert", "word": "assert", "meaning": "ยืนยัน / กล่าวอ้าง", "example": "She asserted her opinion confidently." },
+  { "id": "benevolent", "word": "benevolent", "meaning": "ใจดี / มีเมตตา", "example": "A benevolent leader cares for the people." },
+  { "id": "candid", "word": "candid", "meaning": "ตรงไปตรงมา / จริงใจ", "example": "He gave a candid answer about his mistakes." },
+  { "id": "coherent", "word": "coherent", "meaning": "เป็นเหตุเป็นผล / สอดคล้องกัน", "example": "Her argument was coherent and easy to follow." },
+  { "id": "concise", "word": "concise", "meaning": "กระชับ / รัดกุม", "example": "Please give a concise summary." },
+  { "id": "condone", "word": "condone", "meaning": "ยอมรับ / ให้อภัย", "example": "We cannot condone such behavior." },
+  { "id": "contradict", "word": "contradict", "meaning": "ขัดแย้ง / โต้แย้ง", "example": "His actions contradict his words." },
+  { "id": "deduce", "word": "deduce", "meaning": "อนุมาน / สรุปจากข้อมูล", "example": "We can deduce the answer from the evidence." },
+  { "id": "diligent", "word": "diligent", "meaning": "ขยัน / ตั้งใจ", "example": "She is a diligent student." },
+  { "id": "elaborate", "word": "elaborate", "meaning": "อธิบายอย่างละเอียด", "example": "Can you elaborate on that idea?" },
+  { "id": "explicit", "word": "explicit", "meaning": "ชัดเจน / ระบุตรงๆ", "example": "The instructions were explicit." },
+  { "id": "implicit", "word": "implicit", "meaning": "โดยนัย / ไม่ระบุตรง", "example": "There was an implicit warning in his tone." },
+  { "id": "infer", "word": "infer", "meaning": "อนุมาน / ตีความ", "example": "What can you infer from the passage?" },
+  { "id": "objective", "word": "objective", "meaning": "เป็นกลาง / ไม่ลำเอียง", "example": "A good journalist must be objective." },
+  { "id": "perspective", "word": "perspective", "meaning": "มุมมอง / ทัศนคติ", "example": "Try to see things from her perspective." },
+  { "id": "refute", "word": "refute", "meaning": "หักล้าง / พิสูจน์ว่าผิด", "example": "He refuted the accusations with evidence." },
+  { "id": "subjective", "word": "subjective", "meaning": "อัตวิสัย / ขึ้นกับมุมมอง", "example": "Beauty is subjective." }
+]

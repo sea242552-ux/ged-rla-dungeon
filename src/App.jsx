@@ -1,3 +1,7 @@
+import { GAME } from './config/constants';
+
+console.log('GAME constants:', GAME);
+
 function App() {
   return (
     <div className="min-h-screen flex items-center justify-center font-mono">
