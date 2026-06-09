@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
-import { GAME, RANK_INFO } from '../config/constants';
+import { GAME } from '../config/constants';
+import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
 import { selectNextWord, generateChoices, hasWordsToPlay } from '../engine/wordSelector';
 import { onCorrect, onIncorrect } from '../engine/srs';
@@ -67,20 +68,16 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       setFeedback('correct');
       const updated = onCorrect(currentWord.stat);
       updateStat(currentWord.word.id, updated);
+      setTimeout(() => {
+        game.nextRoom();
+        pickNext();
+      }, 2000);
     } else {
       game.handleIncorrect(currentWord.word);
       setFeedback('wrong');
       const updated = onIncorrect(currentWord.stat);
       updateStat(currentWord.word.id, updated);
     }
-
-    // หลัง 1.2 วินาที → ไปคำต่อไป
-    setTimeout(() => {
-      if (game.hp - (idx === correctIndex ? 0 : 1) > 0) {
-        game.nextRoom();
-        pickNext();
-      }
-    }, 1200);
   };
 
   // === No more words ===
@@ -118,10 +115,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   // === Rank display ของคำปัจจุบัน ===
   const stat = currentWord.stat;
-  const rankKey = stat.status === 'mastered' ? 'mastered'
-    : (stat.status === 'new' || stat.status === 'learning') ? 'new'
-    : stat.interval;
-  const rank = RANK_INFO[rankKey] || RANK_INFO.new;
+  const rank = getRankFromStat(stat);
 
   return (
     <div className="min-h-screen flex flex-col p-4 font-mono">
@@ -155,6 +149,18 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
           {currentWord.word.example}
         </div>
 
+        {/* === FEEDBACK TOAST === */}
+        {feedback && (
+          <div className="text-center text-sm mb-4 h-6">
+            {feedback === 'correct' && (
+              <span className="text-green-400">✓ ถูกต้อง!</span>
+            )}
+            {feedback === 'wrong' && (
+              <span className="text-red-400">✗ คำตอบที่ถูก: {choices[correctIndex]}</span>
+            )}
+          </div>
+        )}
+
         {/* === CHOICES === */}
         <div className="w-full max-w-md space-y-2">
           {choices.map((c, idx) => {
@@ -176,6 +182,16 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
             );
           })}
         </div>
+
+        {/* === ปุ่มไปต่อ (ตอบผิดเท่านั้น) === */}
+        {feedback === 'wrong' && (
+          <button
+            onClick={() => { game.nextRoom(); pickNext(); }}
+            className="mt-4 px-6 py-2 bg-zinc-700 hover:bg-zinc-600 rounded"
+          >
+            ไปต่อ →
+          </button>
+        )}
       </div>
     </div>
   );
