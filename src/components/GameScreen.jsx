@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { GAME } from '../config/constants';
 import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
-import { selectNextWord, generateChoices, hasWordsToPlay } from '../engine/wordSelector';
+import { selectNextWord, generateChoices, hasWordsToPlay, selectBossWordFromAll } from '../engine/wordSelector';
 import { onCorrect, onIncorrect } from '../engine/srs';
 
 export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
@@ -14,8 +14,12 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [feedback, setFeedback] = useState(null);  // 'correct' | 'wrong' | null
   const [newCardsUsed, setNewCardsUsed] = useState(0);
   const [noMoreWords, setNoMoreWords] = useState(false);
+  const [bossHp, setBossHp] = useState(GAME.BOSS_HP);
+  const [isInBoss, setIsInBoss] = useState(false);
+  const [bossSkipped, setBossSkipped] = useState(false);
 
-  const pickNext = useCallback(() => {
+  const pickNextNormal = useCallback(() => {
+    setIsInBoss(false);
     if (!hasWordsToPlay(words, wordStats, getStat)) {
       setNoMoreWords(true);
       return;
@@ -35,6 +39,31 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       setNewCardsUsed(u => u + 1);
     }
   }, [words, wordStats, getStat, newCardsUsed]);
+
+  const pickNext = useCallback(() => {
+    if (game.isBossRoom && !bossSkipped) {
+      const boss = selectBossWordFromAll(words, wordStats, getStat);
+      if (!boss) {
+        // ไม่มีคำระดับสูงพอ → ข้าม Boss
+        setBossSkipped(true);
+        setTimeout(() => {
+          game.nextRoom();
+          pickNextNormal();
+        }, 1500);
+        return;
+      }
+      setIsInBoss(true);
+      setBossHp(GAME.BOSS_HP);
+      setCurrentWord(boss);
+      const { choices, correctIndex } = generateChoices(boss.word, words);
+      setChoices(choices);
+      setCorrectIndex(correctIndex);
+      setSelectedIndex(-1);
+      setFeedback(null);
+      return;
+    }
+    pickNextNormal();
+  }, [game.isBossRoom, bossSkipped, words, wordStats, getStat, pickNextNormal]);
 
   // เริ่มเกม: pick คำแรก
   useEffect(() => {
@@ -60,9 +89,58 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   }, [game.gameOver]);
 
   const handleChoice = (idx) => {
-    if (selectedIndex !== -1) return;  // ตอบไปแล้ว
+    if (selectedIndex !== -1) return;
     setSelectedIndex(idx);
 
+    if (isInBoss) {
+      // === BOSS LOGIC ===
+      if (idx === correctIndex) {
+        const earned = game.handleCorrect(currentWord.stat.interval);
+        setFeedback('correct');
+
+        // เฉพาะ update lastSeen ของคำ (ไม่อัพ interval)
+        updateStat(currentWord.word.id, {
+          ...currentWord.stat,
+          lastSeen: new Date().toISOString().split('T')[0]
+        });
+
+        setBossHp(prev => {
+          const newBossHp = prev - 1;
+          if (newBossHp <= 0) {
+            // Boss ตาย → ไป floor ใหม่
+            setTimeout(() => {
+              setIsInBoss(false);
+              setBossSkipped(false);
+              game.nextRoom();
+              pickNext();
+            }, 1200);
+          } else {
+            // Boss ยังไม่ตาย → คำใหม่ใน Boss เดียวกัน
+            setTimeout(() => {
+              const newBoss = selectBossWordFromAll(words, wordStats, getStat);
+              if (newBoss) {
+                setCurrentWord(newBoss);
+                const { choices, correctIndex } = generateChoices(newBoss.word, words);
+                setChoices(choices);
+                setCorrectIndex(correctIndex);
+                setSelectedIndex(-1);
+                setFeedback(null);
+              }
+            }, 1200);
+          }
+          return newBossHp;
+        });
+      } else {
+        // ผิด → reset คำกลับไป 1 วัน + HP -1
+        game.handleIncorrect(currentWord.word);
+        setFeedback('wrong');
+        const updated = onIncorrect(currentWord.stat);
+        updateStat(currentWord.word.id, updated);
+      }
+      return;
+    }
+
+    // === NORMAL LOGIC ===
     if (idx === correctIndex) {
       const earned = game.handleCorrect(currentWord.stat.interval);
       setFeedback('correct');
@@ -125,6 +203,22 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         <div>Score: <span className="text-white">{game.score}</span></div>
       </div>
 
+      {/* === BOSS BANNER === */}
+      {isInBoss && (
+        <div className="bg-red-900/30 border border-red-700 rounded p-2 mb-4 text-center">
+          <div className="text-red-400 text-sm font-bold">⚔️ BOSS ROOM</div>
+          <div className="text-xs text-zinc-400 mt-1">
+            Boss HP: {'👹'.repeat(bossHp)}{'💀'.repeat(GAME.BOSS_HP - bossHp)}
+          </div>
+        </div>
+      )}
+
+      {bossSkipped && (
+        <div className="bg-zinc-800 rounded p-2 mb-4 text-center text-xs text-zinc-400">
+          ยังไม่มีศัตรูแกร่งพอ... ข้าม Boss ห้องนี้
+        </div>
+      )}
+
       {/* === HP + COMBO === */}
       <div className="flex justify-between items-center mb-8">
         <div className="text-2xl">
@@ -186,7 +280,22 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         {/* === ปุ่มไปต่อ (ตอบผิดเท่านั้น) === */}
         {feedback === 'wrong' && (
           <button
-            onClick={() => { game.nextRoom(); pickNext(); }}
+            onClick={() => {
+              if (isInBoss) {
+                const newBoss = selectBossWordFromAll(words, wordStats, getStat);
+                if (newBoss) {
+                  setCurrentWord(newBoss);
+                  const { choices, correctIndex } = generateChoices(newBoss.word, words);
+                  setChoices(choices);
+                  setCorrectIndex(correctIndex);
+                  setSelectedIndex(-1);
+                  setFeedback(null);
+                }
+              } else {
+                game.nextRoom();
+                pickNext();
+              }
+            }}
             className="mt-4 px-6 py-2 bg-zinc-700 hover:bg-zinc-600 rounded"
           >
             ไปต่อ →

@@ -1,6 +1,6 @@
 import { GAME } from '../config/constants';
 import { calculateWeight, isDue } from './srs';
-import { sortByPriority } from './priority';
+import { sortByPriority, selectBossWord } from './priority';
 import { calculateNewCardsAllowed } from './newCardGate';
 
 function combine(words, wordStats, getStat) {
@@ -82,4 +82,9 @@ export function hasWordsToPlay(words, wordStats, getStat) {
   if (allowed > 0 && all.some(({ stat }) => stat.status === 'new')) return true;
 
   return false;
+}
+
+export function selectBossWordFromAll(words, wordStats, getStat) {
+  const combined = words.map(w => ({ word: w, stat: getStat(w.id) }));
+  return selectBossWord(combined);
 }
