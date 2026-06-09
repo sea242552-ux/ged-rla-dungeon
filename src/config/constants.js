@@ -51,7 +51,7 @@ export const COMBO_MULTIPLIERS = [
 
 // ========== GAME SETTINGS ==========
 export const GAME = {
-  MAX_HP: 5,
+  MAX_HP: 3,
   ROOMS_PER_FLOOR: 10,
   BOSS_HP: 3,
   CHOICES_COUNT: 4,
@@ -61,7 +61,7 @@ export const GAME = {
 // ========== RANK DISPLAY ==========
 export const RANK_INFO = {
   new:       { color: 'text-white',        icon: '',     label: 'New' },
-  1:         { color: 'text-white',        icon: '',     label: '1 วัน' },
+  1:         { color: 'text-blue-400',      icon: '',     label: '1 วัน' },
   3:         { color: 'text-green-400',    icon: '🛡️🛡️', label: '3 วัน' },
   7:         { color: 'text-amber-400',    icon: '⚜️',   label: '7 วัน' },
   14:        { color: 'text-orange-500',   icon: '💎',    label: '14 วัน' },

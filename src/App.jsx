@@ -3,6 +3,8 @@ import { useProgress } from './hooks/useProgress';
 import HomeScreen from './components/HomeScreen';
 import GameScreen from './components/GameScreen';
 import WordVault from './components/WordVault';
+import GameOverScreen from './components/GameOverScreen';
+import LeaderboardScreen from './components/LeaderboardScreen';
 
 function App() {
   const progress = useProgress();
@@ -28,25 +30,17 @@ function App() {
   }
 
   if (screen === 'leaderboard') {
-    return (
-      <div className="min-h-screen p-4 font-mono">
-        <button onClick={() => setScreen('home')} className="text-zinc-400 mb-4">← Back</button>
-        <h2 className="text-lg mb-4">🏆 Leaderboard</h2>
-        <p className="text-zinc-500 text-sm">ทำใน Step 10</p>
-      </div>
-    );
+    return <LeaderboardScreen onBack={() => setScreen('home')} />;
   }
 
   if (screen === 'gameover') {
     return (
-      <div className="min-h-screen p-4 font-mono">
-        <h2 className="text-2xl mb-4">Game Over</h2>
-        <pre className="text-xs text-zinc-400">{JSON.stringify(gameResult, null, 2)}</pre>
-        <div className="flex gap-2 mt-4">
-          <button onClick={() => setScreen('game')} className="px-4 py-2 bg-amber-700 rounded">เล่นอีกครั้ง</button>
-          <button onClick={() => setScreen('home')} className="px-4 py-2 bg-zinc-800 rounded">กลับหน้าแรก</button>
-        </div>
-      </div>
+      <GameOverScreen
+        result={gameResult}
+        playerStats={progress.playerStats}
+        onPlayAgain={() => setScreen('game')}
+        onHome={() => setScreen('home')}
+      />
     );
   }
 
