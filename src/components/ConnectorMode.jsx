@@ -126,7 +126,15 @@ export default function ConnectorMode({ onExit }) {
       {feedback && (
         <div className="text-center text-sm mb-4 h-6">
           {feedback === 'correct' && <span className="text-green-400">✓ ถูกต้อง!</span>}
-          {feedback === 'wrong' && <span className="text-red-400">✗ คำตอบที่ใช้ได้: {correctAnswers.join(', ')}</span>}
+          {feedback === 'wrong' && (
+            <span className="text-red-400">
+              ✗ คำตอบที่ใช้ได้:{' '}
+              {CONNECTOR_TYPES[currentType].words
+                .filter(w => correctAnswers.includes(w.word))
+                .map(w => `${w.word} (${w.meaning})`)
+                .join(', ')}
+            </span>
+          )}
         </div>
       )}
 
