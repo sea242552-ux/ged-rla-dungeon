@@ -22,12 +22,12 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
     if (!hasWordsToPlay(words, wordStats, getStat)) {
-      setNoMoreWords(true);
+      setNewCardsUsed(0);
       return;
     }
     const next = selectNextWord(words, wordStats, getStat, newCardsUsed);
     if (!next) {
-      setNoMoreWords(true);
+      setNewCardsUsed(0);
       return;
     }
     setCurrentWord(next);
