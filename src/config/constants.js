@@ -6,11 +6,11 @@ export const RELEARNING_STEPS = 1;     // คำ relearn ต้องถูก 1
 // ========== WEIGHTS (ความน่าจะถูกสุ่มออกมา) ==========
 export const WEIGHTS = {
   new: 1.0,
-  learning_1: 3.0,        // ตอบถูก 1/3
-  learning_2: 2.0,        // ตอบถูก 2/3
+  learning_1: 1.5,        // ตอบถูก 1/3
+  learning_2: 1.2,        // ตอบถูก 2/3
   review_due: 1.0,        // ถึงกำหนด review พอดี
   review_overdue_multiplier: 0.5,  // 1.0 + (0.5 × overdue_days)
-  relearning: 2.5,
+  relearning: 1.8,
   mastered: 0.1,
 };
 
