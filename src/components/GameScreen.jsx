@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { GAME } from '../config/constants';
 import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
-import { selectNextWord, generateChoices, hasWordsToPlay, selectBossWordFromAll } from '../engine/wordSelector';
+import { selectNextWord, generateChoices, selectBossWordFromAll } from '../engine/wordSelector';
 import { onCorrect, onIncorrect } from '../engine/srs';
 
 export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
@@ -12,8 +12,6 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [correctIndex, setCorrectIndex] = useState(-1);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [feedback, setFeedback] = useState(null);  // 'correct' | 'wrong' | null
-  const [newCardsUsed, setNewCardsUsed] = useState(0);
-  const [noMoreWords, setNoMoreWords] = useState(false);
   const [bossHp, setBossHp] = useState(GAME.BOSS_HP);
   const [isInBoss, setIsInBoss] = useState(false);
   const [bossSkipped, setBossSkipped] = useState(false);
@@ -21,14 +19,10 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
-    if (!hasWordsToPlay(words, wordStats, getStat)) {
-      setNewCardsUsed(0);
-      return;
-    }
-    const next = selectNextWord(words, wordStats, getStat, newCardsUsed);
+    let next = selectNextWord(words, wordStats, getStat, Infinity);
     if (!next) {
-      setNewCardsUsed(0);
-      return;
+      const fallback = words[Math.floor(Math.random() * words.length)];
+      next = { word: fallback, stat: getStat(fallback.id) };
     }
     setCurrentWord(next);
     const { choices, correctIndex } = generateChoices(next.word, words);
@@ -37,10 +31,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     setSelectedIndex(-1);
     setFeedback(null);
     setExample(next.word.examples[Math.floor(Math.random() * next.word.examples.length)]);
-    if (next.stat.status === 'new') {
-      setNewCardsUsed(u => u + 1);
-    }
-  }, [words, wordStats, getStat, newCardsUsed]);
+  }, [words, wordStats, getStat]);
 
   const pickNext = useCallback(() => {
     if (game.isBossRoom && !bossSkipped) {
@@ -160,34 +151,6 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       updateStat(currentWord.word.id, updated);
     }
   };
-
-  // === No more words ===
-  if (noMoreWords) {
-    return (
-      <div className="min-h-screen flex items-center justify-center p-4 font-mono">
-        <div className="text-center max-w-md">
-          <h2 className="text-2xl mb-4">🎉 ยินดีด้วย!</h2>
-          <p className="text-zinc-300 mb-6">
-            คุณได้เรียนรู้คำไปจนหมดของวันนี้แล้ว
-          </p>
-          <div className="text-sm text-zinc-400 mb-6">
-            Score: {game.score} | Floor: {game.floor} | Words: {game.wordsLearned}
-          </div>
-          <button
-            onClick={() => onGameOver({
-              score: game.score,
-              floor: game.floor,
-              wordsLearned: game.wordsLearned,
-              wrongAnswers: game.wrongAnswers,
-            })}
-            className="px-6 py-2 bg-zinc-800 hover:bg-zinc-700 rounded"
-          >
-            จบเกม
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   // === Loading ===
   if (!currentWord) {
