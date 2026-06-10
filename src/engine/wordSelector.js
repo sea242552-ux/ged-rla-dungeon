@@ -20,7 +20,7 @@ function weightedRandom(items, getWeight) {
   return items[items.length - 1];
 }
 
-export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0) {
+export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, lastWordId = null) {
   const all = combine(words, wordStats, getStat);
 
   const fastTrackPool = all.filter(({ stat }) => stat.fastTrack);
@@ -43,9 +43,12 @@ export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0) {
   if (eligiblePool.length === 0) return null;
 
   const sorted = sortByPriority(eligiblePool);
-  const topN = sorted.slice(0, Math.min(5, sorted.length));
+  const topN = sorted.slice(0, Math.min(15, sorted.length));
 
-  return weightedRandom(topN, ({ stat }) => calculateWeight(stat));
+  const filtered = lastWordId ? topN.filter(({ word }) => word.id !== lastWordId) : topN;
+  const pool = filtered.length > 0 ? filtered : topN;
+
+  return weightedRandom(pool, ({ stat }) => calculateWeight(stat));
 }
 
 export function generateChoices(targetWord, allWords) {

@@ -12,6 +12,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [correctIndex, setCorrectIndex] = useState(-1);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [feedback, setFeedback] = useState(null);  // 'correct' | 'wrong' | null
+  const [lastWordId, setLastWordId] = useState(null);
   const [bossHp, setBossHp] = useState(GAME.BOSS_HP);
   const [isInBoss, setIsInBoss] = useState(false);
   const [bossSkipped, setBossSkipped] = useState(false);
@@ -19,19 +20,20 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
-    let next = selectNextWord(words, wordStats, getStat, Infinity);
+    let next = selectNextWord(words, wordStats, getStat, Infinity, lastWordId);
     if (!next) {
       const fallback = words[Math.floor(Math.random() * words.length)];
       next = { word: fallback, stat: getStat(fallback.id) };
     }
     setCurrentWord(next);
+    setLastWordId(next.word.id);
     const { choices, correctIndex } = generateChoices(next.word, words);
     setChoices(choices);
     setCorrectIndex(correctIndex);
     setSelectedIndex(-1);
     setFeedback(null);
     setExample(next.word.examples[Math.floor(Math.random() * next.word.examples.length)]);
-  }, [words, wordStats, getStat]);
+  }, [words, wordStats, getStat, lastWordId]);
 
   const pickNext = useCallback(() => {
     if (game.isBossRoom && !bossSkipped) {
