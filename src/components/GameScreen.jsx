@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { GAME } from '../config/constants';
 import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
@@ -12,7 +12,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [correctIndex, setCorrectIndex] = useState(-1);
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [feedback, setFeedback] = useState(null);  // 'correct' | 'wrong' | null
-  const [recentWordIds, setRecentWordIds] = useState([]);
+  const recentWordIds = useRef([]);
   const [bossHp, setBossHp] = useState(GAME.BOSS_HP);
   const [isInBoss, setIsInBoss] = useState(false);
   const [bossSkipped, setBossSkipped] = useState(false);
@@ -20,20 +20,20 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
-    let next = selectNextWord(words, wordStats, getStat, Infinity, recentWordIds);
+    let next = selectNextWord(words, wordStats, getStat, Infinity, recentWordIds.current);
     if (!next) {
       const fallback = words[Math.floor(Math.random() * words.length)];
       next = { word: fallback, stat: getStat(fallback.id) };
     }
     setCurrentWord(next);
-    setRecentWordIds(prev => [...prev.slice(-4), next.word.id]);
+    recentWordIds.current = [...recentWordIds.current.slice(-4), next.word.id];
     const { choices, correctIndex } = generateChoices(next.word, words);
     setChoices(choices);
     setCorrectIndex(correctIndex);
     setSelectedIndex(-1);
     setFeedback(null);
     setExample(next.word.examples[Math.floor(Math.random() * next.word.examples.length)]);
-  }, [words, wordStats, getStat, recentWordIds]);
+  }, [words, wordStats, getStat]);
 
   const pickNext = useCallback(() => {
     if (game.isBossRoom && !bossSkipped) {
