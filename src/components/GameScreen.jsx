@@ -20,7 +20,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
-    let next = selectNextWord(words, wordStats, getStat, Infinity, recentWordIds.current);
+    let next = selectNextWord(words, wordStats, getStat, recentWordIds.current);
     if (!next) {
       const available = words.filter(w => !recentWordIds.current.includes(w.id));
       const pool = available.length > 0 ? available : words;

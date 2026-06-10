@@ -1,7 +1,6 @@
 import { GAME } from '../config/constants';
 import { calculateWeight, isDue } from './srs';
 import { sortByPriority, selectBossWord } from './priority';
-import { calculateNewCardsAllowed } from './newCardGate';
 
 function combine(words, wordStats, getStat) {
   return words.map(w => ({ word: w, stat: getStat(w.id) }));
@@ -20,7 +19,7 @@ function weightedRandom(items, getWeight) {
   return items[items.length - 1];
 }
 
-export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, recentWordIds = []) {
+export function selectNextWord(words, wordStats, getStat, recentWordIds = []) {
   const all = combine(words, wordStats, getStat);
 
   const fastTrackPool = all.filter(({ stat }) => stat.fastTrack);
@@ -32,11 +31,7 @@ export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, rece
     isDue(stat)
   );
 
-  const newCardsAllowed = calculateNewCardsAllowed(wordStats);
-  const remainingNew = Math.max(0, newCardsAllowed - newCardsUsed);
-  const newPool = remainingNew > 0
-    ? all.filter(({ stat }) => stat.status === 'new')
-    : [];
+  const newPool = all.filter(({ stat }) => stat.status === 'new');
 
   const eligiblePool = [...fastTrackPool, ...duePool, ...newPool];
 
@@ -77,22 +72,6 @@ export function generateChoices(targetWord, allWords) {
   };
 }
 
-export function hasWordsToPlay(words, wordStats, getStat) {
-  const all = combine(words, wordStats, getStat);
-
-  if (all.some(({ stat }) => stat.fastTrack)) return true;
-
-  if (all.some(({ stat }) =>
-    stat.status !== 'new' &&
-    stat.status !== 'mastered' &&
-    isDue(stat)
-  )) return true;
-
-  const allowed = calculateNewCardsAllowed(wordStats);
-  if (allowed > 0 && all.some(({ stat }) => stat.status === 'new')) return true;
-
-  return false;
-}
 
 export function selectBossWordFromAll(words, wordStats, getStat) {
   const combined = words.map(w => ({ word: w, stat: getStat(w.id) }));
