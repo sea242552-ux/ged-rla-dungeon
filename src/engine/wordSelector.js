@@ -20,7 +20,7 @@ function weightedRandom(items, getWeight) {
   return items[items.length - 1];
 }
 
-export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, lastWordId = null) {
+export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, recentWordIds = []) {
   const all = combine(words, wordStats, getStat);
 
   const fastTrackPool = all.filter(({ stat }) => stat.fastTrack);
@@ -45,7 +45,7 @@ export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, last
   const sorted = sortByPriority(eligiblePool);
   const topN = sorted.slice(0, Math.min(15, sorted.length));
 
-  const filtered = lastWordId ? topN.filter(({ word }) => word.id !== lastWordId) : topN;
+  const filtered = topN.filter(({ word }) => !recentWordIds.includes(word.id));
   const pool = filtered.length > 0 ? filtered : topN;
 
   return weightedRandom(pool, ({ stat }) => calculateWeight(stat));
