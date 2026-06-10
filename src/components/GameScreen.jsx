@@ -22,7 +22,9 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     setIsInBoss(false);
     let next = selectNextWord(words, wordStats, getStat, Infinity, recentWordIds.current);
     if (!next) {
-      const fallback = words[Math.floor(Math.random() * words.length)];
+      const available = words.filter(w => !recentWordIds.current.includes(w.id));
+      const pool = available.length > 0 ? available : words;
+      const fallback = pool[Math.floor(Math.random() * pool.length)];
       next = { word: fallback, stat: getStat(fallback.id) };
     }
     setCurrentWord(next);
