@@ -43,7 +43,14 @@ export function selectNextWord(words, wordStats, getStat, newCardsUsed = 0, rece
   if (eligiblePool.length === 0) return null;
 
   const sorted = sortByPriority(eligiblePool);
-  const topN = sorted.slice(0, Math.min(15, sorted.length));
+  // shuffle คำที่มี weight เท่ากัน เพื่อป้องกัน deterministic ordering
+  const shuffled = [...sorted].sort((a, b) => {
+    const wa = calculateWeight(a.stat);
+    const wb = calculateWeight(b.stat);
+    if (Math.abs(wa - wb) < 0.01) return Math.random() - 0.5;
+    return wb - wa;
+  });
+  const topN = shuffled.slice(0, Math.min(15, shuffled.length));
 
   const filtered = topN.filter(({ word }) => !recentWordIds.includes(word.id));
   const pool = filtered.length > 0 ? filtered : topN;
