@@ -96,12 +96,6 @@ export default function ConnectorMode({ onExit }) {
   const typeInfo = CONNECTOR_TYPES[currentType];
   const allWords = Object.values(CONNECTOR_TYPES).flatMap(t => t.words);
   const getMeaning = (word) => allWords.find(w => w.word === word)?.meaning ?? '';
-  const getType = (word) => {
-    for (const [type, info] of Object.entries(CONNECTOR_TYPES)) {
-      if (info.words.some(w => w.word === word)) return type;
-    }
-    return null;
-  };
 
   return (
     <div className="min-h-screen flex flex-col p-4 font-mono">
@@ -118,6 +112,12 @@ export default function ConnectorMode({ onExit }) {
         </div>
         {combo >= 2 && <div className="text-sm text-amber-400">Combo ×{combo}</div>}
       </div>
+
+      {feedback && (
+        <div className={`text-xs mb-2 ${typeInfo?.color ?? 'text-zinc-400'}`}>
+          {typeInfo?.label ?? ''}
+        </div>
+      )}
 
       {/* SENTENCE */}
       <div className="bg-zinc-900 rounded-lg p-4 mb-6 text-sm leading-relaxed">
@@ -149,14 +149,7 @@ export default function ConnectorMode({ onExit }) {
               className={`w-full p-3 text-left rounded ${bg} transition-colors`}
             >
               {String.fromCharCode(65 + idx)}. {c}
-              {feedback && (
-                <span className="text-zinc-400 text-xs ml-2">
-                  ({getMeaning(c)}{' · '}
-                  <span className={CONNECTOR_TYPES[getType(c)]?.color ?? 'text-zinc-500'}>
-                    {CONNECTOR_TYPES[getType(c)]?.label ?? ''}
-                  </span>)
-                </span>
-              )}
+              {feedback && <span className="text-zinc-400 text-xs ml-2">({getMeaning(c)})</span>}
             </button>
           );
         })}
