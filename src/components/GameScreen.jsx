@@ -144,10 +144,6 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       setFeedback('correct');
       const updated = onCorrect(currentWord.stat);
       updateStat(currentWord.word.id, updated);
-      setTimeout(() => {
-        game.nextRoom();
-        pickNext();
-      }, 2000);
     } else {
       game.handleIncorrect(currentWord.word);
       setFeedback('wrong');
@@ -247,11 +243,14 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
           })}
         </div>
 
-        {/* === ปุ่มไปต่อ (ตอบผิดเท่านั้น) === */}
-        {feedback === 'wrong' && (
+        {/* === ปุ่มไปต่อ === */}
+        {feedback && (
           <button
             onClick={() => {
-              if (isInBoss) {
+              if (feedback === 'correct') {
+                game.nextRoom();
+                pickNext();
+              } else if (isInBoss) {
                 const newBoss = selectBossWordFromAll(words, wordStats, getStat);
                 if (newBoss) {
                   setCurrentWord(newBoss);
