@@ -17,6 +17,28 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [isInBoss, setIsInBoss] = useState(false);
   const [bossSkipped, setBossSkipped] = useState(false);
   const [example, setExample] = useState('');
+  const [timeLeft, setTimeLeft] = useState(10);
+  const timerRef = useRef(null);
+
+  const resetTimer = useCallback(() => {
+    if (timerRef.current) clearInterval(timerRef.current);
+    setTimeLeft(10);
+    timerRef.current = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current);
+          // หมดเวลา = ตอบผิด
+          game.handleIncorrect(currentWord.word);
+          setFeedback('wrong');
+          const updated = onIncorrect(currentWord.stat);
+          updateStat(currentWord.word.id, updated);
+          setSelectedIndex(correctIndex);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  }, [currentWord, correctIndex]);
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
@@ -63,6 +85,11 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     pickNextNormal();
   }, [game.isBossRoom, bossSkipped, words, wordStats, getStat, pickNextNormal]);
 
+  useEffect(() => {
+    if (currentWord) resetTimer();
+    return () => { if (timerRef.current) clearInterval(timerRef.current); };
+  }, [currentWord]);
+
   // เริ่มเกม: pick คำแรก
   useEffect(() => {
     pickNext();
@@ -87,6 +114,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   }, [game.gameOver]);
 
   const handleChoice = (idx) => {
+    if (timerRef.current) clearInterval(timerRef.current);
     if (selectedIndex !== -1) return;
     setSelectedIndex(idx);
 
@@ -195,6 +223,13 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
             Combo ×{game.combo} ({game.multiplier}x)
           </div>
         )}
+      </div>
+
+      <div className="w-full bg-zinc-800 rounded-full h-1 mb-4">
+        <div
+          className={`h-1 rounded-full transition-all ${timeLeft <= 3 ? 'bg-red-500' : 'bg-amber-400'}`}
+          style={{ width: `${(timeLeft / 10) * 100}%` }}
+        />
       </div>
 
       {/* === WORD === */}
