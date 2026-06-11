@@ -240,7 +240,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         <div className={`text-4xl mb-2 ${rank.color}`}>
           {currentWord.word.word}
         </div>
-        <div className="text-xs text-zinc-600 italic mb-8 text-center max-w-md">
+        <div className={`text-xs italic mb-8 text-center max-w-md transition-colors ${feedback ? 'text-zinc-300' : 'text-zinc-600'}`}>
           {example}
         </div>
 
