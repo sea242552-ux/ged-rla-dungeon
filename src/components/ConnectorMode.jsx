@@ -57,7 +57,6 @@ export default function ConnectorMode({ onExit }) {
       const newWeights = updateWeight(weights, currentType, chosen, true);
       setWeights(newWeights);
       saveConnectorWeights(newWeights);
-      setTimeout(() => pickNext(newWeights), 1500);
     } else {
       const newHp = hp - 1;
       setHp(newHp);
@@ -95,6 +94,8 @@ export default function ConnectorMode({ onExit }) {
   if (!currentSentence) return <div className="p-4 font-mono">Loading...</div>;
 
   const typeInfo = CONNECTOR_TYPES[currentType];
+  const allWords = Object.values(CONNECTOR_TYPES).flatMap(t => t.words);
+  const getMeaning = (word) => allWords.find(w => w.word === word)?.meaning ?? '';
 
   return (
     <div className="min-h-screen flex flex-col p-4 font-mono">
@@ -126,15 +127,7 @@ export default function ConnectorMode({ onExit }) {
       {feedback && (
         <div className="text-center text-sm mb-4 h-6">
           {feedback === 'correct' && <span className="text-green-400">✓ ถูกต้อง!</span>}
-          {feedback === 'wrong' && (
-            <span className="text-red-400">
-              ✗ คำตอบที่ใช้ได้:{' '}
-              {CONNECTOR_TYPES[currentType].words
-                .filter(w => correctAnswers.includes(w.word))
-                .map(w => `${w.word} (${w.meaning})`)
-                .join(', ')}
-            </span>
-          )}
+          {feedback === 'wrong' && <span className="text-red-400">✗ ผิด</span>}
         </div>
       )}
 
@@ -155,16 +148,17 @@ export default function ConnectorMode({ onExit }) {
               className={`w-full p-3 text-left rounded ${bg} transition-colors`}
             >
               {String.fromCharCode(65 + idx)}. {c}
+              {feedback && <span className="text-zinc-400 text-xs ml-2">({getMeaning(c)})</span>}
             </button>
           );
         })}
       </div>
 
-      {/* ปุ่มไปต่อ (แสดงเมื่อตอบผิด) */}
-      {feedback === 'wrong' && !gameOver && (
+      {/* ปุ่มไปต่อ */}
+      {feedback && !gameOver && (
         <div className="mt-4 text-center">
           <button
-            onClick={handleNext}
+            onClick={() => pickNext(weights)}
             className="px-6 py-2 bg-zinc-700 hover:bg-zinc-600 rounded"
           >
             ไปต่อ →
