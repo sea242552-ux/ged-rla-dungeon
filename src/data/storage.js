@@ -50,6 +50,8 @@ export function createDefaultStat() {
     nextReview: null,
     lastSeen: null,
     fastTrack: false,
+    userId: 'local_user',
+    source: 'ged_rla',
   };
 }
 

@@ -1,278 +1,4844 @@
 [
-  {"id":"imply","word":"imply","meaning":"บ่งบอก / สื่อความหมายโดยนัย","examples":["Her silence implied that she disagreed with the proposal.","The data implies a strong correlation between diet and health.","What does the author imply in the final paragraph?"]},
-  {"id":"infer","word":"infer","meaning":"อนุมาน / ตีความ","examples":["We can infer from the passage that the author supports reform.","She inferred from his tone that he was unhappy.","What can you infer about the character's motivation?"]},
-  {"id":"contradict","word":"contradict","meaning":"ขัดแย้ง","examples":["His actions contradict his earlier statements.","The new findings contradict the original hypothesis.","Evidence from the second study directly contradicts the first."]},
-  {"id":"evidence","word":"evidence","meaning":"หลักฐาน","examples":["The author provides strong evidence to support the argument.","There is no evidence that the policy reduced crime.","She cited three studies as evidence for her claim."]},
-  {"id":"perspective","word":"perspective","meaning":"มุมมอง","examples":["Consider the issue from multiple perspectives.","The story is told from the perspective of a child.","Her perspective changed after reading the article."]},
-  {"id":"assert","word":"assert","meaning":"ยืนยัน / กล่าวอ้างอย่างมั่นใจ","examples":["The report asserts that climate change is accelerating.","She asserted her right to speak at the meeting.","He asserted that the evidence was inconclusive."]},
-  {"id":"evaluate","word":"evaluate","meaning":"ประเมิน / วิจารณ์","examples":["Evaluate the strength of the author's argument.","Teachers evaluate students based on multiple criteria.","We need to evaluate the evidence before drawing conclusions."]},
-  {"id":"validity","word":"validity","meaning":"ความถูกต้อง / ความสมเหตุสมผล","examples":["Question the validity of arguments lacking evidence.","The validity of the study was confirmed by peer review.","Without solid data, the claim has little validity."]},
-  {"id":"assumption","word":"assumption","meaning":"ข้อสมมุติฐาน / การสันนิษฐาน","examples":["The argument rests on a faulty assumption.","Do not make assumptions without checking the facts.","His assumption that everyone agreed turned out to be wrong."]},
-  {"id":"assess","word":"assess","meaning":"ประเมิน","examples":["We must assess the risks before making a decision.","The committee assessed the impact of the new policy.","Doctors assess patients before recommending treatment."]},
-  {"id":"determine","word":"determine","meaning":"ระบุ / ตัดสิน / กำหนด","examples":["Scientists are trying to determine the cause of the disease.","The judge will determine the outcome of the case.","We need to determine the best course of action."]},
-  {"id":"explicit","word":"explicit","meaning":"ชัดเจน / ระบุตรงๆ","examples":["The instructions were explicit and easy to follow.","The author makes an explicit argument against discrimination.","Be explicit about your expectations from the beginning."]},
-  {"id":"implicit","word":"implicit","meaning":"โดยนัย / ไม่ได้พูดตรงๆ","examples":["There was an implicit warning in the author's tone.","The implicit message of the story is about resilience.","His approval was implicit rather than openly stated."]},
-  {"id":"sufficient","word":"sufficient","meaning":"เพียงพอ","examples":["One example is not sufficient to prove a general point.","The evidence was sufficient to support the claim.","Is this amount of data sufficient for the analysis?"]},
-  {"id":"precedent","word":"precedent","meaning":"บรรทัดฐาน","examples":["The court's ruling set an important legal precedent.","There is no historical precedent for such a dramatic change.","Breaking with precedent requires careful justification."]},
-  {"id":"interpretation","word":"interpretation","meaning":"การตีความ","examples":["Her interpretation of the poem differed from the teacher's.","There are multiple valid interpretations of the data.","The lawyer offered a different interpretation of the law."]},
-  {"id":"consistent","word":"consistent","meaning":"สอดคล้อง / สม่ำเสมอ","examples":["The results were consistent across all three studies.","Her argument is consistent with the evidence presented.","A consistent writing style makes an essay easier to follow."]},
-  {"id":"stance","word":"stance","meaning":"จุดยืน","examples":["What is the author's stance on environmental policy?","She took a firm stance against workplace discrimination.","His stance shifted after reviewing the new evidence."]},
-  {"id":"portray","word":"portray","meaning":"แสดงภาพ / พรรณนา","examples":["The article portrays the community in a negative light.","How does the author portray the main character?","The documentary portrays the struggles of migrant workers."]},
-  {"id":"justify","word":"justify","meaning":"แสดงเหตุผลสนับสนุน","examples":["Justify your answer with evidence from the text.","Can you justify this decision with data?","The government failed to justify the new restrictions."]},
-  {"id":"concede","word":"concede","meaning":"ยอมรับ / ยินยอม","examples":["The author concedes that the evidence is not conclusive.","He conceded that his opponent made a valid point.","Even critics concede that the policy had some benefits."]},
-  {"id":"restate","word":"restate","meaning":"กล่าวซ้ำ / อธิบายใหม่","examples":["Restate the main argument in your own words.","She restated her position more clearly after the objection.","The conclusion restates the thesis with new insight."]},
-  {"id":"cite","word":"cite","meaning":"อ้างอิง","examples":["Always cite your sources in academic writing.","The lawyer cited a previous case as precedent.","She cited three studies to support her claim."]},
-  {"id":"convey","word":"convey","meaning":"สื่อสาร / ถ่ายทอด","examples":["The poem conveys a deep sense of loss.","She used vivid language to convey her emotions.","Good writing conveys complex ideas clearly."]},
-  {"id":"bias","word":"bias","meaning":"อคติ / ความลำเอียง","examples":["The report showed a clear bias toward one side.","Journalists must strive to avoid bias in their writing.","Confirmation bias leads people to seek only supporting evidence."]},
-  {"id":"relevance","word":"relevance","meaning":"ความเกี่ยวข้อง","examples":["Make sure all your evidence has relevance to the topic.","The relevance of the data to the argument was questioned.","Choose examples that have direct relevance to your claim."]},
-  {"id":"distinguish","word":"distinguish","meaning":"แยกแยะ","examples":["Can you distinguish between fact and opinion in this passage?","It is important to distinguish correlation from causation.","The author distinguishes two seemingly similar ideas."]},
-  {"id":"undermine","word":"undermine","meaning":"บั่นทอน / ทำให้อ่อนแอ","examples":["The new evidence undermines the original claim.","Constant criticism can undermine a person's confidence.","Corruption undermines public trust in institutions."]},
-  {"id":"reinforce","word":"reinforce","meaning":"เสริมความแข็งแกร่ง","examples":["This example reinforces the author's central argument.","Positive feedback reinforces good behavior.","The study's findings reinforce earlier research conclusions."]},
-  {"id":"elaborate","word":"elaborate","meaning":"ขยายความ / อธิบายเพิ่มเติม","examples":["Could you elaborate on that point?","The author elaborates on the causes of the economic crisis.","Please elaborate your answer with specific examples."]},
-  {"id":"shift","word":"shift","meaning":"เปลี่ยนแปลง / เปลี่ยนทิศทาง","examples":["The author's tone shifts in the final paragraph.","A shift in public opinion led to policy change.","There has been a significant shift in how we view education."]},
-  {"id":"primarily","word":"primarily","meaning":"เป็นหลัก / ส่วนใหญ่","examples":["The article is aimed primarily at young voters.","She is primarily responsible for the success of the project.","The problem is primarily caused by lack of communication."]},
-  {"id":"refute","word":"refute","meaning":"หักล้าง / โต้แย้ง","examples":["The scientist refuted the hypothesis with new data.","He was unable to refute the claims made against him.","A strong counterargument refutes the opposing view directly."]},
-  {"id":"substantiate","word":"substantiate","meaning":"พิสูจน์ / สนับสนุนด้วยหลักฐาน","examples":["Can you substantiate that claim with evidence?","The report substantiates concerns about air quality.","She substantiated her argument with multiple peer-reviewed studies."]},
-  {"id":"generalize","word":"generalize","meaning":"สรุปภาพรวม / ด่วนสรุป","examples":["It is dangerous to generalize based on a single case.","The author generalizes too broadly about human behavior.","Avoid generalizing without sufficient evidence."]},
-  {"id":"corroborate","word":"corroborate","meaning":"ยืนยัน / สนับสนุนด้วยหลักฐาน","examples":["The witness's testimony corroborated the physical evidence.","Multiple studies corroborate these findings.","Can you find another source to corroborate this claim?"]},
-  {"id":"characterize","word":"characterize","meaning":"บ่งบอกลักษณะ / พรรณนา","examples":["How does the author characterize the role of government?","The report characterizes the situation as a public health crisis.","She characterized his behavior as irresponsible."]},
-  {"id":"credibility","word":"credibility","meaning":"ความน่าเชื่อถือ","examples":["Citing expert sources increases your credibility.","The source lacks credibility because of its clear bias.","A writer's credibility depends on the evidence they provide."]},
-  {"id":"discrepancy","word":"discrepancy","meaning":"ความไม่สอดคล้อง / ความแตกต่าง","examples":["There is a discrepancy between the two reports.","The auditors discovered a discrepancy in the financial records.","This discrepancy in the data needs to be explained."]},
-  {"id":"plausible","word":"plausible","meaning":"น่าเชื่อถือ / เป็นไปได้","examples":["The author offers a plausible explanation for the trend.","Is this theory plausible given the available evidence?","He gave a plausible account of what happened."]},
-  {"id":"hypothesis","word":"hypothesis","meaning":"สมมุติฐาน","examples":["The scientist tested the hypothesis through experiments.","A hypothesis must be supported by evidence to be accepted.","Her hypothesis was that stress causes memory loss."]},
-  {"id":"advocate","word":"advocate","meaning":"สนับสนุน / ผู้สนับสนุน","examples":["She advocates for stronger environmental protections.","The organization advocates equal rights for all citizens.","He is a well-known advocate for criminal justice reform."]},
-  {"id":"reconcile","word":"reconcile","meaning":"ประสานความขัดแย้ง / ทำให้สอดคล้อง","examples":["How can we reconcile these two contradictory findings?","The mediator helped the two parties reconcile their differences.","It is difficult to reconcile his words with his actions."]},
-  {"id":"differentiate","word":"differentiate","meaning":"แยกแยะความแตกต่าง","examples":["Differentiate between the author's opinion and stated facts.","The test differentiates students by reading level.","She could not differentiate between the two very similar arguments."]},
-  {"id":"analyze","word":"analyze","meaning":"วิเคราะห์","examples":["Analyze the evidence before drawing any conclusions.","The essay analyzes the causes of the economic recession.","She carefully analyzed the author's rhetorical strategies."]},
-  {"id":"conclude","word":"conclude","meaning":"สรุป","examples":["The author concludes that reform is urgently needed.","What can we conclude from the data presented?","He concluded his argument with a powerful call to action."]},
-  {"id":"support","word":"support","meaning":"สนับสนุน","examples":["This evidence supports the author's central claim.","The data supports the conclusion that exercise improves health.","She used three examples to support her argument."]},
-  {"id":"contrast","word":"contrast","meaning":"เปรียบเทียบความต่าง","examples":["Contrast the two characters' views on justice.","In contrast to the first study, this one found no benefit.","The essay contrasts urban and rural experiences of poverty."]},
-  {"id":"compare","word":"compare","meaning":"เปรียบเทียบ","examples":["Compare the two authors' approaches to the same topic.","The study compared outcomes between two groups.","When you compare the data, the trend becomes clear."]},
-  {"id":"indicate","word":"indicate","meaning":"บ่งชี้ / แสดงให้เห็น","examples":["The graph indicates a steady rise in temperatures.","Her tone indicates that she is frustrated with the situation.","The data indicates a strong link between poverty and crime."]},
-  {"id":"emphasize","word":"emphasize","meaning":"เน้นย้ำ","examples":["The author emphasizes the importance of early education.","She emphasized that the deadline was non-negotiable.","Bold text is used to emphasize key terms in the passage."]},
-  {"id":"address","word":"address","meaning":"กล่าวถึง / จัดการ","examples":["The article addresses concerns about income inequality.","The policy was designed to address environmental degradation.","She addressed the audience's questions directly."]},
-  {"id":"clarify","word":"clarify","meaning":"ชี้แจง / อธิบายให้ชัดเจน","examples":["Can you clarify what you mean by that term?","The author clarifies the distinction between the two concepts.","She clarified her position after the misunderstanding."]},
-  {"id":"reveal","word":"reveal","meaning":"เปิดเผย","examples":["The investigation revealed widespread corruption.","The final paragraph reveals the author's true purpose.","A close reading reveals the hidden meaning in the text."]},
-  {"id":"examine","word":"examine","meaning":"ตรวจสอบ / พิจารณา","examples":["The essay examines the causes of the financial crisis.","We need to examine the evidence more carefully.","The committee examined each proposal in detail."]},
-  {"id":"claim","word":"claim","meaning":"ข้ออ้าง / กล่าวอ้าง","examples":["The author's main claim is that education reduces inequality.","Support every claim with relevant evidence.","She claimed the policy was unconstitutional."]},
-  {"id":"demonstrate","word":"demonstrate","meaning":"แสดงให้เห็น / พิสูจน์","examples":["The experiment demonstrated that the hypothesis was correct.","She demonstrated how to apply the concept in practice.","His commitment demonstrates his dedication to the cause."]},
-  {"id":"illustrate","word":"illustrate","meaning":"แสดงตัวอย่าง / อธิบายด้วยภาพ","examples":["Use specific examples to illustrate your argument.","The chart illustrates the dramatic rise in carbon emissions.","The story illustrates the consequences of moral compromise."]},
-  {"id":"premise","word":"premise","meaning":"ข้อสมมุติฐาน / หลักการเริ่มต้น","examples":["The argument is built on a faulty premise.","State your premise clearly before drawing conclusions.","If the premise is false, the entire argument collapses."]},
-  {"id":"acknowledge","word":"acknowledge","meaning":"ยอมรับ / รับรู้","examples":["A strong essay acknowledges opposing viewpoints.","She acknowledged that she had made a mistake.","The author acknowledges the limitations of the study."]},
-  {"id":"cynical","word":"cynical","meaning":"มองโลกในแง่ร้าย / ไม่เชื่อในความดีของคน","examples":["He had a cynical view of politics after years of corruption.","The author's cynical tone suggests distrust of institutions.","She grew cynical after repeated disappointments."]},
-  {"id":"objective","word":"objective","meaning":"เป็นกลาง / ปราศจากอคติ","examples":["The report aims to present an objective analysis.","A good journalist remains objective when covering controversial topics.","Try to be objective when evaluating both sides of the argument."]},
-  {"id":"skeptical","word":"skeptical","meaning":"สงสัย / ไม่เชื่อง่าย","examples":["She was skeptical about the new study's conclusions.","Be skeptical of information that lacks credible sources.","Scientists are trained to be skeptical of untested claims."]},
-  {"id":"impartial","word":"impartial","meaning":"ไม่ลำเอียง / เป็นกลาง","examples":["Judges must remain impartial throughout the trial.","An impartial review of the evidence led to a different conclusion.","She gave an impartial assessment of both candidates."]},
-  {"id":"ambivalent","word":"ambivalent","meaning":"รู้สึกสองจิตสองใจ","examples":["She felt ambivalent about accepting the promotion.","The public remains ambivalent about the new policy.","His ambivalent response suggested he had not decided."]},
-  {"id":"satirical","word":"satirical","meaning":"เสียดสี / ล้อเลียน","examples":["The article uses a satirical tone to criticize politicians.","Satirical writing often highlights social problems through humor.","The comedian's satirical sketch mocked government incompetence."]},
-  {"id":"nostalgic","word":"nostalgic","meaning":"คิดถึงอดีต / โหยหาอดีต","examples":["The essay has a nostalgic tone about life before technology.","She felt nostalgic looking at old photographs.","His nostalgic writing romanticizes a simpler past."]},
-  {"id":"melancholic","word":"melancholic","meaning":"เศร้าโศก / หดหู่","examples":["The poem has a melancholic tone throughout.","She wrote in a melancholic style that moved readers to tears.","His melancholic mood was reflected in his writing."]},
-  {"id":"indignant","word":"indignant","meaning":"โกรธแค้น (เพราะไม่ยุติธรรม)","examples":["She was indignant at the unfair treatment she received.","The author's indignant tone reveals anger at social injustice.","He grew indignant when his honesty was questioned."]},
-  {"id":"biased","word":"biased","meaning":"มีอคติ / ลำเอียง","examples":["A biased source weakens any argument that relies on it.","His biased reporting favored one political party.","The study was criticized for its biased sample selection."]},
-  {"id":"sarcastic","word":"sarcastic","meaning":"ประชดประชัน","examples":["Her sarcastic remark masked her true frustration.","The author uses a sarcastic tone to critique consumer culture.","His sarcastic comments did not help the conversation."]},
-  {"id":"optimistic","word":"optimistic","meaning":"มองโลกในแง่ดี","examples":["The author's optimistic conclusion inspires hope for change.","She remained optimistic despite the challenges.","An optimistic tone suggests belief in a positive future."]},
-  {"id":"pessimistic","word":"pessimistic","meaning":"มองโลกในแง่ร้าย","examples":["The report takes a pessimistic view of economic recovery.","He was pessimistic about the chances of success.","A pessimistic tone can suggest futility or despair."]},
-  {"id":"formal","word":"formal","meaning":"เป็นทางการ","examples":["Academic essays require a formal writing style.","The letter was written in a very formal tone.","Formal language avoids slang and casual expressions."]},
-  {"id":"informal","word":"informal","meaning":"ไม่เป็นทางการ","examples":["The blog uses an informal, conversational tone.","Informal language makes the article feel more approachable.","She chose an informal style to connect with young readers."]},
-  {"id":"apathetic","word":"apathetic","meaning":"ไม่แยแส / เฉยเมย","examples":["The apathetic tone suggests the narrator has given up hope.","Young voters are often described as apathetic.","His apathetic response disappointed his supporters."]},
-  {"id":"sympathetic","word":"sympathetic","meaning":"เห็นอกเห็นใจ","examples":["The author takes a sympathetic view of the refugees.","She wrote about the victims in a sympathetic tone.","A sympathetic narrator helps readers connect with characters."]},
-  {"id":"solemn","word":"solemn","meaning":"เคร่งขรึม / จริงจัง","examples":["The speaker delivered a solemn message about climate change.","The solemn tone of the passage reflects the gravity of the topic.","He made a solemn promise to protect the community."]},
-  {"id":"didactic","word":"didactic","meaning":"มุ่งสอน / ให้คติสอนใจ","examples":["The novel has a didactic purpose to teach moral lessons.","A didactic tone can feel preachy if overused.","The essay is didactic in its approach to civic responsibility."]},
-  {"id":"earnest","word":"earnest","meaning":"จริงจัง / ตั้งใจจริง","examples":["Her earnest plea for change moved the audience.","He spoke with earnest conviction about justice.","The letter was earnest in its request for reform."]},
-  {"id":"reverent","word":"reverent","meaning":"เคารพนับถือ / ยำเกรง","examples":["The author writes about nature in a reverent tone.","She spoke about her mentor in a reverent way.","His reverent attitude toward tradition shapes his argument."]},
-  {"id":"irreverent","word":"irreverent","meaning":"ไม่เคารพ / ดูหมิ่น","examples":["The article's irreverent tone challenges traditional authority.","His irreverent humor offended some readers.","She wrote an irreverent satire of political institutions."]},
-  {"id":"condescending","word":"condescending","meaning":"วางท่าอวดดี / ดูถูก","examples":["His condescending tone suggested he thought little of his audience.","The article was criticized for its condescending attitude toward readers.","Avoid a condescending tone when explaining complex ideas."]},
-  {"id":"belligerent","word":"belligerent","meaning":"ก้าวร้าว / ชอบทะเลาะ","examples":["The politician's belligerent speech alienated many voters.","A belligerent tone in negotiation rarely leads to agreement.","He became belligerent when his position was challenged."]},
-  {"id":"provocative","word":"provocative","meaning":"ยั่วยุ / กระตุ้นให้เกิดปฏิกิริยา","examples":["The author uses provocative questions to challenge readers.","Her provocative article sparked a national debate.","The speech was deliberately provocative to stir public anger."]},
-  {"id":"compassionate","word":"compassionate","meaning":"มีความเมตตา / สงสาร","examples":["The author's compassionate tone reflects deep concern for the poor.","A compassionate response to suffering includes action.","She wrote a compassionate account of the refugees' journey."]},
-  {"id":"laudatory","word":"laudatory","meaning":"ยกย่อง / สรรเสริญ","examples":["The review was laudatory, praising every aspect of the book.","The senator gave a laudatory speech honoring the volunteers.","A laudatory tone can sometimes obscure honest criticism."]},
-  {"id":"speculative","word":"speculative","meaning":"เป็นการคาดเดา / ไม่มีหลักฐานแน่ชัด","examples":["The article is speculative, offering little concrete evidence.","His speculative claims were not supported by data.","The author takes a speculative approach to the future of AI."]},
-  {"id":"pragmatic","word":"pragmatic","meaning":"เป็นไปในทางปฏิบัติ / จริงจัง","examples":["She took a pragmatic approach to solving the budget crisis.","A pragmatic leader focuses on results rather than ideology.","His pragmatic tone suggests a preference for practical solutions."]},
-  {"id":"detached","word":"detached","meaning":"ไม่ผูกพัน / เป็นกลาง","examples":["The narrator's detached tone creates an objective perspective.","She described the tragedy in a cold, detached manner.","A detached writing style can feel clinical or impersonal."]},
-  {"id":"apologetic","word":"apologetic","meaning":"ขอโทษ / รู้สึกเสียใจ","examples":["The company issued an apologetic statement after the incident.","His apologetic tone acknowledged the harm caused.","She was apologetic but firm in her decision."]},
-  {"id":"hostile","word":"hostile","meaning":"เป็นปฏิปักษ์ / ไม่เป็นมิตร","examples":["The hostile tone of the article undermines its credibility.","She faced a hostile audience during the debate.","A hostile work environment reduces productivity."]},
-  {"id":"philosophical","word":"philosophical","meaning":"เชิงปรัชญา / ยอมรับสิ่งที่เกิดขึ้น","examples":["He took a philosophical approach to the question of justice.","The essay has a philosophical tone, exploring deeper meaning.","She was philosophical about the setbacks she encountered."]},
-  {"id":"cautious","word":"cautious","meaning":"ระมัดระวัง","examples":["The author is cautious about drawing conclusions from limited data.","A cautious tone suggests awareness of complexity.","She was cautious in her claims, acknowledging uncertainty."]},
-  {"id":"assertive","word":"assertive","meaning":"มั่นใจในตัวเอง / กล้าแสดงออก","examples":["The author's assertive tone leaves no room for doubt.","Being assertive does not mean being aggressive.","She made her point in a confident, assertive manner."]},
-  {"id":"urgent","word":"urgent","meaning":"เร่งด่วน","examples":["The report uses urgent language to call for immediate action.","Her urgent tone reflects the seriousness of the situation.","The letter conveyed an urgent need for policy reform."]},
-  {"id":"mocking","word":"mocking","meaning":"เยาะเย้ย / ล้อเลียน","examples":["The author's mocking tone ridicules the opposition's arguments.","His mocking laughter was inappropriate given the situation.","She used a mocking style to dismiss the opponent's logic."]},
-  {"id":"defensive","word":"defensive","meaning":"ป้องกันตัว / ตั้งรับ","examples":["His defensive tone suggested he felt attacked by the criticism.","She became defensive when her findings were questioned.","A defensive argument often signals insecurity in one's position."]},
-  {"id":"candid","word":"candid","meaning":"พูดตรงไปตรงมา / ซื่อสัตย์","examples":["She gave a candid assessment of the program's failures.","His candid admission surprised the audience.","A candid tone builds trust with the reader."]},
-  {"id":"critical","word":"critical","meaning":"วิจารณ์ / ตำหนิ","examples":["The review was highly critical of the government's response.","Critical thinking is essential for evaluating arguments.","She wrote a critical analysis of the novel's themes."]},
-  {"id":"wistful","word":"wistful","meaning":"คิดถึงด้วยความอาลัย / เศร้าอาลัย","examples":["Her wistful tone conveys longing for a lost era.","He wrote with a wistful sadness about his childhood home.","The poem ends on a wistful note, full of gentle regret."]},
-  {"id":"ambiguous","word":"ambiguous","meaning":"กำกวม / ไม่ชัดเจน","examples":["The author's conclusion is ambiguous and open to interpretation.","Ambiguous language can lead to misunderstanding.","The law is ambiguous on this particular issue."]},
-  {"id":"apprehensive","word":"apprehensive","meaning":"กังวล / กลัว","examples":["The narrator's apprehensive tone reflects fear of the unknown.","She was apprehensive about speaking in front of a large audience.","An apprehensive mood pervades the opening chapter."]},
-  {"id":"resigned","word":"resigned","meaning":"ยอมรับชะตากรรม / ยอมจำนน","examples":["His resigned tone suggests he has given up hope for change.","She spoke with a resigned acceptance of the outcome.","The community felt resigned to living with the problem."]},
-  {"id":"defiant","word":"defiant","meaning":"ท้าทาย / ดื้อรั้น","examples":["Her defiant response challenged the authority of the committee.","The activist's defiant speech inspired the crowd.","A defiant tone signals refusal to yield under pressure."]},
-  {"id":"facetious","word":"facetious","meaning":"ตลกขบขัน (ไม่เหมาะกับสถานการณ์)","examples":["His facetious remarks during the debate frustrated many listeners.","A facetious tone is inappropriate in a serious academic essay.","She made a facetious comment that offended the grieving family."]},
-  {"id":"flippant","word":"flippant","meaning":"พูดเล่น / ไม่จริงจัง","examples":["His flippant reply showed he did not take the issue seriously.","A flippant tone undermines the credibility of an argument.","She dismissed the complaint with a flippant wave of her hand."]},
-  {"id":"incredulous","word":"incredulous","meaning":"ไม่เชื่อ / งงงวย","examples":["She looked at him with an incredulous expression.","The author's incredulous tone reflects disbelief at the evidence.","He was incredulous that the plan had actually succeeded."]},
-  {"id":"patronizing","word":"patronizing","meaning":"วางท่าดูถูก / ทำราวกับว่าอีกฝ่ายด้อยกว่า","examples":["The article's patronizing tone assumes readers cannot think for themselves.","She found his explanation patronizing and overly simplified.","A patronizing attitude damages relationships and trust."]},
-  {"id":"colloquial","word":"colloquial","meaning":"ภาษาพูดทั่วไป / ภาษาปาก","examples":["Colloquial language makes the article feel casual and accessible.","Avoid colloquial expressions in formal academic writing.","The author uses colloquial phrases to appeal to everyday readers."]},
-  {"id":"however","word":"however","meaning":"อย่างไรก็ตาม","examples":["The plan seemed sound; however, it failed in practice.","He tried his best; however, the results were disappointing.","However, not everyone agreed with the final decision."]},
-  {"id":"nevertheless","word":"nevertheless","meaning":"อย่างไรก็ตาม","examples":["The task was difficult; nevertheless, they completed it on time.","He was exhausted; nevertheless, he continued working.","Nevertheless, the results offered some encouraging signs."]},
-  {"id":"consequently","word":"consequently","meaning":"ดังนั้น / เป็นผลให้","examples":["She studied every night; consequently, she passed with high marks.","The factory closed; consequently, hundreds lost their jobs.","Consequently, the project was delayed by several months."]},
-  {"id":"furthermore","word":"furthermore","meaning":"ยิ่งกว่านั้น","examples":["The policy reduces costs; furthermore, it improves morale.","Furthermore, the study found no significant side effects.","She is highly skilled; furthermore, she works exceptionally hard."]},
-  {"id":"conversely","word":"conversely","meaning":"ในทางกลับกัน","examples":["He prefers action movies; conversely, she enjoys documentaries.","Conversely, the second study found the opposite trend.","More rules do not always improve safety; conversely, they can create confusion."]},
-  {"id":"therefore","word":"therefore","meaning":"ดังนั้น","examples":["The evidence is conclusive; therefore, the case is closed.","She trained daily; therefore, she was well prepared.","Therefore, we must take immediate action."]},
-  {"id":"moreover","word":"moreover","meaning":"ยิ่งกว่านั้น","examples":["The product is affordable; moreover, it is highly effective.","Moreover, the research revealed additional long-term benefits.","He is talented; moreover, he brings a positive attitude to the team."]},
-  {"id":"on-the-other-hand","word":"on the other hand","meaning":"ในทางกลับกัน","examples":["Urban life is exciting; on the other hand, it can be stressful.","On the other hand, the second candidate had far more experience.","The policy saves money; on the other hand, it reduces services."]},
-  {"id":"likewise","word":"likewise","meaning":"ในทำนองเดียวกัน","examples":["She smiled warmly; likewise, he responded with kindness.","Likewise, the second study reached the same conclusion.","Treat others with respect; likewise, you will receive respect."]},
-  {"id":"similarly","word":"similarly","meaning":"เช่นเดียวกัน","examples":["Similarly, the second group showed significant improvement.","She remained composed under pressure; similarly, her team stayed calm.","Similarly, other nations face the same environmental challenge."]},
-  {"id":"nonetheless","word":"nonetheless","meaning":"อย่างไรก็ตาม","examples":["The challenge was immense; nonetheless, they succeeded.","Nonetheless, the idea deserves serious consideration.","He disagreed with the ruling; nonetheless, he respected it."]},
-  {"id":"hence","word":"hence","meaning":"เพราะฉะนั้น","examples":["The data was unreliable; hence, the results were questioned.","The product was expensive; hence, few customers bought it.","Hence, we decided to revise our entire strategy."]},
-  {"id":"thus","word":"thus","meaning":"ดังนั้น / ด้วยวิธีนี้","examples":["He saved money carefully and thus bought a house.","The results were clear; thus, the experiment was declared a success.","Thus, we can conclude that the hypothesis was supported."]},
-  {"id":"accordingly","word":"accordingly","meaning":"ตามนั้น / ดังนั้น","examples":["The rules changed; act accordingly.","She was given more responsibility and compensated accordingly.","Accordingly, the committee revised its original decision."]},
-  {"id":"subsequently","word":"subsequently","meaning":"ต่อมา","examples":["He was arrested and subsequently charged with fraud.","She graduated and subsequently found a well-paying job.","The law was passed and subsequently enforced nationwide."]},
-  {"id":"meanwhile","word":"meanwhile","meaning":"ในขณะเดียวกัน","examples":["She worked on the report; meanwhile, her colleague set up the presentation.","Meanwhile, the situation at the border continued to deteriorate.","He studied late into the night; meanwhile, the rest of the household slept."]},
-  {"id":"as-a-result","word":"as a result","meaning":"เป็นผลให้","examples":["The drought destroyed crops; as a result, food prices soared.","She trained intensively; as a result, her performance improved dramatically.","As a result of the new policy, unemployment fell significantly."]},
-  {"id":"in-addition","word":"in addition","meaning":"นอกจากนี้","examples":["In addition, the study found a strong link between diet and mood.","She is a skilled researcher; in addition, she is an excellent writer.","In addition to reducing costs, the plan also improves efficiency."]},
-  {"id":"despite","word":"despite","meaning":"ถึงแม้ว่า","examples":["Despite the rain, the outdoor event continued as planned.","She succeeded despite many obstacles in her path.","Despite the evidence, he refused to change his position."]},
-  {"id":"in-spite-of","word":"in spite of","meaning":"ทั้งๆ ที่","examples":["In spite of the criticism, the author stood by her argument.","He continued working in spite of his illness.","In spite of limited resources, the team achieved impressive results."]},
-  {"id":"although","word":"although","meaning":"แม้ว่า","examples":["Although the task was difficult, she completed it ahead of schedule.","Although he disagreed, he respected the group's decision.","Although evidence was limited, the findings were suggestive."]},
-  {"id":"even-so","word":"even so","meaning":"แม้กระนั้น","examples":["The argument has weaknesses; even so, the core claim is valid.","Even so, no one could deny that progress had been made.","She faced enormous criticism; even so, she pressed forward."]},
-  {"id":"on-the-contrary","word":"on the contrary","meaning":"ตรงกันข้าม","examples":["He is not lazy; on the contrary, he works harder than anyone.","On the contrary, the new policy made the situation worse.","She did not give up; on the contrary, she redoubled her efforts."]},
-  {"id":"alternatively","word":"alternatively","meaning":"หรืออีกทางหนึ่ง","examples":["You can take the train; alternatively, you can drive.","Alternatively, we could postpone the project until next quarter.","Consider solar power; alternatively, invest in wind energy."]},
-  {"id":"whereas","word":"whereas","meaning":"ในขณะที่ / แต่ว่า","examples":["She prefers reading, whereas he enjoys outdoor activities.","Whereas the first study found clear benefits, the second was inconclusive.","Urban areas grew rapidly, whereas rural regions declined."]},
-  {"id":"specifically","word":"specifically","meaning":"โดยเฉพาะ","examples":["Specifically, the report focuses on air quality in urban areas.","She asked specifically for a full refund.","He specifically mentioned the need for longer deadlines."]},
-  {"id":"for-instance","word":"for instance","meaning":"ยกตัวอย่างเช่น","examples":["Many factors contribute to success; for instance, hard work matters greatly.","For instance, the study found benefits in just eight weeks.","Consider the role of technology; for instance, social media changed communication."]},
-  {"id":"notwithstanding","word":"notwithstanding","meaning":"ทั้งๆ ที่ / แม้กระนั้น","examples":["Notwithstanding the difficulties, they completed the project on time.","The law applies notwithstanding any prior agreement.","Notwithstanding her fear, she gave a powerful speech."]},
-  {"id":"further","word":"further","meaning":"นอกจากนี้ / ยิ่งกว่านั้น","examples":["Further research is needed to confirm these findings.","She provided further evidence to strengthen her argument.","Further, the data suggests a long-term trend, not a temporary one."]},
-  {"id":"granted","word":"granted","meaning":"ยอมรับว่า","examples":["Granted, the solution is imperfect, but it is better than nothing.","Granted, he made mistakes, but he learned from each one.","Granted that the task is hard, we still need to attempt it."]},
-  {"id":"because","word":"because","meaning":"เพราะว่า","examples":["She succeeded because she worked consistently every day.","He was late because his car broke down unexpectedly.","We canceled the event because of dangerous weather conditions."]},
-  {"id":"so","word":"so","meaning":"ดังนั้น","examples":["The evidence was overwhelming, so the jury reached a verdict quickly.","She was tired, so she went to bed early.","The project was delayed, so the deadline was extended."]},
-  {"id":"for-this-reason","word":"for this reason","meaning":"ด้วยเหตุนี้","examples":["The data was incomplete; for this reason, the study was retracted.","For this reason, early education is considered essential.","He lacked the required qualifications; for this reason, he was not hired."]},
-  {"id":"yet","word":"yet","meaning":"แต่ถึงกระนั้น","examples":["The task was enormous, yet the team completed it on time.","She had little experience, yet she outperformed the veterans.","Yet, some experts remain unconvinced by the evidence."]},
-  {"id":"still","word":"still","meaning":"แต่ก็ยังคง","examples":["The problem was identified years ago; still, little has changed.","She has faced many setbacks; still, she remains determined.","Still, the author's main argument deserves consideration."]},
-  {"id":"also","word":"also","meaning":"ด้วย / เช่นกัน","examples":["The law reduces inequality; it also promotes economic growth.","She is a researcher and also an award-winning author.","Reading improves vocabulary; it also builds critical thinking."]},
-  {"id":"besides","word":"besides","meaning":"นอกจากนี้","examples":["Besides being highly qualified, she has years of experience.","Besides, it is too late to change the plan now.","He has many skills; besides, he is a natural leader."]},
-  {"id":"if","word":"if","meaning":"ถ้าหาก","examples":["If you study consistently, you will improve your score.","If the policy is not revised, inequality will worsen.","If the evidence is weak, the argument cannot stand."]},
-  {"id":"unless","word":"unless","meaning":"ยกเว้นว่า","examples":["The project will fail unless we address the funding gap.","Unless you provide evidence, your claim remains unsupported.","He will not change his mind unless presented with new data."]},
-  {"id":"provided-that","word":"provided that","meaning":"โดยมีเงื่อนไขว่า","examples":["You may take time off, provided that your work is complete.","The plan is acceptable, provided that all parties agree.","Provided that conditions improve, we will continue the program."]},
-  {"id":"first","word":"first","meaning":"ประการแรก","examples":["First, gather all the evidence before drawing conclusions.","First, the author establishes the historical context.","First, consider the long-term impact of the policy."]},
-  {"id":"then","word":"then","meaning":"จากนั้น","examples":["First, analyze the data; then, draw your conclusions.","She reviewed the draft, then submitted it to the editor.","Then, the committee voted on the final proposal."]},
-  {"id":"afterward","word":"afterward","meaning":"หลังจากนั้น","examples":["He graduated; afterward, he found a job within two weeks.","The law was passed; afterward, enforcement began immediately.","She finished the report and went home afterward."]},
-  {"id":"legislation","word":"legislation","meaning":"กฎหมาย / การออกกฎหมาย","examples":["New legislation was passed to protect workers' rights.","The legislation aims to reduce carbon emissions by 2030.","Activists lobbied for stronger environmental legislation."]},
-  {"id":"disenfranchise","word":"disenfranchise","meaning":"ตัดสิทธิ์การเลือกตั้ง","examples":["New voter ID laws could disenfranchise minority communities.","Historically, many groups were disenfranchised by unjust laws.","The policy was accused of disenfranchising low-income voters."]},
-  {"id":"enfranchise","word":"enfranchise","meaning":"ให้สิทธิ์เลือกตั้ง","examples":["The amendment enfranchised women for the first time.","Efforts to enfranchise marginalized communities continued for decades.","Reformers sought to enfranchise all adult citizens."]},
-  {"id":"amendment","word":"amendment","meaning":"การแก้ไขเพิ่มเติม (กฎหมาย)","examples":["The First Amendment protects freedom of speech.","Congress proposed an amendment to strengthen voting rights.","The amendment was ratified by the required number of states."]},
-  {"id":"suffrage","word":"suffrage","meaning":"สิทธิ์ออกเสียงเลือกตั้ง","examples":["Women fought for suffrage for more than seventy years.","Suffrage is a fundamental right in any true democracy.","The suffrage movement changed the course of American history."]},
-  {"id":"constituency","word":"constituency","meaning":"เขตเลือกตั้ง / กลุ่มผู้สนับสนุน","examples":["The senator regularly met with her constituency to listen to concerns.","The party lost support among its core constituency.","Each constituency elects one representative to the legislature."]},
-  {"id":"bipartisan","word":"bipartisan","meaning":"สองพรรคร่วม / ข้ามพรรค","examples":["The bill passed with bipartisan support in the Senate.","A bipartisan approach is needed to address the budget crisis.","Bipartisan cooperation is rare in today's divided political climate."]},
-  {"id":"ratify","word":"ratify","meaning":"ให้สัตยาบัน / รับรอง","examples":["The treaty must be ratified by two-thirds of the Senate.","Enough states ratified the amendment for it to become law.","The country was slow to ratify the international agreement."]},
-  {"id":"advocacy","word":"advocacy","meaning":"การสนับสนุน / การรณรงค์","examples":["Her advocacy for education reform spanned three decades.","Advocacy groups lobbied for stronger environmental protections.","His advocacy work helped change the law on workers' rights."]},
-  {"id":"civic","word":"civic","meaning":"เกี่ยวกับพลเมือง","examples":["Voting is a fundamental civic duty in a democracy.","Civic engagement strengthens communities and democratic institutions.","The school promotes civic responsibility through service learning."]},
-  {"id":"coalition","word":"coalition","meaning":"พันธมิตร / กลุ่มรวม","examples":["A broad coalition of groups supported the new legislation.","The coalition worked together despite differing priorities.","Building a strong coalition is key to political success."]},
-  {"id":"jurisdiction","word":"jurisdiction","meaning":"เขตอำนาจศาล","examples":["The case falls under federal, not state, jurisdiction.","Local courts have limited jurisdiction in national matters.","Different laws apply depending on the jurisdiction."]},
-  {"id":"policy","word":"policy","meaning":"นโยบาย","examples":["The new policy aims to reduce income inequality.","Policy changes require careful analysis of likely impacts.","She advocated for evidence-based policy in public health."]},
-  {"id":"partisan","word":"partisan","meaning":"ฝักใฝ่พรรค / ลำเอียงทางการเมือง","examples":["The debate became increasingly partisan over the years.","Partisan politics often prioritizes party over national interest.","Critics called the decision partisan rather than principled."]},
-  {"id":"veto","word":"veto","meaning":"ยับยั้ง / อำนาจยับยั้ง","examples":["The president threatened to veto the spending bill.","Congress overrode the veto with a two-thirds majority.","The mayor used her veto power to block the development plan."]},
-  {"id":"referendum","word":"referendum","meaning":"การลงประชามติ","examples":["The government called a referendum on independence.","Citizens voted in a national referendum on the new constitution.","The referendum result surprised even the most experienced analysts."]},
-  {"id":"constituent","word":"constituent","meaning":"ผู้มีสิทธิ์เลือกตั้ง / ส่วนประกอบ","examples":["Every constituent has the right to contact their representative.","The senator listened carefully to constituent concerns.","Water is a key constituent of all living organisms."]},
-  {"id":"decree","word":"decree","meaning":"พระราชกฤษฎีกา / คำสั่ง","examples":["The president issued a decree banning the practice.","The court decree required immediate changes to the policy.","By royal decree, the law was suspended pending review."]},
-  {"id":"lobby","word":"lobby","meaning":"ล็อบบี้ / กดดันทางการเมือง","examples":["Corporations spend millions to lobby Congress each year.","Environmental groups lobby for stronger regulations.","She worked as a professional lobbyist in Washington D.C."]},
-  {"id":"nullify","word":"nullify","meaning":"ยกเลิก / ทำให้เป็นโมฆะ","examples":["The court ruled to nullify the unconstitutional law.","New evidence could nullify the original verdict.","The contract was nullified because one party violated its terms."]},
-  {"id":"statute","word":"statute","meaning":"กฎหมาย / พระราชบัญญัติ","examples":["The statute prohibits discrimination in public accommodations.","The lawyer cited a specific statute in her argument.","Congress passed a new statute to protect consumers from fraud."]},
-  {"id":"limitations","word":"limitations","meaning":"ข้อจำกัด","examples":["Every study has limitations that researchers must acknowledge.","The policy has significant limitations that reduce its effectiveness.","Understanding the limitations of the data is essential."]},
-  {"id":"recourse","word":"recourse","meaning":"การใช้สิทธิ์ / การพึ่งพา","examples":["Citizens have legal recourse if their rights are violated.","Without recourse to the courts, they had no way to seek justice.","The only recourse available was to file a formal complaint."]},
-  {"id":"retribution","word":"retribution","meaning":"การลงโทษ / การตอบแทน","examples":["The victims sought retribution through the legal system.","Retribution is one theory of criminal punishment.","He feared retribution for speaking out against the corruption."]},
-  {"id":"disparate","word":"disparate","meaning":"แตกต่างกันมาก / ไม่เหมือนกัน","examples":["The two groups had disparate views on immigration policy.","The study drew from disparate data sources across regions.","Disparate outcomes for different groups suggest systemic inequality."]},
-  {"id":"litigation","word":"litigation","meaning":"การฟ้องร้อง / คดีความ","examples":["The company faced costly litigation after the product recall.","Litigation can take years and drain significant resources.","She chose mediation over litigation to resolve the dispute."]},
-  {"id":"plaintiff","word":"plaintiff","meaning":"โจทก์","examples":["The plaintiff filed a lawsuit alleging workplace discrimination.","The court ruled in favor of the plaintiff.","As the plaintiff, she bore the burden of proving her case."]},
-  {"id":"defendant","word":"defendant","meaning":"จำเลย","examples":["The defendant pleaded not guilty to all charges.","The lawyer argued that the defendant had acted in self-defense.","Under the law, every defendant is presumed innocent."]},
-  {"id":"prejudice","word":"prejudice","meaning":"อคติ / ความลำเอียง","examples":["Racial prejudice continues to affect hiring decisions.","The judge ruled that the evidence had created prejudice against the defendant.","Prejudice stems from ignorance and fear of the unknown."]},
-  {"id":"equity","word":"equity","meaning":"ความเป็นธรรม / ความเท่าเทียม","examples":["The policy aims to promote equity in access to education.","Equity requires giving people what they need, not just equal treatment.","Racial equity in the workplace remains a significant challenge."]},
-  {"id":"systemic","word":"systemic","meaning":"เกี่ยวกับระบบ / แพร่หลายในระบบ","examples":["Systemic racism affects opportunity at every level of society.","The problem is not individual but systemic in nature.","Addressing systemic inequality requires structural changes."]},
-  {"id":"accrual","word":"accrual","meaning":"การสะสม / การเพิ่มพูน","examples":["The accrual of debt over many years put the company at risk.","Accrual accounting records revenue when earned, not when received.","The accrual of environmental damage cannot be easily reversed."]},
-  {"id":"settlement","word":"settlement","meaning":"การยุติ / ข้อตกลง","examples":["The two companies reached a financial settlement out of court.","The settlement required the company to pay compensation.","A negotiated settlement avoided a lengthy and costly trial."]},
-  {"id":"grievance","word":"grievance","meaning":"ข้อร้องเรียน / ความไม่พอใจ","examples":["Workers filed a formal grievance against the management's decision.","The colonists listed their grievances in the Declaration of Independence.","A fair grievance process is essential for workplace trust."]},
-  {"id":"retaliation","word":"retaliation","meaning":"การตอบโต้ / การแก้แค้น","examples":["She feared retaliation for reporting the abuse to authorities.","The law protects employees from retaliation for whistleblowing.","The attack was widely seen as an act of retaliation."]},
-  {"id":"remedial","word":"remedial","meaning":"แก้ไข / บำบัด","examples":["Remedial classes helped struggling students catch up.","The government launched a remedial program to address past injustices.","Remedial action was taken after the environmental violation."]},
-  {"id":"insidious","word":"insidious","meaning":"แอบแฝง / ร้ายกาจโดยไม่เห็นได้ชัด","examples":["Bias can be insidious, operating below the level of conscious awareness.","The disease is insidious because it shows no early symptoms.","Insidious misinformation spreads gradually without obvious signs."]},
-  {"id":"compensation","word":"compensation","meaning":"ค่าตอบแทน / การชดเชย","examples":["Workers received compensation for injuries sustained on the job.","Fair compensation is essential for attracting skilled employees.","She sought compensation after the accident through legal channels."]},
-  {"id":"arbitration","word":"arbitration","meaning":"การอนุญาโตตุลาการ","examples":["The dispute was resolved through binding arbitration.","Many employment contracts include mandatory arbitration clauses.","Arbitration is generally faster and less costly than court litigation."]},
-  {"id":"discrimination","word":"discrimination","meaning":"การเลือกปฏิบัติ","examples":["Discrimination in hiring based on race is illegal.","She filed a formal complaint about gender discrimination at work.","The law protects workers from discrimination in all its forms."]},
-  {"id":"conservation","word":"conservation","meaning":"การอนุรักษ์","examples":["Conservation efforts have helped restore the forest ecosystem.","She dedicated her career to wildlife conservation.","Water conservation is increasingly important in drought-prone regions."]},
-  {"id":"imperiled","word":"imperiled","meaning":"ตกอยู่ในอันตราย","examples":["Several imperiled species are now protected under federal law.","Rapid habitat loss has imperiled dozens of native birds.","The imperiled river ecosystem requires immediate restoration efforts."]},
-  {"id":"ecosystem","word":"ecosystem","meaning":"ระบบนิเวศ","examples":["Every organism plays a role in its ecosystem.","Deforestation can destroy an entire ecosystem within decades.","Protecting the coastal ecosystem benefits both wildlife and humans."]},
-  {"id":"biodiversity","word":"biodiversity","meaning":"ความหลากหลายทางชีวภาพ","examples":["Tropical rainforests contain extraordinary biodiversity.","Human activity threatens global biodiversity at an unprecedented rate.","Biodiversity is essential for ecosystem resilience and stability."]},
-  {"id":"depletion","word":"depletion","meaning":"การลดลง / การหมดสิ้น","examples":["Depletion of natural resources poses a serious long-term threat.","The depletion of the ozone layer led to international agreements.","Groundwater depletion is a growing crisis in many regions."]},
-  {"id":"habitat","word":"habitat","meaning":"ที่อยู่อาศัยตามธรรมชาติ","examples":["Deforestation destroys the natural habitat of countless species.","The polar bear's habitat is rapidly shrinking due to climate change.","Protecting habitat is the most effective way to prevent extinction."]},
-  {"id":"mitigation","word":"mitigation","meaning":"การบรรเทา / การลดความรุนแรง","examples":["Planting trees is one strategy for climate change mitigation.","The company invested in mitigation measures after the oil spill.","Mitigation of flood risk requires long-term infrastructure planning."]},
-  {"id":"sustainability","word":"sustainability","meaning":"ความยั่งยืน","examples":["Sustainability requires balancing economic growth with environmental protection.","The organization adopted a sustainability plan to reduce its carbon footprint.","Long-term sustainability must be the goal of any development policy."]},
-  {"id":"degradation","word":"degradation","meaning":"การเสื่อมสภาพ / การทำให้แย่ลง","examples":["Soil degradation reduces agricultural productivity significantly.","The degradation of the coral reef threatens marine biodiversity.","Environmental degradation is accelerating in industrialized regions."]},
-  {"id":"preservation","word":"preservation","meaning":"การรักษา / การอนุรักษ์","examples":["The preservation of historic buildings protects cultural heritage.","Preservation of wetlands prevents flooding and supports wildlife.","Food preservation techniques have been used for thousands of years."]},
-  {"id":"extinction","word":"extinction","meaning":"การสูญพันธุ์","examples":["Many species face extinction due to habitat destruction.","The extinction of the dinosaurs occurred approximately 66 million years ago.","Preventing extinction requires global cooperation and commitment."]},
-  {"id":"hatchery","word":"hatchery","meaning":"โรงเพาะฟัก","examples":["The salmon hatchery releases millions of fish into the river each year.","A fish hatchery can help replenish depleted wild populations.","The hatchery program was a key part of the restoration plan."]},
-  {"id":"supplementation","word":"supplementation","meaning":"การเสริม / การเพิ่มเติม","examples":["Supplementation of wild fish populations helps prevent extinction.","Vitamin supplementation is recommended for people with certain deficiencies.","The program focused on supplementation rather than replacement of native species."]},
-  {"id":"ecological","word":"ecological","meaning":"เกี่ยวกับนิเวศวิทยา","examples":["The oil spill caused significant ecological damage to the coastline.","Ecological balance is fragile and easily disrupted by human activity.","Researchers conducted an ecological survey of the protected zone."]},
-  {"id":"bode","word":"bode","meaning":"บ่งบอก / เป็นลางสัญญาณ","examples":["The declining bird population does not bode well for the ecosystem.","Early results bode well for the success of the new program.","Rising temperatures bode poorly for polar ice preservation."]},
-  {"id":"breach","word":"breach","meaning":"การละเมิด / การฝ่าฝืน","examples":["The company was fined for a serious breach of environmental regulations.","A breach of contract can result in significant legal consequences.","The data breach exposed the personal information of thousands of users."]},
-  {"id":"adversely","word":"adversely","meaning":"อย่างเป็นผลเสีย","examples":["Pollution adversely affects the health of nearby communities.","The drought adversely impacted agricultural output for three years.","The decision adversely affected workers in the manufacturing sector."]},
-  {"id":"proliferation","word":"proliferation","meaning":"การแพร่กระจาย / การขยายตัว","examples":["The proliferation of invasive species threatens native biodiversity.","Nuclear proliferation remains one of the world's greatest security threats.","The proliferation of misinformation online is a growing concern."]},
-  {"id":"indigenous","word":"indigenous","meaning":"พื้นเมือง / ท้องถิ่น","examples":["Indigenous communities often have deep knowledge of local ecosystems.","The government violated the rights of indigenous peoples.","Indigenous plants are better adapted to local environmental conditions."]},
-  {"id":"vulnerable","word":"vulnerable","meaning":"เปราะบาง / ได้รับผลกระทบได้ง่าย","examples":["Children and the elderly are most vulnerable during heat waves.","Vulnerable ecosystems require special legal protections.","The policy aims to protect the most vulnerable members of society."]},
-  {"id":"exploitation","word":"exploitation","meaning":"การแสวงหาประโยชน์ / การใช้ประโยชน์","examples":["The exploitation of natural resources must be regulated carefully.","Workers spoke out against the exploitation of underpaid labor.","Economic exploitation of developing nations remains a global concern."]},
-  {"id":"internship","word":"internship","meaning":"การฝึกงาน","examples":["She completed a summer internship at a leading law firm.","Many companies offer internships to recruit future full-time employees.","Unpaid internships raise serious questions about labor fairness."]},
-  {"id":"remuneration","word":"remuneration","meaning":"ค่าตอบแทน / ค่าจ้าง","examples":["The position offers generous remuneration and benefits.","Fair remuneration is essential for attracting and retaining skilled workers.","The union negotiated higher remuneration for all employees."]},
-  {"id":"unregulated","word":"unregulated","meaning":"ไม่มีการควบคุม","examples":["Unregulated industries often cause greater harm to workers and consumers.","The unregulated market led to dangerous working conditions.","Critics argue that unregulated technology companies pose serious risks."]},
-  {"id":"proponent","word":"proponent","meaning":"ผู้สนับสนุน / ผู้เสนอ","examples":["She is a leading proponent of criminal justice reform.","Proponents of the policy argue it will reduce inequality.","He became a vocal proponent of renewable energy solutions."]},
-  {"id":"prevalent","word":"prevalent","meaning":"แพร่หลาย / พบได้บ่อย","examples":["Income inequality is increasingly prevalent in developed nations.","Misinformation is prevalent on social media platforms.","A prevalent view among researchers is that prevention is more effective than cure."]},
-  {"id":"corporate","word":"corporate","meaning":"เกี่ยวกับบริษัท / องค์กร","examples":["Corporate social responsibility has become a major business priority.","The scandal exposed widespread corporate corruption.","She climbed the corporate ladder through talent and dedication."]},
-  {"id":"lucrative","word":"lucrative","meaning":"ทำกำไรได้มาก / มีรายได้ดี","examples":["Real estate investment can be extremely lucrative in growing cities.","She found a lucrative career in the technology sector.","The deal turned out to be far more lucrative than expected."]},
-  {"id":"exempt","word":"exempt","meaning":"ยกเว้น / ได้รับการยกเว้น","examples":["Small businesses may be exempt from certain labor regulations.","Nonprofit organizations are often exempt from paying income tax.","The regulation exempts companies with fewer than ten employees."]},
-  {"id":"coercion","word":"coercion","meaning":"การบังคับ / การข่มขู่","examples":["The confession was obtained through coercion and is therefore invalid.","Coercion in the workplace violates employees' fundamental rights.","The agreement was signed under coercion and later challenged in court."]},
-  {"id":"laborious","word":"laborious","meaning":"ยากลำบาก / ต้องใช้ความพยายามมาก","examples":["The data collection process was laborious and time-consuming.","Reforming a complex legal system is a laborious undertaking.","She completed the laborious task without complaint."]},
-  {"id":"negotiate","word":"negotiate","meaning":"เจรจาต่อรอง","examples":["Workers have the legal right to negotiate their wages collectively.","The two parties negotiated for weeks before reaching an agreement.","She successfully negotiated a better contract for her team."]},
-  {"id":"entitled","word":"entitled","meaning":"มีสิทธิ์ / ได้รับสิทธิ์","examples":["Every worker is entitled to a safe working environment.","Citizens are entitled to equal protection under the law.","She felt entitled to the promotion after years of dedicated service."]},
-  {"id":"mandate","word":"mandate","meaning":"อำนาจ / คำสั่งที่มีผลผูกมัด","examples":["The new law mandates paid family leave for all workers.","The agency received a clear mandate to regulate emissions.","A mandate from voters gave the party authority to implement change."]},
-  {"id":"discretion","word":"discretion","meaning":"ดุลยพินิจ / การตัดสินใจ","examples":["Judges use discretion when determining appropriate sentences.","Managers must exercise discretion when handling confidential information.","The decision was left to the discretion of the committee."]},
-  {"id":"jurisprudence","word":"jurisprudence","meaning":"นิติศาสตร์ / หลักกฎหมาย","examples":["Constitutional jurisprudence evolves through court decisions over time.","Her expertise in labor jurisprudence made her a leading authority.","This case will have a lasting impact on environmental jurisprudence."]},
-  {"id":"compliance","word":"compliance","meaning":"การปฏิบัติตามกฎ","examples":["The company achieved full compliance with safety regulations.","Compliance with environmental standards is legally required.","Regular audits ensure ongoing compliance across all departments."]},
-  {"id":"standardization","word":"standardization","meaning":"การกำหนดมาตรฐาน","examples":["Standardization of testing procedures improves reliability.","The industry called for standardization of safety protocols.","Standardization allows different systems to work together effectively."]},
-  {"id":"violation","word":"violation","meaning":"การละเมิด","examples":["The company was fined for a serious safety violation.","Voting rights violations were documented in several states.","A violation of the agreement would result in immediate penalties."]},
-  {"id":"recompense","word":"recompense","meaning":"การชดเชย / ค่าตอบแทน","examples":["She sought recompense for the damage caused by the company's negligence.","The court ordered full recompense for all affected workers.","A formal apology was offered as recompense for the error."]},
-  {"id":"automation","word":"automation","meaning":"การทำงานอัตโนมัติ","examples":["Automation has replaced many routine manufacturing jobs.","The automation of customer service reduced costs significantly.","Workers are concerned about the impact of automation on employment."]},
-  {"id":"obsolescence","word":"obsolescence","meaning":"การล้าสมัย","examples":["Rapid technological change accelerates product obsolescence.","Planned obsolescence encourages consumers to buy new products regularly.","The obsolescence of certain skills requires workers to retrain constantly."]},
-  {"id":"productivity","word":"productivity","meaning":"ผลผลิต / ประสิทธิภาพการผลิต","examples":["New software increased the team's productivity by thirty percent.","Employee well-being is closely linked to workplace productivity.","Automation can boost productivity while reducing labor costs."]},
-  {"id":"implementation","word":"implementation","meaning":"การนำไปปฏิบัติ","examples":["Successful policy depends on careful implementation.","The implementation of the new system took longer than expected.","Challenges in implementation often undermine well-designed policies."]},
-  {"id":"precision","word":"precision","meaning":"ความแม่นยำ","examples":["The surgeon operated with extraordinary precision.","Precision is essential in scientific measurement and reporting.","She delivered her argument with clarity and precision."]},
-  {"id":"integration","word":"integration","meaning":"การบูรณาการ / การรวมกัน","examples":["The integration of new technology improved workflow significantly.","Social integration promotes cohesion in diverse communities.","The successful integration of the two departments improved communication."]},
-  {"id":"efficiency","word":"efficiency","meaning":"ประสิทธิภาพ","examples":["Streamlining the process improved overall efficiency.","Fuel efficiency is a key factor for consumers choosing a car.","Greater efficiency in government reduces waste and saves taxpayer money."]},
-  {"id":"backlash","word":"backlash","meaning":"ปฏิกิริยาต่อต้าน","examples":["The new policy faced a significant backlash from workers.","Social media amplified the public backlash against the decision.","The company suffered a backlash after the controversial advertisement."]},
-  {"id":"disruption","word":"disruption","meaning":"การรบกวน / การเปลี่ยนแปลงอย่างรุนแรง","examples":["Technological disruption is transforming entire industries.","The strike caused major disruption to public transportation.","Innovation often creates disruption before it delivers lasting benefit."]},
-  {"id":"redundancy","word":"redundancy","meaning":"ความซ้ำซ้อน / การถูกเลิกจ้าง","examples":["Automation has led to significant redundancy in the manufacturing sector.","The company offered generous packages to workers facing redundancy.","Redundancy in a system can actually improve resilience and reliability."]},
-  {"id":"feasibility","word":"feasibility","meaning":"ความเป็นไปได้","examples":["A feasibility study was conducted before approving the project.","The feasibility of the proposal depends on available funding.","Experts questioned the feasibility of meeting the aggressive deadline."]},
-  {"id":"augment","word":"augment","meaning":"เพิ่มเติม / ขยาย","examples":["Technology can augment human capabilities rather than replace them.","The program aims to augment workers' skills for the digital economy.","She sought to augment her income through freelance work."]},
-  {"id":"hybrid","word":"hybrid","meaning":"ลูกผสม / รูปแบบผสม","examples":["Many companies now offer hybrid work models combining remote and office days.","Hybrid vehicles use both electric and gasoline power.","The hybrid approach combines the best elements of two methods."]},
-  {"id":"unprecedented","word":"unprecedented","meaning":"ไม่เคยมีมาก่อน","examples":["The pandemic caused unprecedented disruption to the global economy.","Unemployment reached unprecedented levels during the financial crisis.","The technology represents an unprecedented leap forward in computing."]},
-  {"id":"displacement","word":"displacement","meaning":"การแทนที่ / การพลัดถิ่น","examples":["Automation has caused widespread job displacement in manufacturing.","The war led to the displacement of millions of civilians.","Economic displacement requires government support for retraining programs."]},
-  {"id":"obsolete","word":"obsolete","meaning":"ล้าสมัย","examples":["Fax machines have become largely obsolete in the digital age.","Skills that were once valuable can quickly become obsolete.","The outdated software was declared obsolete and replaced."]},
-  {"id":"capital-intensive","word":"capital-intensive","meaning":"ต้องใช้เงินทุนสูง","examples":["Nuclear energy is a capital-intensive technology with high upfront costs.","Manufacturing semiconductors is one of the most capital-intensive industries.","Capital-intensive projects require long-term financial planning and commitment."]},
-  {"id":"moratorium","word":"moratorium","meaning":"การพักชำระหนี้ / การระงับชั่วคราว","examples":["The government declared a moratorium on new oil drilling permits.","A moratorium on debt repayments was granted to struggling nations.","Environmental groups called for a moratorium on deep-sea mining."]},
-  {"id":"competitiveness","word":"competitiveness","meaning":"ความสามารถในการแข่งขัน","examples":["Investing in education improves a nation's long-term competitiveness.","The company's global competitiveness depends on innovation.","Wage growth must be balanced with maintaining economic competitiveness."]},
-  {"id":"retrain","word":"retrain","meaning":"ฝึกทักษะใหม่ / อบรมใหม่","examples":["Workers displaced by automation need opportunities to retrain.","The government funded programs to retrain unemployed factory workers.","She chose to retrain as a data analyst after her industry declined."]},
-  {"id":"accelerating","word":"accelerating","meaning":"เพิ่มความรุนแรง / เร่งขึ้น","examples":["The report asserts that climate change is accelerating.","Technology is accelerating at an unprecedented rate.","The accelerating pace of change challenges traditional systems."]},
-  {"id":"alarming","word":"alarming","meaning":"น่าตกใจ / น่าเป็นห่วง","examples":["The rate of deforestation is alarming.","Scientists have found alarming levels of pollution in the ocean.","The alarming statistics prompted immediate government action."]},
-  {"id":"irreplaceable","word":"irreplaceable","meaning":"ทดแทนไม่ได้","examples":["These ancient forests are irreplaceable.","She was an irreplaceable member of the team.","Once lost, this biodiversity is irreplaceable."]},
-  {"id":"severe","word":"severe","meaning":"รุนแรง","examples":["The drought had severe consequences for local farmers.","Severe weather conditions disrupted travel across the region.","The patient suffered severe side effects from the treatment."]},
-  {"id":"threats","word":"threats","meaning":"ภัยคุกคาม","examples":["Pollution and overfishing are major threats to marine life.","The report identified three key threats to national security.","Climate change poses serious threats to global food supplies."]},
-  {"id":"efforts","word":"efforts","meaning":"ความพยายาม","examples":["Despite efforts to reduce emissions, pollution levels remain high.","Conservation efforts have helped increase the tiger population.","Her efforts to improve education inspired the whole community."]},
-  {"id":"preserving","word":"preserving","meaning":"อนุรักษ์ไว้","examples":["Preserving natural habitats is essential for biodiversity.","The museum is dedicated to preserving cultural heritage.","Local communities play a key role in preserving traditions."]},
-  {"id":"considered","word":"considered","meaning":"ถือว่า / ได้รับการพิจารณา","examples":["Coral reefs are considered among the most diverse ecosystems.","She is considered one of the greatest scientists of her time.","This region is considered a biodiversity hotspot."]},
-  {"id":"trends","word":"trends","meaning":"แนวโน้ม","examples":["Current trends suggest that temperatures will continue to rise.","Researchers identified troubling trends in public health data.","Economic trends indicate a slowdown in growth."]},
-  {"id":"remains","word":"remains","meaning":"สิ่งที่เหลืออยู่","examples":["Much of the rainforest remains untouched by human activity.","The question of funding remains unresolved.","Only a fraction of the original population remains."]},
-  {"id":"diversity","word":"diversity","meaning":"ความหลากหลาย","examples":["The Amazon rainforest is known for its incredible diversity.","Diversity in the workplace leads to more creative solutions.","Species diversity is a key indicator of ecosystem health."]},
-  {"id":"extraordinary","word":"extraordinary","meaning":"ยอดเยี่ยม / ไม่ธรรมดา","examples":["Coral reefs support an extraordinary variety of marine life.","She showed extraordinary courage under pressure.","The discovery was an extraordinary breakthrough in medicine."]},
-  {"id":"marine","word":"marine","meaning":"เกี่ยวกับทะเล","examples":["Marine biologists study life in the ocean.","Plastic pollution threatens marine ecosystems worldwide.","The government established a marine protected area."]},
-  {"id":"bleaching","word":"bleaching","meaning":"การฟอกขาว","examples":["Rising ocean temperatures cause coral bleaching.","Bleaching events have increased in frequency over the past decade.","Severe bleaching can kill entire reef systems."]},
-  {"id":"expel","word":"expel","meaning":"ขับออก / ไล่ออก","examples":["Stressed coral expels the algae living in its tissues.","The student was expelled for violating school rules.","The body expels toxins through sweat and urine."]},
-  {"id":"algae","word":"algae","meaning":"สาหร่าย","examples":["Coral reefs depend on algae for nutrition and color.","Algae blooms can deplete oxygen in the water.","Some species of algae are used as a food source."]},
-  {"id":"tissues","word":"tissues","meaning":"เนื้อเยื่อ","examples":["The algae live within the coral's tissues.","Damaged tissues require time and nutrients to heal.","Scientists studied the tissues under a microscope."]},
-  {"id":"suffocate","word":"suffocate","meaning":"ทำให้หายใจไม่ออก","examples":["Agricultural runoff causes algae blooms that suffocate marine life.","The thick smoke suffocated the firefighters.","Plants can suffocate if their roots are completely submerged."]},
-  {"id":"resistant","word":"resistant","meaning":"ทนทานต่อ","examples":["Some coral species are more resistant to bleaching than others.","The bacteria became resistant to antibiotics.","Researchers are developing heat-resistant crop varieties."]},
-  {"id":"repeated","word":"repeated","meaning":"ซ้ำๆ","examples":["Repeated bleaching events prevent coral from recovering.","She made repeated attempts to contact the organization.","Repeated exposure to stress can harm mental health."]},
-  {"id":"stretching","word":"stretching","meaning":"ทอดยาว / ขยาย","examples":["The Great Barrier Reef stretches over 2,300 kilometers.","The desert is stretching further each year due to climate change.","A long highway stretching across the plains came into view."]},
-  {"id":"mollusk","word":"mollusk","meaning":"หอย","examples":["The octopus is a type of mollusk.","Mollusks such as clams and oysters filter water naturally.","Scientists discovered a new species of deep-sea mollusk."]},
-  {"id":"able","word":"able","meaning":"สามารถ","examples":["Some coral species are able to recover if conditions improve.","She was able to complete the project ahead of schedule.","Not all students are able to access quality education."]}
+  {
+    "id": "imply",
+    "word": "imply",
+    "meaning": "บ่งบอก / สื่อความหมายโดยนัย",
+    "examples": [
+      "Her silence implied that she disagreed with the proposal.",
+      "The data implies a strong correlation between diet and health.",
+      "What does the author imply in the final paragraph?"
+    ],
+    "translations": [
+      "บ่งบอก",
+      "สื่อความหมายโดยนัย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "infer",
+    "word": "infer",
+    "meaning": "อนุมาน / ตีความ",
+    "examples": [
+      "We can infer from the passage that the author supports reform.",
+      "She inferred from his tone that he was unhappy.",
+      "What can you infer about the character's motivation?"
+    ],
+    "translations": [
+      "อนุมาน",
+      "ตีความ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "contradict",
+    "word": "contradict",
+    "meaning": "ขัดแย้ง",
+    "examples": [
+      "His actions contradict his earlier statements.",
+      "The new findings contradict the original hypothesis.",
+      "Evidence from the second study directly contradicts the first."
+    ],
+    "translations": [
+      "ขัดแย้ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "evidence",
+    "word": "evidence",
+    "meaning": "หลักฐาน",
+    "examples": [
+      "The author provides strong evidence to support the argument.",
+      "There is no evidence that the policy reduced crime.",
+      "She cited three studies as evidence for her claim."
+    ],
+    "translations": [
+      "หลักฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "perspective",
+    "word": "perspective",
+    "meaning": "มุมมอง",
+    "examples": [
+      "Consider the issue from multiple perspectives.",
+      "The story is told from the perspective of a child.",
+      "Her perspective changed after reading the article."
+    ],
+    "translations": [
+      "มุมมอง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "assert",
+    "word": "assert",
+    "meaning": "ยืนยัน / กล่าวอ้างอย่างมั่นใจ",
+    "examples": [
+      "The report asserts that climate change is accelerating.",
+      "She asserted her right to speak at the meeting.",
+      "He asserted that the evidence was inconclusive."
+    ],
+    "translations": [
+      "ยืนยัน",
+      "กล่าวอ้างอย่างมั่นใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "evaluate",
+    "word": "evaluate",
+    "meaning": "ประเมิน / วิจารณ์",
+    "examples": [
+      "Evaluate the strength of the author's argument.",
+      "Teachers evaluate students based on multiple criteria.",
+      "We need to evaluate the evidence before drawing conclusions."
+    ],
+    "translations": [
+      "ประเมิน",
+      "วิจารณ์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "validity",
+    "word": "validity",
+    "meaning": "ความถูกต้อง / ความสมเหตุสมผล",
+    "examples": [
+      "Question the validity of arguments lacking evidence.",
+      "The validity of the study was confirmed by peer review.",
+      "Without solid data, the claim has little validity."
+    ],
+    "translations": [
+      "ความถูกต้อง",
+      "ความสมเหตุสมผล"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "assumption",
+    "word": "assumption",
+    "meaning": "ข้อสมมุติฐาน / การสันนิษฐาน",
+    "examples": [
+      "The argument rests on a faulty assumption.",
+      "Do not make assumptions without checking the facts.",
+      "His assumption that everyone agreed turned out to be wrong."
+    ],
+    "translations": [
+      "ข้อสมมุติฐาน",
+      "การสันนิษฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "assess",
+    "word": "assess",
+    "meaning": "ประเมิน",
+    "examples": [
+      "We must assess the risks before making a decision.",
+      "The committee assessed the impact of the new policy.",
+      "Doctors assess patients before recommending treatment."
+    ],
+    "translations": [
+      "ประเมิน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "determine",
+    "word": "determine",
+    "meaning": "ระบุ / ตัดสิน / กำหนด",
+    "examples": [
+      "Scientists are trying to determine the cause of the disease.",
+      "The judge will determine the outcome of the case.",
+      "We need to determine the best course of action."
+    ],
+    "translations": [
+      "ระบุ",
+      "ตัดสิน",
+      "กำหนด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "explicit",
+    "word": "explicit",
+    "meaning": "ชัดเจน / ระบุตรงๆ",
+    "examples": [
+      "The instructions were explicit and easy to follow.",
+      "The author makes an explicit argument against discrimination.",
+      "Be explicit about your expectations from the beginning."
+    ],
+    "translations": [
+      "ชัดเจน",
+      "ระบุตรงๆ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "implicit",
+    "word": "implicit",
+    "meaning": "โดยนัย / ไม่ได้พูดตรงๆ",
+    "examples": [
+      "There was an implicit warning in the author's tone.",
+      "The implicit message of the story is about resilience.",
+      "His approval was implicit rather than openly stated."
+    ],
+    "translations": [
+      "โดยนัย",
+      "ไม่ได้พูดตรงๆ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "sufficient",
+    "word": "sufficient",
+    "meaning": "เพียงพอ",
+    "examples": [
+      "One example is not sufficient to prove a general point.",
+      "The evidence was sufficient to support the claim.",
+      "Is this amount of data sufficient for the analysis?"
+    ],
+    "translations": [
+      "เพียงพอ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "precedent",
+    "word": "precedent",
+    "meaning": "บรรทัดฐาน",
+    "examples": [
+      "The court's ruling set an important legal precedent.",
+      "There is no historical precedent for such a dramatic change.",
+      "Breaking with precedent requires careful justification."
+    ],
+    "translations": [
+      "บรรทัดฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "interpretation",
+    "word": "interpretation",
+    "meaning": "การตีความ",
+    "examples": [
+      "Her interpretation of the poem differed from the teacher's.",
+      "There are multiple valid interpretations of the data.",
+      "The lawyer offered a different interpretation of the law."
+    ],
+    "translations": [
+      "การตีความ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "consistent",
+    "word": "consistent",
+    "meaning": "สอดคล้อง / สม่ำเสมอ",
+    "examples": [
+      "The results were consistent across all three studies.",
+      "Her argument is consistent with the evidence presented.",
+      "A consistent writing style makes an essay easier to follow."
+    ],
+    "translations": [
+      "สอดคล้อง",
+      "สม่ำเสมอ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "stance",
+    "word": "stance",
+    "meaning": "จุดยืน",
+    "examples": [
+      "What is the author's stance on environmental policy?",
+      "She took a firm stance against workplace discrimination.",
+      "His stance shifted after reviewing the new evidence."
+    ],
+    "translations": [
+      "จุดยืน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "portray",
+    "word": "portray",
+    "meaning": "แสดงภาพ / พรรณนา",
+    "examples": [
+      "The article portrays the community in a negative light.",
+      "How does the author portray the main character?",
+      "The documentary portrays the struggles of migrant workers."
+    ],
+    "translations": [
+      "แสดงภาพ",
+      "พรรณนา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "justify",
+    "word": "justify",
+    "meaning": "แสดงเหตุผลสนับสนุน",
+    "examples": [
+      "Justify your answer with evidence from the text.",
+      "Can you justify this decision with data?",
+      "The government failed to justify the new restrictions."
+    ],
+    "translations": [
+      "แสดงเหตุผลสนับสนุน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "concede",
+    "word": "concede",
+    "meaning": "ยอมรับ / ยินยอม",
+    "examples": [
+      "The author concedes that the evidence is not conclusive.",
+      "He conceded that his opponent made a valid point.",
+      "Even critics concede that the policy had some benefits."
+    ],
+    "translations": [
+      "ยอมรับ",
+      "ยินยอม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "restate",
+    "word": "restate",
+    "meaning": "กล่าวซ้ำ / อธิบายใหม่",
+    "examples": [
+      "Restate the main argument in your own words.",
+      "She restated her position more clearly after the objection.",
+      "The conclusion restates the thesis with new insight."
+    ],
+    "translations": [
+      "กล่าวซ้ำ",
+      "อธิบายใหม่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "cite",
+    "word": "cite",
+    "meaning": "อ้างอิง",
+    "examples": [
+      "Always cite your sources in academic writing.",
+      "The lawyer cited a previous case as precedent.",
+      "She cited three studies to support her claim."
+    ],
+    "translations": [
+      "อ้างอิง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "convey",
+    "word": "convey",
+    "meaning": "สื่อสาร / ถ่ายทอด",
+    "examples": [
+      "The poem conveys a deep sense of loss.",
+      "She used vivid language to convey her emotions.",
+      "Good writing conveys complex ideas clearly."
+    ],
+    "translations": [
+      "สื่อสาร",
+      "ถ่ายทอด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "bias",
+    "word": "bias",
+    "meaning": "อคติ / ความลำเอียง",
+    "examples": [
+      "The report showed a clear bias toward one side.",
+      "Journalists must strive to avoid bias in their writing.",
+      "Confirmation bias leads people to seek only supporting evidence."
+    ],
+    "translations": [
+      "อคติ",
+      "ความลำเอียง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "relevance",
+    "word": "relevance",
+    "meaning": "ความเกี่ยวข้อง",
+    "examples": [
+      "Make sure all your evidence has relevance to the topic.",
+      "The relevance of the data to the argument was questioned.",
+      "Choose examples that have direct relevance to your claim."
+    ],
+    "translations": [
+      "ความเกี่ยวข้อง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "distinguish",
+    "word": "distinguish",
+    "meaning": "แยกแยะ",
+    "examples": [
+      "Can you distinguish between fact and opinion in this passage?",
+      "It is important to distinguish correlation from causation.",
+      "The author distinguishes two seemingly similar ideas."
+    ],
+    "translations": [
+      "แยกแยะ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "undermine",
+    "word": "undermine",
+    "meaning": "บั่นทอน / ทำให้อ่อนแอ",
+    "examples": [
+      "The new evidence undermines the original claim.",
+      "Constant criticism can undermine a person's confidence.",
+      "Corruption undermines public trust in institutions."
+    ],
+    "translations": [
+      "บั่นทอน",
+      "ทำให้อ่อนแอ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "reinforce",
+    "word": "reinforce",
+    "meaning": "เสริมความแข็งแกร่ง",
+    "examples": [
+      "This example reinforces the author's central argument.",
+      "Positive feedback reinforces good behavior.",
+      "The study's findings reinforce earlier research conclusions."
+    ],
+    "translations": [
+      "เสริมความแข็งแกร่ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "elaborate",
+    "word": "elaborate",
+    "meaning": "ขยายความ / อธิบายเพิ่มเติม",
+    "examples": [
+      "Could you elaborate on that point?",
+      "The author elaborates on the causes of the economic crisis.",
+      "Please elaborate your answer with specific examples."
+    ],
+    "translations": [
+      "ขยายความ",
+      "อธิบายเพิ่มเติม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "shift",
+    "word": "shift",
+    "meaning": "เปลี่ยนแปลง / เปลี่ยนทิศทาง",
+    "examples": [
+      "The author's tone shifts in the final paragraph.",
+      "A shift in public opinion led to policy change.",
+      "There has been a significant shift in how we view education."
+    ],
+    "translations": [
+      "เปลี่ยนแปลง",
+      "เปลี่ยนทิศทาง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "primarily",
+    "word": "primarily",
+    "meaning": "เป็นหลัก / ส่วนใหญ่",
+    "examples": [
+      "The article is aimed primarily at young voters.",
+      "She is primarily responsible for the success of the project.",
+      "The problem is primarily caused by lack of communication."
+    ],
+    "translations": [
+      "เป็นหลัก",
+      "ส่วนใหญ่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "refute",
+    "word": "refute",
+    "meaning": "หักล้าง / โต้แย้ง",
+    "examples": [
+      "The scientist refuted the hypothesis with new data.",
+      "He was unable to refute the claims made against him.",
+      "A strong counterargument refutes the opposing view directly."
+    ],
+    "translations": [
+      "หักล้าง",
+      "โต้แย้ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "substantiate",
+    "word": "substantiate",
+    "meaning": "พิสูจน์ / สนับสนุนด้วยหลักฐาน",
+    "examples": [
+      "Can you substantiate that claim with evidence?",
+      "The report substantiates concerns about air quality.",
+      "She substantiated her argument with multiple peer-reviewed studies."
+    ],
+    "translations": [
+      "พิสูจน์",
+      "สนับสนุนด้วยหลักฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "generalize",
+    "word": "generalize",
+    "meaning": "สรุปภาพรวม / ด่วนสรุป",
+    "examples": [
+      "It is dangerous to generalize based on a single case.",
+      "The author generalizes too broadly about human behavior.",
+      "Avoid generalizing without sufficient evidence."
+    ],
+    "translations": [
+      "สรุปภาพรวม",
+      "ด่วนสรุป"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "corroborate",
+    "word": "corroborate",
+    "meaning": "ยืนยัน / สนับสนุนด้วยหลักฐาน",
+    "examples": [
+      "The witness's testimony corroborated the physical evidence.",
+      "Multiple studies corroborate these findings.",
+      "Can you find another source to corroborate this claim?"
+    ],
+    "translations": [
+      "ยืนยัน",
+      "สนับสนุนด้วยหลักฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "characterize",
+    "word": "characterize",
+    "meaning": "บ่งบอกลักษณะ / พรรณนา",
+    "examples": [
+      "How does the author characterize the role of government?",
+      "The report characterizes the situation as a public health crisis.",
+      "She characterized his behavior as irresponsible."
+    ],
+    "translations": [
+      "บ่งบอกลักษณะ",
+      "พรรณนา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "credibility",
+    "word": "credibility",
+    "meaning": "ความน่าเชื่อถือ",
+    "examples": [
+      "Citing expert sources increases your credibility.",
+      "The source lacks credibility because of its clear bias.",
+      "A writer's credibility depends on the evidence they provide."
+    ],
+    "translations": [
+      "ความน่าเชื่อถือ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "discrepancy",
+    "word": "discrepancy",
+    "meaning": "ความไม่สอดคล้อง / ความแตกต่าง",
+    "examples": [
+      "There is a discrepancy between the two reports.",
+      "The auditors discovered a discrepancy in the financial records.",
+      "This discrepancy in the data needs to be explained."
+    ],
+    "translations": [
+      "ความไม่สอดคล้อง",
+      "ความแตกต่าง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "plausible",
+    "word": "plausible",
+    "meaning": "น่าเชื่อถือ / เป็นไปได้",
+    "examples": [
+      "The author offers a plausible explanation for the trend.",
+      "Is this theory plausible given the available evidence?",
+      "He gave a plausible account of what happened."
+    ],
+    "translations": [
+      "น่าเชื่อถือ",
+      "เป็นไปได้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "hypothesis",
+    "word": "hypothesis",
+    "meaning": "สมมุติฐาน",
+    "examples": [
+      "The scientist tested the hypothesis through experiments.",
+      "A hypothesis must be supported by evidence to be accepted.",
+      "Her hypothesis was that stress causes memory loss."
+    ],
+    "translations": [
+      "สมมุติฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "advocate",
+    "word": "advocate",
+    "meaning": "สนับสนุน / ผู้สนับสนุน",
+    "examples": [
+      "She advocates for stronger environmental protections.",
+      "The organization advocates equal rights for all citizens.",
+      "He is a well-known advocate for criminal justice reform."
+    ],
+    "translations": [
+      "สนับสนุน",
+      "ผู้สนับสนุน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "reconcile",
+    "word": "reconcile",
+    "meaning": "ประสานความขัดแย้ง / ทำให้สอดคล้อง",
+    "examples": [
+      "How can we reconcile these two contradictory findings?",
+      "The mediator helped the two parties reconcile their differences.",
+      "It is difficult to reconcile his words with his actions."
+    ],
+    "translations": [
+      "ประสานความขัดแย้ง",
+      "ทำให้สอดคล้อง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "differentiate",
+    "word": "differentiate",
+    "meaning": "แยกแยะความแตกต่าง",
+    "examples": [
+      "Differentiate between the author's opinion and stated facts.",
+      "The test differentiates students by reading level.",
+      "She could not differentiate between the two very similar arguments."
+    ],
+    "translations": [
+      "แยกแยะความแตกต่าง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "analyze",
+    "word": "analyze",
+    "meaning": "วิเคราะห์",
+    "examples": [
+      "Analyze the evidence before drawing any conclusions.",
+      "The essay analyzes the causes of the economic recession.",
+      "She carefully analyzed the author's rhetorical strategies."
+    ],
+    "translations": [
+      "วิเคราะห์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "conclude",
+    "word": "conclude",
+    "meaning": "สรุป",
+    "examples": [
+      "The author concludes that reform is urgently needed.",
+      "What can we conclude from the data presented?",
+      "He concluded his argument with a powerful call to action."
+    ],
+    "translations": [
+      "สรุป"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "support",
+    "word": "support",
+    "meaning": "สนับสนุน",
+    "examples": [
+      "This evidence supports the author's central claim.",
+      "The data supports the conclusion that exercise improves health.",
+      "She used three examples to support her argument."
+    ],
+    "translations": [
+      "สนับสนุน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "contrast",
+    "word": "contrast",
+    "meaning": "เปรียบเทียบความต่าง",
+    "examples": [
+      "Contrast the two characters' views on justice.",
+      "In contrast to the first study, this one found no benefit.",
+      "The essay contrasts urban and rural experiences of poverty."
+    ],
+    "translations": [
+      "เปรียบเทียบความต่าง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "compare",
+    "word": "compare",
+    "meaning": "เปรียบเทียบ",
+    "examples": [
+      "Compare the two authors' approaches to the same topic.",
+      "The study compared outcomes between two groups.",
+      "When you compare the data, the trend becomes clear."
+    ],
+    "translations": [
+      "เปรียบเทียบ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "indicate",
+    "word": "indicate",
+    "meaning": "บ่งชี้ / แสดงให้เห็น",
+    "examples": [
+      "The graph indicates a steady rise in temperatures.",
+      "Her tone indicates that she is frustrated with the situation.",
+      "The data indicates a strong link between poverty and crime."
+    ],
+    "translations": [
+      "บ่งชี้",
+      "แสดงให้เห็น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "emphasize",
+    "word": "emphasize",
+    "meaning": "เน้นย้ำ",
+    "examples": [
+      "The author emphasizes the importance of early education.",
+      "She emphasized that the deadline was non-negotiable.",
+      "Bold text is used to emphasize key terms in the passage."
+    ],
+    "translations": [
+      "เน้นย้ำ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "address",
+    "word": "address",
+    "meaning": "กล่าวถึง / จัดการ",
+    "examples": [
+      "The article addresses concerns about income inequality.",
+      "The policy was designed to address environmental degradation.",
+      "She addressed the audience's questions directly."
+    ],
+    "translations": [
+      "กล่าวถึง",
+      "จัดการ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "clarify",
+    "word": "clarify",
+    "meaning": "ชี้แจง / อธิบายให้ชัดเจน",
+    "examples": [
+      "Can you clarify what you mean by that term?",
+      "The author clarifies the distinction between the two concepts.",
+      "She clarified her position after the misunderstanding."
+    ],
+    "translations": [
+      "ชี้แจง",
+      "อธิบายให้ชัดเจน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "reveal",
+    "word": "reveal",
+    "meaning": "เปิดเผย",
+    "examples": [
+      "The investigation revealed widespread corruption.",
+      "The final paragraph reveals the author's true purpose.",
+      "A close reading reveals the hidden meaning in the text."
+    ],
+    "translations": [
+      "เปิดเผย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "examine",
+    "word": "examine",
+    "meaning": "ตรวจสอบ / พิจารณา",
+    "examples": [
+      "The essay examines the causes of the financial crisis.",
+      "We need to examine the evidence more carefully.",
+      "The committee examined each proposal in detail."
+    ],
+    "translations": [
+      "ตรวจสอบ",
+      "พิจารณา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "claim",
+    "word": "claim",
+    "meaning": "ข้ออ้าง / กล่าวอ้าง",
+    "examples": [
+      "The author's main claim is that education reduces inequality.",
+      "Support every claim with relevant evidence.",
+      "She claimed the policy was unconstitutional."
+    ],
+    "translations": [
+      "ข้ออ้าง",
+      "กล่าวอ้าง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "demonstrate",
+    "word": "demonstrate",
+    "meaning": "แสดงให้เห็น / พิสูจน์",
+    "examples": [
+      "The experiment demonstrated that the hypothesis was correct.",
+      "She demonstrated how to apply the concept in practice.",
+      "His commitment demonstrates his dedication to the cause."
+    ],
+    "translations": [
+      "แสดงให้เห็น",
+      "พิสูจน์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "illustrate",
+    "word": "illustrate",
+    "meaning": "แสดงตัวอย่าง / อธิบายด้วยภาพ",
+    "examples": [
+      "Use specific examples to illustrate your argument.",
+      "The chart illustrates the dramatic rise in carbon emissions.",
+      "The story illustrates the consequences of moral compromise."
+    ],
+    "translations": [
+      "แสดงตัวอย่าง",
+      "อธิบายด้วยภาพ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "premise",
+    "word": "premise",
+    "meaning": "ข้อสมมุติฐาน / หลักการเริ่มต้น",
+    "examples": [
+      "The argument is built on a faulty premise.",
+      "State your premise clearly before drawing conclusions.",
+      "If the premise is false, the entire argument collapses."
+    ],
+    "translations": [
+      "ข้อสมมุติฐาน",
+      "หลักการเริ่มต้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "acknowledge",
+    "word": "acknowledge",
+    "meaning": "ยอมรับ / รับรู้",
+    "examples": [
+      "A strong essay acknowledges opposing viewpoints.",
+      "She acknowledged that she had made a mistake.",
+      "The author acknowledges the limitations of the study."
+    ],
+    "translations": [
+      "ยอมรับ",
+      "รับรู้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "cynical",
+    "word": "cynical",
+    "meaning": "มองโลกในแง่ร้าย / ไม่เชื่อในความดีของคน",
+    "examples": [
+      "He had a cynical view of politics after years of corruption.",
+      "The author's cynical tone suggests distrust of institutions.",
+      "She grew cynical after repeated disappointments."
+    ],
+    "translations": [
+      "มองโลกในแง่ร้าย",
+      "ไม่เชื่อในความดีของคน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "objective",
+    "word": "objective",
+    "meaning": "เป็นกลาง / ปราศจากอคติ",
+    "examples": [
+      "The report aims to present an objective analysis.",
+      "A good journalist remains objective when covering controversial topics.",
+      "Try to be objective when evaluating both sides of the argument."
+    ],
+    "translations": [
+      "เป็นกลาง",
+      "ปราศจากอคติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "skeptical",
+    "word": "skeptical",
+    "meaning": "สงสัย / ไม่เชื่อง่าย",
+    "examples": [
+      "She was skeptical about the new study's conclusions.",
+      "Be skeptical of information that lacks credible sources.",
+      "Scientists are trained to be skeptical of untested claims."
+    ],
+    "translations": [
+      "สงสัย",
+      "ไม่เชื่อง่าย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "impartial",
+    "word": "impartial",
+    "meaning": "ไม่ลำเอียง / เป็นกลาง",
+    "examples": [
+      "Judges must remain impartial throughout the trial.",
+      "An impartial review of the evidence led to a different conclusion.",
+      "She gave an impartial assessment of both candidates."
+    ],
+    "translations": [
+      "ไม่ลำเอียง",
+      "เป็นกลาง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "ambivalent",
+    "word": "ambivalent",
+    "meaning": "รู้สึกสองจิตสองใจ",
+    "examples": [
+      "She felt ambivalent about accepting the promotion.",
+      "The public remains ambivalent about the new policy.",
+      "His ambivalent response suggested he had not decided."
+    ],
+    "translations": [
+      "รู้สึกสองจิตสองใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "satirical",
+    "word": "satirical",
+    "meaning": "เสียดสี / ล้อเลียน",
+    "examples": [
+      "The article uses a satirical tone to criticize politicians.",
+      "Satirical writing often highlights social problems through humor.",
+      "The comedian's satirical sketch mocked government incompetence."
+    ],
+    "translations": [
+      "เสียดสี",
+      "ล้อเลียน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "nostalgic",
+    "word": "nostalgic",
+    "meaning": "คิดถึงอดีต / โหยหาอดีต",
+    "examples": [
+      "The essay has a nostalgic tone about life before technology.",
+      "She felt nostalgic looking at old photographs.",
+      "His nostalgic writing romanticizes a simpler past."
+    ],
+    "translations": [
+      "คิดถึงอดีต",
+      "โหยหาอดีต"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "melancholic",
+    "word": "melancholic",
+    "meaning": "เศร้าโศก / หดหู่",
+    "examples": [
+      "The poem has a melancholic tone throughout.",
+      "She wrote in a melancholic style that moved readers to tears.",
+      "His melancholic mood was reflected in his writing."
+    ],
+    "translations": [
+      "เศร้าโศก",
+      "หดหู่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "indignant",
+    "word": "indignant",
+    "meaning": "โกรธแค้น (เพราะไม่ยุติธรรม)",
+    "examples": [
+      "She was indignant at the unfair treatment she received.",
+      "The author's indignant tone reveals anger at social injustice.",
+      "He grew indignant when his honesty was questioned."
+    ],
+    "translations": [
+      "โกรธแค้น (เพราะไม่ยุติธรรม)"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "biased",
+    "word": "biased",
+    "meaning": "มีอคติ / ลำเอียง",
+    "examples": [
+      "A biased source weakens any argument that relies on it.",
+      "His biased reporting favored one political party.",
+      "The study was criticized for its biased sample selection."
+    ],
+    "translations": [
+      "มีอคติ",
+      "ลำเอียง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "sarcastic",
+    "word": "sarcastic",
+    "meaning": "ประชดประชัน",
+    "examples": [
+      "Her sarcastic remark masked her true frustration.",
+      "The author uses a sarcastic tone to critique consumer culture.",
+      "His sarcastic comments did not help the conversation."
+    ],
+    "translations": [
+      "ประชดประชัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "optimistic",
+    "word": "optimistic",
+    "meaning": "มองโลกในแง่ดี",
+    "examples": [
+      "The author's optimistic conclusion inspires hope for change.",
+      "She remained optimistic despite the challenges.",
+      "An optimistic tone suggests belief in a positive future."
+    ],
+    "translations": [
+      "มองโลกในแง่ดี"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "pessimistic",
+    "word": "pessimistic",
+    "meaning": "มองโลกในแง่ร้าย",
+    "examples": [
+      "The report takes a pessimistic view of economic recovery.",
+      "He was pessimistic about the chances of success.",
+      "A pessimistic tone can suggest futility or despair."
+    ],
+    "translations": [
+      "มองโลกในแง่ร้าย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "formal",
+    "word": "formal",
+    "meaning": "เป็นทางการ",
+    "examples": [
+      "Academic essays require a formal writing style.",
+      "The letter was written in a very formal tone.",
+      "Formal language avoids slang and casual expressions."
+    ],
+    "translations": [
+      "เป็นทางการ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "informal",
+    "word": "informal",
+    "meaning": "ไม่เป็นทางการ",
+    "examples": [
+      "The blog uses an informal, conversational tone.",
+      "Informal language makes the article feel more approachable.",
+      "She chose an informal style to connect with young readers."
+    ],
+    "translations": [
+      "ไม่เป็นทางการ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "apathetic",
+    "word": "apathetic",
+    "meaning": "ไม่แยแส / เฉยเมย",
+    "examples": [
+      "The apathetic tone suggests the narrator has given up hope.",
+      "Young voters are often described as apathetic.",
+      "His apathetic response disappointed his supporters."
+    ],
+    "translations": [
+      "ไม่แยแส",
+      "เฉยเมย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "sympathetic",
+    "word": "sympathetic",
+    "meaning": "เห็นอกเห็นใจ",
+    "examples": [
+      "The author takes a sympathetic view of the refugees.",
+      "She wrote about the victims in a sympathetic tone.",
+      "A sympathetic narrator helps readers connect with characters."
+    ],
+    "translations": [
+      "เห็นอกเห็นใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "solemn",
+    "word": "solemn",
+    "meaning": "เคร่งขรึม / จริงจัง",
+    "examples": [
+      "The speaker delivered a solemn message about climate change.",
+      "The solemn tone of the passage reflects the gravity of the topic.",
+      "He made a solemn promise to protect the community."
+    ],
+    "translations": [
+      "เคร่งขรึม",
+      "จริงจัง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "didactic",
+    "word": "didactic",
+    "meaning": "มุ่งสอน / ให้คติสอนใจ",
+    "examples": [
+      "The novel has a didactic purpose to teach moral lessons.",
+      "A didactic tone can feel preachy if overused.",
+      "The essay is didactic in its approach to civic responsibility."
+    ],
+    "translations": [
+      "มุ่งสอน",
+      "ให้คติสอนใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "earnest",
+    "word": "earnest",
+    "meaning": "จริงจัง / ตั้งใจจริง",
+    "examples": [
+      "Her earnest plea for change moved the audience.",
+      "He spoke with earnest conviction about justice.",
+      "The letter was earnest in its request for reform."
+    ],
+    "translations": [
+      "จริงจัง",
+      "ตั้งใจจริง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "reverent",
+    "word": "reverent",
+    "meaning": "เคารพนับถือ / ยำเกรง",
+    "examples": [
+      "The author writes about nature in a reverent tone.",
+      "She spoke about her mentor in a reverent way.",
+      "His reverent attitude toward tradition shapes his argument."
+    ],
+    "translations": [
+      "เคารพนับถือ",
+      "ยำเกรง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "irreverent",
+    "word": "irreverent",
+    "meaning": "ไม่เคารพ / ดูหมิ่น",
+    "examples": [
+      "The article's irreverent tone challenges traditional authority.",
+      "His irreverent humor offended some readers.",
+      "She wrote an irreverent satire of political institutions."
+    ],
+    "translations": [
+      "ไม่เคารพ",
+      "ดูหมิ่น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "condescending",
+    "word": "condescending",
+    "meaning": "วางท่าอวดดี / ดูถูก",
+    "examples": [
+      "His condescending tone suggested he thought little of his audience.",
+      "The article was criticized for its condescending attitude toward readers.",
+      "Avoid a condescending tone when explaining complex ideas."
+    ],
+    "translations": [
+      "วางท่าอวดดี",
+      "ดูถูก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "belligerent",
+    "word": "belligerent",
+    "meaning": "ก้าวร้าว / ชอบทะเลาะ",
+    "examples": [
+      "The politician's belligerent speech alienated many voters.",
+      "A belligerent tone in negotiation rarely leads to agreement.",
+      "He became belligerent when his position was challenged."
+    ],
+    "translations": [
+      "ก้าวร้าว",
+      "ชอบทะเลาะ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "provocative",
+    "word": "provocative",
+    "meaning": "ยั่วยุ / กระตุ้นให้เกิดปฏิกิริยา",
+    "examples": [
+      "The author uses provocative questions to challenge readers.",
+      "Her provocative article sparked a national debate.",
+      "The speech was deliberately provocative to stir public anger."
+    ],
+    "translations": [
+      "ยั่วยุ",
+      "กระตุ้นให้เกิดปฏิกิริยา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "compassionate",
+    "word": "compassionate",
+    "meaning": "มีความเมตตา / สงสาร",
+    "examples": [
+      "The author's compassionate tone reflects deep concern for the poor.",
+      "A compassionate response to suffering includes action.",
+      "She wrote a compassionate account of the refugees' journey."
+    ],
+    "translations": [
+      "มีความเมตตา",
+      "สงสาร"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "laudatory",
+    "word": "laudatory",
+    "meaning": "ยกย่อง / สรรเสริญ",
+    "examples": [
+      "The review was laudatory, praising every aspect of the book.",
+      "The senator gave a laudatory speech honoring the volunteers.",
+      "A laudatory tone can sometimes obscure honest criticism."
+    ],
+    "translations": [
+      "ยกย่อง",
+      "สรรเสริญ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "speculative",
+    "word": "speculative",
+    "meaning": "เป็นการคาดเดา / ไม่มีหลักฐานแน่ชัด",
+    "examples": [
+      "The article is speculative, offering little concrete evidence.",
+      "His speculative claims were not supported by data.",
+      "The author takes a speculative approach to the future of AI."
+    ],
+    "translations": [
+      "เป็นการคาดเดา",
+      "ไม่มีหลักฐานแน่ชัด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "pragmatic",
+    "word": "pragmatic",
+    "meaning": "เป็นไปในทางปฏิบัติ / จริงจัง",
+    "examples": [
+      "She took a pragmatic approach to solving the budget crisis.",
+      "A pragmatic leader focuses on results rather than ideology.",
+      "His pragmatic tone suggests a preference for practical solutions."
+    ],
+    "translations": [
+      "เป็นไปในทางปฏิบัติ",
+      "จริงจัง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "detached",
+    "word": "detached",
+    "meaning": "ไม่ผูกพัน / เป็นกลาง",
+    "examples": [
+      "The narrator's detached tone creates an objective perspective.",
+      "She described the tragedy in a cold, detached manner.",
+      "A detached writing style can feel clinical or impersonal."
+    ],
+    "translations": [
+      "ไม่ผูกพัน",
+      "เป็นกลาง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "apologetic",
+    "word": "apologetic",
+    "meaning": "ขอโทษ / รู้สึกเสียใจ",
+    "examples": [
+      "The company issued an apologetic statement after the incident.",
+      "His apologetic tone acknowledged the harm caused.",
+      "She was apologetic but firm in her decision."
+    ],
+    "translations": [
+      "ขอโทษ",
+      "รู้สึกเสียใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "hostile",
+    "word": "hostile",
+    "meaning": "เป็นปฏิปักษ์ / ไม่เป็นมิตร",
+    "examples": [
+      "The hostile tone of the article undermines its credibility.",
+      "She faced a hostile audience during the debate.",
+      "A hostile work environment reduces productivity."
+    ],
+    "translations": [
+      "เป็นปฏิปักษ์",
+      "ไม่เป็นมิตร"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "philosophical",
+    "word": "philosophical",
+    "meaning": "เชิงปรัชญา / ยอมรับสิ่งที่เกิดขึ้น",
+    "examples": [
+      "He took a philosophical approach to the question of justice.",
+      "The essay has a philosophical tone, exploring deeper meaning.",
+      "She was philosophical about the setbacks she encountered."
+    ],
+    "translations": [
+      "เชิงปรัชญา",
+      "ยอมรับสิ่งที่เกิดขึ้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "cautious",
+    "word": "cautious",
+    "meaning": "ระมัดระวัง",
+    "examples": [
+      "The author is cautious about drawing conclusions from limited data.",
+      "A cautious tone suggests awareness of complexity.",
+      "She was cautious in her claims, acknowledging uncertainty."
+    ],
+    "translations": [
+      "ระมัดระวัง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "assertive",
+    "word": "assertive",
+    "meaning": "มั่นใจในตัวเอง / กล้าแสดงออก",
+    "examples": [
+      "The author's assertive tone leaves no room for doubt.",
+      "Being assertive does not mean being aggressive.",
+      "She made her point in a confident, assertive manner."
+    ],
+    "translations": [
+      "มั่นใจในตัวเอง",
+      "กล้าแสดงออก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "urgent",
+    "word": "urgent",
+    "meaning": "เร่งด่วน",
+    "examples": [
+      "The report uses urgent language to call for immediate action.",
+      "Her urgent tone reflects the seriousness of the situation.",
+      "The letter conveyed an urgent need for policy reform."
+    ],
+    "translations": [
+      "เร่งด่วน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "mocking",
+    "word": "mocking",
+    "meaning": "เยาะเย้ย / ล้อเลียน",
+    "examples": [
+      "The author's mocking tone ridicules the opposition's arguments.",
+      "His mocking laughter was inappropriate given the situation.",
+      "She used a mocking style to dismiss the opponent's logic."
+    ],
+    "translations": [
+      "เยาะเย้ย",
+      "ล้อเลียน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "defensive",
+    "word": "defensive",
+    "meaning": "ป้องกันตัว / ตั้งรับ",
+    "examples": [
+      "His defensive tone suggested he felt attacked by the criticism.",
+      "She became defensive when her findings were questioned.",
+      "A defensive argument often signals insecurity in one's position."
+    ],
+    "translations": [
+      "ป้องกันตัว",
+      "ตั้งรับ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "candid",
+    "word": "candid",
+    "meaning": "พูดตรงไปตรงมา / ซื่อสัตย์",
+    "examples": [
+      "She gave a candid assessment of the program's failures.",
+      "His candid admission surprised the audience.",
+      "A candid tone builds trust with the reader."
+    ],
+    "translations": [
+      "พูดตรงไปตรงมา",
+      "ซื่อสัตย์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "critical",
+    "word": "critical",
+    "meaning": "วิจารณ์ / ตำหนิ",
+    "examples": [
+      "The review was highly critical of the government's response.",
+      "Critical thinking is essential for evaluating arguments.",
+      "She wrote a critical analysis of the novel's themes."
+    ],
+    "translations": [
+      "วิจารณ์",
+      "ตำหนิ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "wistful",
+    "word": "wistful",
+    "meaning": "คิดถึงด้วยความอาลัย / เศร้าอาลัย",
+    "examples": [
+      "Her wistful tone conveys longing for a lost era.",
+      "He wrote with a wistful sadness about his childhood home.",
+      "The poem ends on a wistful note, full of gentle regret."
+    ],
+    "translations": [
+      "คิดถึงด้วยความอาลัย",
+      "เศร้าอาลัย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "ambiguous",
+    "word": "ambiguous",
+    "meaning": "กำกวม / ไม่ชัดเจน",
+    "examples": [
+      "The author's conclusion is ambiguous and open to interpretation.",
+      "Ambiguous language can lead to misunderstanding.",
+      "The law is ambiguous on this particular issue."
+    ],
+    "translations": [
+      "กำกวม",
+      "ไม่ชัดเจน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "apprehensive",
+    "word": "apprehensive",
+    "meaning": "กังวล / กลัว",
+    "examples": [
+      "The narrator's apprehensive tone reflects fear of the unknown.",
+      "She was apprehensive about speaking in front of a large audience.",
+      "An apprehensive mood pervades the opening chapter."
+    ],
+    "translations": [
+      "กังวล",
+      "กลัว"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "resigned",
+    "word": "resigned",
+    "meaning": "ยอมรับชะตากรรม / ยอมจำนน",
+    "examples": [
+      "His resigned tone suggests he has given up hope for change.",
+      "She spoke with a resigned acceptance of the outcome.",
+      "The community felt resigned to living with the problem."
+    ],
+    "translations": [
+      "ยอมรับชะตากรรม",
+      "ยอมจำนน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "defiant",
+    "word": "defiant",
+    "meaning": "ท้าทาย / ดื้อรั้น",
+    "examples": [
+      "Her defiant response challenged the authority of the committee.",
+      "The activist's defiant speech inspired the crowd.",
+      "A defiant tone signals refusal to yield under pressure."
+    ],
+    "translations": [
+      "ท้าทาย",
+      "ดื้อรั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "facetious",
+    "word": "facetious",
+    "meaning": "ตลกขบขัน (ไม่เหมาะกับสถานการณ์)",
+    "examples": [
+      "His facetious remarks during the debate frustrated many listeners.",
+      "A facetious tone is inappropriate in a serious academic essay.",
+      "She made a facetious comment that offended the grieving family."
+    ],
+    "translations": [
+      "ตลกขบขัน (ไม่เหมาะกับสถานการณ์)"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "flippant",
+    "word": "flippant",
+    "meaning": "พูดเล่น / ไม่จริงจัง",
+    "examples": [
+      "His flippant reply showed he did not take the issue seriously.",
+      "A flippant tone undermines the credibility of an argument.",
+      "She dismissed the complaint with a flippant wave of her hand."
+    ],
+    "translations": [
+      "พูดเล่น",
+      "ไม่จริงจัง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "incredulous",
+    "word": "incredulous",
+    "meaning": "ไม่เชื่อ / งงงวย",
+    "examples": [
+      "She looked at him with an incredulous expression.",
+      "The author's incredulous tone reflects disbelief at the evidence.",
+      "He was incredulous that the plan had actually succeeded."
+    ],
+    "translations": [
+      "ไม่เชื่อ",
+      "งงงวย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "patronizing",
+    "word": "patronizing",
+    "meaning": "วางท่าดูถูก / ทำราวกับว่าอีกฝ่ายด้อยกว่า",
+    "examples": [
+      "The article's patronizing tone assumes readers cannot think for themselves.",
+      "She found his explanation patronizing and overly simplified.",
+      "A patronizing attitude damages relationships and trust."
+    ],
+    "translations": [
+      "วางท่าดูถูก",
+      "ทำราวกับว่าอีกฝ่ายด้อยกว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "colloquial",
+    "word": "colloquial",
+    "meaning": "ภาษาพูดทั่วไป / ภาษาปาก",
+    "examples": [
+      "Colloquial language makes the article feel casual and accessible.",
+      "Avoid colloquial expressions in formal academic writing.",
+      "The author uses colloquial phrases to appeal to everyday readers."
+    ],
+    "translations": [
+      "ภาษาพูดทั่วไป",
+      "ภาษาปาก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "however",
+    "word": "however",
+    "meaning": "อย่างไรก็ตาม",
+    "examples": [
+      "The plan seemed sound; however, it failed in practice.",
+      "He tried his best; however, the results were disappointing.",
+      "However, not everyone agreed with the final decision."
+    ],
+    "translations": [
+      "อย่างไรก็ตาม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "nevertheless",
+    "word": "nevertheless",
+    "meaning": "อย่างไรก็ตาม",
+    "examples": [
+      "The task was difficult; nevertheless, they completed it on time.",
+      "He was exhausted; nevertheless, he continued working.",
+      "Nevertheless, the results offered some encouraging signs."
+    ],
+    "translations": [
+      "อย่างไรก็ตาม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "consequently",
+    "word": "consequently",
+    "meaning": "ดังนั้น / เป็นผลให้",
+    "examples": [
+      "She studied every night; consequently, she passed with high marks.",
+      "The factory closed; consequently, hundreds lost their jobs.",
+      "Consequently, the project was delayed by several months."
+    ],
+    "translations": [
+      "ดังนั้น",
+      "เป็นผลให้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "furthermore",
+    "word": "furthermore",
+    "meaning": "ยิ่งกว่านั้น",
+    "examples": [
+      "The policy reduces costs; furthermore, it improves morale.",
+      "Furthermore, the study found no significant side effects.",
+      "She is highly skilled; furthermore, she works exceptionally hard."
+    ],
+    "translations": [
+      "ยิ่งกว่านั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "conversely",
+    "word": "conversely",
+    "meaning": "ในทางกลับกัน",
+    "examples": [
+      "He prefers action movies; conversely, she enjoys documentaries.",
+      "Conversely, the second study found the opposite trend.",
+      "More rules do not always improve safety; conversely, they can create confusion."
+    ],
+    "translations": [
+      "ในทางกลับกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "therefore",
+    "word": "therefore",
+    "meaning": "ดังนั้น",
+    "examples": [
+      "The evidence is conclusive; therefore, the case is closed.",
+      "She trained daily; therefore, she was well prepared.",
+      "Therefore, we must take immediate action."
+    ],
+    "translations": [
+      "ดังนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "moreover",
+    "word": "moreover",
+    "meaning": "ยิ่งกว่านั้น",
+    "examples": [
+      "The product is affordable; moreover, it is highly effective.",
+      "Moreover, the research revealed additional long-term benefits.",
+      "He is talented; moreover, he brings a positive attitude to the team."
+    ],
+    "translations": [
+      "ยิ่งกว่านั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "on-the-other-hand",
+    "word": "on the other hand",
+    "meaning": "ในทางกลับกัน",
+    "examples": [
+      "Urban life is exciting; on the other hand, it can be stressful.",
+      "On the other hand, the second candidate had far more experience.",
+      "The policy saves money; on the other hand, it reduces services."
+    ],
+    "translations": [
+      "ในทางกลับกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "likewise",
+    "word": "likewise",
+    "meaning": "ในทำนองเดียวกัน",
+    "examples": [
+      "She smiled warmly; likewise, he responded with kindness.",
+      "Likewise, the second study reached the same conclusion.",
+      "Treat others with respect; likewise, you will receive respect."
+    ],
+    "translations": [
+      "ในทำนองเดียวกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "similarly",
+    "word": "similarly",
+    "meaning": "เช่นเดียวกัน",
+    "examples": [
+      "Similarly, the second group showed significant improvement.",
+      "She remained composed under pressure; similarly, her team stayed calm.",
+      "Similarly, other nations face the same environmental challenge."
+    ],
+    "translations": [
+      "เช่นเดียวกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "nonetheless",
+    "word": "nonetheless",
+    "meaning": "อย่างไรก็ตาม",
+    "examples": [
+      "The challenge was immense; nonetheless, they succeeded.",
+      "Nonetheless, the idea deserves serious consideration.",
+      "He disagreed with the ruling; nonetheless, he respected it."
+    ],
+    "translations": [
+      "อย่างไรก็ตาม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "hence",
+    "word": "hence",
+    "meaning": "เพราะฉะนั้น",
+    "examples": [
+      "The data was unreliable; hence, the results were questioned.",
+      "The product was expensive; hence, few customers bought it.",
+      "Hence, we decided to revise our entire strategy."
+    ],
+    "translations": [
+      "เพราะฉะนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "thus",
+    "word": "thus",
+    "meaning": "ดังนั้น / ด้วยวิธีนี้",
+    "examples": [
+      "He saved money carefully and thus bought a house.",
+      "The results were clear; thus, the experiment was declared a success.",
+      "Thus, we can conclude that the hypothesis was supported."
+    ],
+    "translations": [
+      "ดังนั้น",
+      "ด้วยวิธีนี้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "accordingly",
+    "word": "accordingly",
+    "meaning": "ตามนั้น / ดังนั้น",
+    "examples": [
+      "The rules changed; act accordingly.",
+      "She was given more responsibility and compensated accordingly.",
+      "Accordingly, the committee revised its original decision."
+    ],
+    "translations": [
+      "ตามนั้น",
+      "ดังนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "subsequently",
+    "word": "subsequently",
+    "meaning": "ต่อมา",
+    "examples": [
+      "He was arrested and subsequently charged with fraud.",
+      "She graduated and subsequently found a well-paying job.",
+      "The law was passed and subsequently enforced nationwide."
+    ],
+    "translations": [
+      "ต่อมา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "meanwhile",
+    "word": "meanwhile",
+    "meaning": "ในขณะเดียวกัน",
+    "examples": [
+      "She worked on the report; meanwhile, her colleague set up the presentation.",
+      "Meanwhile, the situation at the border continued to deteriorate.",
+      "He studied late into the night; meanwhile, the rest of the household slept."
+    ],
+    "translations": [
+      "ในขณะเดียวกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "as-a-result",
+    "word": "as a result",
+    "meaning": "เป็นผลให้",
+    "examples": [
+      "The drought destroyed crops; as a result, food prices soared.",
+      "She trained intensively; as a result, her performance improved dramatically.",
+      "As a result of the new policy, unemployment fell significantly."
+    ],
+    "translations": [
+      "เป็นผลให้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "in-addition",
+    "word": "in addition",
+    "meaning": "นอกจากนี้",
+    "examples": [
+      "In addition, the study found a strong link between diet and mood.",
+      "She is a skilled researcher; in addition, she is an excellent writer.",
+      "In addition to reducing costs, the plan also improves efficiency."
+    ],
+    "translations": [
+      "นอกจากนี้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "despite",
+    "word": "despite",
+    "meaning": "ถึงแม้ว่า",
+    "examples": [
+      "Despite the rain, the outdoor event continued as planned.",
+      "She succeeded despite many obstacles in her path.",
+      "Despite the evidence, he refused to change his position."
+    ],
+    "translations": [
+      "ถึงแม้ว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "in-spite-of",
+    "word": "in spite of",
+    "meaning": "ทั้งๆ ที่",
+    "examples": [
+      "In spite of the criticism, the author stood by her argument.",
+      "He continued working in spite of his illness.",
+      "In spite of limited resources, the team achieved impressive results."
+    ],
+    "translations": [
+      "ทั้งๆ ที่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "although",
+    "word": "although",
+    "meaning": "แม้ว่า",
+    "examples": [
+      "Although the task was difficult, she completed it ahead of schedule.",
+      "Although he disagreed, he respected the group's decision.",
+      "Although evidence was limited, the findings were suggestive."
+    ],
+    "translations": [
+      "แม้ว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "even-so",
+    "word": "even so",
+    "meaning": "แม้กระนั้น",
+    "examples": [
+      "The argument has weaknesses; even so, the core claim is valid.",
+      "Even so, no one could deny that progress had been made.",
+      "She faced enormous criticism; even so, she pressed forward."
+    ],
+    "translations": [
+      "แม้กระนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "on-the-contrary",
+    "word": "on the contrary",
+    "meaning": "ตรงกันข้าม",
+    "examples": [
+      "He is not lazy; on the contrary, he works harder than anyone.",
+      "On the contrary, the new policy made the situation worse.",
+      "She did not give up; on the contrary, she redoubled her efforts."
+    ],
+    "translations": [
+      "ตรงกันข้าม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "alternatively",
+    "word": "alternatively",
+    "meaning": "หรืออีกทางหนึ่ง",
+    "examples": [
+      "You can take the train; alternatively, you can drive.",
+      "Alternatively, we could postpone the project until next quarter.",
+      "Consider solar power; alternatively, invest in wind energy."
+    ],
+    "translations": [
+      "หรืออีกทางหนึ่ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "whereas",
+    "word": "whereas",
+    "meaning": "ในขณะที่ / แต่ว่า",
+    "examples": [
+      "She prefers reading, whereas he enjoys outdoor activities.",
+      "Whereas the first study found clear benefits, the second was inconclusive.",
+      "Urban areas grew rapidly, whereas rural regions declined."
+    ],
+    "translations": [
+      "ในขณะที่",
+      "แต่ว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "specifically",
+    "word": "specifically",
+    "meaning": "โดยเฉพาะ",
+    "examples": [
+      "Specifically, the report focuses on air quality in urban areas.",
+      "She asked specifically for a full refund.",
+      "He specifically mentioned the need for longer deadlines."
+    ],
+    "translations": [
+      "โดยเฉพาะ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "for-instance",
+    "word": "for instance",
+    "meaning": "ยกตัวอย่างเช่น",
+    "examples": [
+      "Many factors contribute to success; for instance, hard work matters greatly.",
+      "For instance, the study found benefits in just eight weeks.",
+      "Consider the role of technology; for instance, social media changed communication."
+    ],
+    "translations": [
+      "ยกตัวอย่างเช่น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "notwithstanding",
+    "word": "notwithstanding",
+    "meaning": "ทั้งๆ ที่ / แม้กระนั้น",
+    "examples": [
+      "Notwithstanding the difficulties, they completed the project on time.",
+      "The law applies notwithstanding any prior agreement.",
+      "Notwithstanding her fear, she gave a powerful speech."
+    ],
+    "translations": [
+      "ทั้งๆ ที่",
+      "แม้กระนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "further",
+    "word": "further",
+    "meaning": "นอกจากนี้ / ยิ่งกว่านั้น",
+    "examples": [
+      "Further research is needed to confirm these findings.",
+      "She provided further evidence to strengthen her argument.",
+      "Further, the data suggests a long-term trend, not a temporary one."
+    ],
+    "translations": [
+      "นอกจากนี้",
+      "ยิ่งกว่านั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "granted",
+    "word": "granted",
+    "meaning": "ยอมรับว่า",
+    "examples": [
+      "Granted, the solution is imperfect, but it is better than nothing.",
+      "Granted, he made mistakes, but he learned from each one.",
+      "Granted that the task is hard, we still need to attempt it."
+    ],
+    "translations": [
+      "ยอมรับว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "because",
+    "word": "because",
+    "meaning": "เพราะว่า",
+    "examples": [
+      "She succeeded because she worked consistently every day.",
+      "He was late because his car broke down unexpectedly.",
+      "We canceled the event because of dangerous weather conditions."
+    ],
+    "translations": [
+      "เพราะว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "so",
+    "word": "so",
+    "meaning": "ดังนั้น",
+    "examples": [
+      "The evidence was overwhelming, so the jury reached a verdict quickly.",
+      "She was tired, so she went to bed early.",
+      "The project was delayed, so the deadline was extended."
+    ],
+    "translations": [
+      "ดังนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "for-this-reason",
+    "word": "for this reason",
+    "meaning": "ด้วยเหตุนี้",
+    "examples": [
+      "The data was incomplete; for this reason, the study was retracted.",
+      "For this reason, early education is considered essential.",
+      "He lacked the required qualifications; for this reason, he was not hired."
+    ],
+    "translations": [
+      "ด้วยเหตุนี้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "yet",
+    "word": "yet",
+    "meaning": "แต่ถึงกระนั้น",
+    "examples": [
+      "The task was enormous, yet the team completed it on time.",
+      "She had little experience, yet she outperformed the veterans.",
+      "Yet, some experts remain unconvinced by the evidence."
+    ],
+    "translations": [
+      "แต่ถึงกระนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "still",
+    "word": "still",
+    "meaning": "แต่ก็ยังคง",
+    "examples": [
+      "The problem was identified years ago; still, little has changed.",
+      "She has faced many setbacks; still, she remains determined.",
+      "Still, the author's main argument deserves consideration."
+    ],
+    "translations": [
+      "แต่ก็ยังคง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "also",
+    "word": "also",
+    "meaning": "ด้วย / เช่นกัน",
+    "examples": [
+      "The law reduces inequality; it also promotes economic growth.",
+      "She is a researcher and also an award-winning author.",
+      "Reading improves vocabulary; it also builds critical thinking."
+    ],
+    "translations": [
+      "ด้วย",
+      "เช่นกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "besides",
+    "word": "besides",
+    "meaning": "นอกจากนี้",
+    "examples": [
+      "Besides being highly qualified, she has years of experience.",
+      "Besides, it is too late to change the plan now.",
+      "He has many skills; besides, he is a natural leader."
+    ],
+    "translations": [
+      "นอกจากนี้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "if",
+    "word": "if",
+    "meaning": "ถ้าหาก",
+    "examples": [
+      "If you study consistently, you will improve your score.",
+      "If the policy is not revised, inequality will worsen.",
+      "If the evidence is weak, the argument cannot stand."
+    ],
+    "translations": [
+      "ถ้าหาก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "unless",
+    "word": "unless",
+    "meaning": "ยกเว้นว่า",
+    "examples": [
+      "The project will fail unless we address the funding gap.",
+      "Unless you provide evidence, your claim remains unsupported.",
+      "He will not change his mind unless presented with new data."
+    ],
+    "translations": [
+      "ยกเว้นว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "provided-that",
+    "word": "provided that",
+    "meaning": "โดยมีเงื่อนไขว่า",
+    "examples": [
+      "You may take time off, provided that your work is complete.",
+      "The plan is acceptable, provided that all parties agree.",
+      "Provided that conditions improve, we will continue the program."
+    ],
+    "translations": [
+      "โดยมีเงื่อนไขว่า"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "first",
+    "word": "first",
+    "meaning": "ประการแรก",
+    "examples": [
+      "First, gather all the evidence before drawing conclusions.",
+      "First, the author establishes the historical context.",
+      "First, consider the long-term impact of the policy."
+    ],
+    "translations": [
+      "ประการแรก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "then",
+    "word": "then",
+    "meaning": "จากนั้น",
+    "examples": [
+      "First, analyze the data; then, draw your conclusions.",
+      "She reviewed the draft, then submitted it to the editor.",
+      "Then, the committee voted on the final proposal."
+    ],
+    "translations": [
+      "จากนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "afterward",
+    "word": "afterward",
+    "meaning": "หลังจากนั้น",
+    "examples": [
+      "He graduated; afterward, he found a job within two weeks.",
+      "The law was passed; afterward, enforcement began immediately.",
+      "She finished the report and went home afterward."
+    ],
+    "translations": [
+      "หลังจากนั้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "legislation",
+    "word": "legislation",
+    "meaning": "กฎหมาย / การออกกฎหมาย",
+    "examples": [
+      "New legislation was passed to protect workers' rights.",
+      "The legislation aims to reduce carbon emissions by 2030.",
+      "Activists lobbied for stronger environmental legislation."
+    ],
+    "translations": [
+      "กฎหมาย",
+      "การออกกฎหมาย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "disenfranchise",
+    "word": "disenfranchise",
+    "meaning": "ตัดสิทธิ์การเลือกตั้ง",
+    "examples": [
+      "New voter ID laws could disenfranchise minority communities.",
+      "Historically, many groups were disenfranchised by unjust laws.",
+      "The policy was accused of disenfranchising low-income voters."
+    ],
+    "translations": [
+      "ตัดสิทธิ์การเลือกตั้ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "enfranchise",
+    "word": "enfranchise",
+    "meaning": "ให้สิทธิ์เลือกตั้ง",
+    "examples": [
+      "The amendment enfranchised women for the first time.",
+      "Efforts to enfranchise marginalized communities continued for decades.",
+      "Reformers sought to enfranchise all adult citizens."
+    ],
+    "translations": [
+      "ให้สิทธิ์เลือกตั้ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "amendment",
+    "word": "amendment",
+    "meaning": "การแก้ไขเพิ่มเติม (กฎหมาย)",
+    "examples": [
+      "The First Amendment protects freedom of speech.",
+      "Congress proposed an amendment to strengthen voting rights.",
+      "The amendment was ratified by the required number of states."
+    ],
+    "translations": [
+      "การแก้ไขเพิ่มเติม (กฎหมาย)"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "suffrage",
+    "word": "suffrage",
+    "meaning": "สิทธิ์ออกเสียงเลือกตั้ง",
+    "examples": [
+      "Women fought for suffrage for more than seventy years.",
+      "Suffrage is a fundamental right in any true democracy.",
+      "The suffrage movement changed the course of American history."
+    ],
+    "translations": [
+      "สิทธิ์ออกเสียงเลือกตั้ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "constituency",
+    "word": "constituency",
+    "meaning": "เขตเลือกตั้ง / กลุ่มผู้สนับสนุน",
+    "examples": [
+      "The senator regularly met with her constituency to listen to concerns.",
+      "The party lost support among its core constituency.",
+      "Each constituency elects one representative to the legislature."
+    ],
+    "translations": [
+      "เขตเลือกตั้ง",
+      "กลุ่มผู้สนับสนุน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "bipartisan",
+    "word": "bipartisan",
+    "meaning": "สองพรรคร่วม / ข้ามพรรค",
+    "examples": [
+      "The bill passed with bipartisan support in the Senate.",
+      "A bipartisan approach is needed to address the budget crisis.",
+      "Bipartisan cooperation is rare in today's divided political climate."
+    ],
+    "translations": [
+      "สองพรรคร่วม",
+      "ข้ามพรรค"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "ratify",
+    "word": "ratify",
+    "meaning": "ให้สัตยาบัน / รับรอง",
+    "examples": [
+      "The treaty must be ratified by two-thirds of the Senate.",
+      "Enough states ratified the amendment for it to become law.",
+      "The country was slow to ratify the international agreement."
+    ],
+    "translations": [
+      "ให้สัตยาบัน",
+      "รับรอง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "advocacy",
+    "word": "advocacy",
+    "meaning": "การสนับสนุน / การรณรงค์",
+    "examples": [
+      "Her advocacy for education reform spanned three decades.",
+      "Advocacy groups lobbied for stronger environmental protections.",
+      "His advocacy work helped change the law on workers' rights."
+    ],
+    "translations": [
+      "การสนับสนุน",
+      "การรณรงค์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "civic",
+    "word": "civic",
+    "meaning": "เกี่ยวกับพลเมือง",
+    "examples": [
+      "Voting is a fundamental civic duty in a democracy.",
+      "Civic engagement strengthens communities and democratic institutions.",
+      "The school promotes civic responsibility through service learning."
+    ],
+    "translations": [
+      "เกี่ยวกับพลเมือง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "coalition",
+    "word": "coalition",
+    "meaning": "พันธมิตร / กลุ่มรวม",
+    "examples": [
+      "A broad coalition of groups supported the new legislation.",
+      "The coalition worked together despite differing priorities.",
+      "Building a strong coalition is key to political success."
+    ],
+    "translations": [
+      "พันธมิตร",
+      "กลุ่มรวม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "jurisdiction",
+    "word": "jurisdiction",
+    "meaning": "เขตอำนาจศาล",
+    "examples": [
+      "The case falls under federal, not state, jurisdiction.",
+      "Local courts have limited jurisdiction in national matters.",
+      "Different laws apply depending on the jurisdiction."
+    ],
+    "translations": [
+      "เขตอำนาจศาล"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "policy",
+    "word": "policy",
+    "meaning": "นโยบาย",
+    "examples": [
+      "The new policy aims to reduce income inequality.",
+      "Policy changes require careful analysis of likely impacts.",
+      "She advocated for evidence-based policy in public health."
+    ],
+    "translations": [
+      "นโยบาย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "partisan",
+    "word": "partisan",
+    "meaning": "ฝักใฝ่พรรค / ลำเอียงทางการเมือง",
+    "examples": [
+      "The debate became increasingly partisan over the years.",
+      "Partisan politics often prioritizes party over national interest.",
+      "Critics called the decision partisan rather than principled."
+    ],
+    "translations": [
+      "ฝักใฝ่พรรค",
+      "ลำเอียงทางการเมือง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "veto",
+    "word": "veto",
+    "meaning": "ยับยั้ง / อำนาจยับยั้ง",
+    "examples": [
+      "The president threatened to veto the spending bill.",
+      "Congress overrode the veto with a two-thirds majority.",
+      "The mayor used her veto power to block the development plan."
+    ],
+    "translations": [
+      "ยับยั้ง",
+      "อำนาจยับยั้ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "referendum",
+    "word": "referendum",
+    "meaning": "การลงประชามติ",
+    "examples": [
+      "The government called a referendum on independence.",
+      "Citizens voted in a national referendum on the new constitution.",
+      "The referendum result surprised even the most experienced analysts."
+    ],
+    "translations": [
+      "การลงประชามติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "constituent",
+    "word": "constituent",
+    "meaning": "ผู้มีสิทธิ์เลือกตั้ง / ส่วนประกอบ",
+    "examples": [
+      "Every constituent has the right to contact their representative.",
+      "The senator listened carefully to constituent concerns.",
+      "Water is a key constituent of all living organisms."
+    ],
+    "translations": [
+      "ผู้มีสิทธิ์เลือกตั้ง",
+      "ส่วนประกอบ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "decree",
+    "word": "decree",
+    "meaning": "พระราชกฤษฎีกา / คำสั่ง",
+    "examples": [
+      "The president issued a decree banning the practice.",
+      "The court decree required immediate changes to the policy.",
+      "By royal decree, the law was suspended pending review."
+    ],
+    "translations": [
+      "พระราชกฤษฎีกา",
+      "คำสั่ง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "lobby",
+    "word": "lobby",
+    "meaning": "ล็อบบี้ / กดดันทางการเมือง",
+    "examples": [
+      "Corporations spend millions to lobby Congress each year.",
+      "Environmental groups lobby for stronger regulations.",
+      "She worked as a professional lobbyist in Washington D.C."
+    ],
+    "translations": [
+      "ล็อบบี้",
+      "กดดันทางการเมือง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "nullify",
+    "word": "nullify",
+    "meaning": "ยกเลิก / ทำให้เป็นโมฆะ",
+    "examples": [
+      "The court ruled to nullify the unconstitutional law.",
+      "New evidence could nullify the original verdict.",
+      "The contract was nullified because one party violated its terms."
+    ],
+    "translations": [
+      "ยกเลิก",
+      "ทำให้เป็นโมฆะ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "statute",
+    "word": "statute",
+    "meaning": "กฎหมาย / พระราชบัญญัติ",
+    "examples": [
+      "The statute prohibits discrimination in public accommodations.",
+      "The lawyer cited a specific statute in her argument.",
+      "Congress passed a new statute to protect consumers from fraud."
+    ],
+    "translations": [
+      "กฎหมาย",
+      "พระราชบัญญัติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "limitations",
+    "word": "limitations",
+    "meaning": "ข้อจำกัด",
+    "examples": [
+      "Every study has limitations that researchers must acknowledge.",
+      "The policy has significant limitations that reduce its effectiveness.",
+      "Understanding the limitations of the data is essential."
+    ],
+    "translations": [
+      "ข้อจำกัด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "recourse",
+    "word": "recourse",
+    "meaning": "การใช้สิทธิ์ / การพึ่งพา",
+    "examples": [
+      "Citizens have legal recourse if their rights are violated.",
+      "Without recourse to the courts, they had no way to seek justice.",
+      "The only recourse available was to file a formal complaint."
+    ],
+    "translations": [
+      "การใช้สิทธิ์",
+      "การพึ่งพา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "retribution",
+    "word": "retribution",
+    "meaning": "การลงโทษ / การตอบแทน",
+    "examples": [
+      "The victims sought retribution through the legal system.",
+      "Retribution is one theory of criminal punishment.",
+      "He feared retribution for speaking out against the corruption."
+    ],
+    "translations": [
+      "การลงโทษ",
+      "การตอบแทน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "disparate",
+    "word": "disparate",
+    "meaning": "แตกต่างกันมาก / ไม่เหมือนกัน",
+    "examples": [
+      "The two groups had disparate views on immigration policy.",
+      "The study drew from disparate data sources across regions.",
+      "Disparate outcomes for different groups suggest systemic inequality."
+    ],
+    "translations": [
+      "แตกต่างกันมาก",
+      "ไม่เหมือนกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "litigation",
+    "word": "litigation",
+    "meaning": "การฟ้องร้อง / คดีความ",
+    "examples": [
+      "The company faced costly litigation after the product recall.",
+      "Litigation can take years and drain significant resources.",
+      "She chose mediation over litigation to resolve the dispute."
+    ],
+    "translations": [
+      "การฟ้องร้อง",
+      "คดีความ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "plaintiff",
+    "word": "plaintiff",
+    "meaning": "โจทก์",
+    "examples": [
+      "The plaintiff filed a lawsuit alleging workplace discrimination.",
+      "The court ruled in favor of the plaintiff.",
+      "As the plaintiff, she bore the burden of proving her case."
+    ],
+    "translations": [
+      "โจทก์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "defendant",
+    "word": "defendant",
+    "meaning": "จำเลย",
+    "examples": [
+      "The defendant pleaded not guilty to all charges.",
+      "The lawyer argued that the defendant had acted in self-defense.",
+      "Under the law, every defendant is presumed innocent."
+    ],
+    "translations": [
+      "จำเลย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "prejudice",
+    "word": "prejudice",
+    "meaning": "อคติ / ความลำเอียง",
+    "examples": [
+      "Racial prejudice continues to affect hiring decisions.",
+      "The judge ruled that the evidence had created prejudice against the defendant.",
+      "Prejudice stems from ignorance and fear of the unknown."
+    ],
+    "translations": [
+      "อคติ",
+      "ความลำเอียง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "equity",
+    "word": "equity",
+    "meaning": "ความเป็นธรรม / ความเท่าเทียม",
+    "examples": [
+      "The policy aims to promote equity in access to education.",
+      "Equity requires giving people what they need, not just equal treatment.",
+      "Racial equity in the workplace remains a significant challenge."
+    ],
+    "translations": [
+      "ความเป็นธรรม",
+      "ความเท่าเทียม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "systemic",
+    "word": "systemic",
+    "meaning": "เกี่ยวกับระบบ / แพร่หลายในระบบ",
+    "examples": [
+      "Systemic racism affects opportunity at every level of society.",
+      "The problem is not individual but systemic in nature.",
+      "Addressing systemic inequality requires structural changes."
+    ],
+    "translations": [
+      "เกี่ยวกับระบบ",
+      "แพร่หลายในระบบ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "accrual",
+    "word": "accrual",
+    "meaning": "การสะสม / การเพิ่มพูน",
+    "examples": [
+      "The accrual of debt over many years put the company at risk.",
+      "Accrual accounting records revenue when earned, not when received.",
+      "The accrual of environmental damage cannot be easily reversed."
+    ],
+    "translations": [
+      "การสะสม",
+      "การเพิ่มพูน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "settlement",
+    "word": "settlement",
+    "meaning": "การยุติ / ข้อตกลง",
+    "examples": [
+      "The two companies reached a financial settlement out of court.",
+      "The settlement required the company to pay compensation.",
+      "A negotiated settlement avoided a lengthy and costly trial."
+    ],
+    "translations": [
+      "การยุติ",
+      "ข้อตกลง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "grievance",
+    "word": "grievance",
+    "meaning": "ข้อร้องเรียน / ความไม่พอใจ",
+    "examples": [
+      "Workers filed a formal grievance against the management's decision.",
+      "The colonists listed their grievances in the Declaration of Independence.",
+      "A fair grievance process is essential for workplace trust."
+    ],
+    "translations": [
+      "ข้อร้องเรียน",
+      "ความไม่พอใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "retaliation",
+    "word": "retaliation",
+    "meaning": "การตอบโต้ / การแก้แค้น",
+    "examples": [
+      "She feared retaliation for reporting the abuse to authorities.",
+      "The law protects employees from retaliation for whistleblowing.",
+      "The attack was widely seen as an act of retaliation."
+    ],
+    "translations": [
+      "การตอบโต้",
+      "การแก้แค้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "remedial",
+    "word": "remedial",
+    "meaning": "แก้ไข / บำบัด",
+    "examples": [
+      "Remedial classes helped struggling students catch up.",
+      "The government launched a remedial program to address past injustices.",
+      "Remedial action was taken after the environmental violation."
+    ],
+    "translations": [
+      "แก้ไข",
+      "บำบัด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "insidious",
+    "word": "insidious",
+    "meaning": "แอบแฝง / ร้ายกาจโดยไม่เห็นได้ชัด",
+    "examples": [
+      "Bias can be insidious, operating below the level of conscious awareness.",
+      "The disease is insidious because it shows no early symptoms.",
+      "Insidious misinformation spreads gradually without obvious signs."
+    ],
+    "translations": [
+      "แอบแฝง",
+      "ร้ายกาจโดยไม่เห็นได้ชัด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "compensation",
+    "word": "compensation",
+    "meaning": "ค่าตอบแทน / การชดเชย",
+    "examples": [
+      "Workers received compensation for injuries sustained on the job.",
+      "Fair compensation is essential for attracting skilled employees.",
+      "She sought compensation after the accident through legal channels."
+    ],
+    "translations": [
+      "ค่าตอบแทน",
+      "การชดเชย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "arbitration",
+    "word": "arbitration",
+    "meaning": "การอนุญาโตตุลาการ",
+    "examples": [
+      "The dispute was resolved through binding arbitration.",
+      "Many employment contracts include mandatory arbitration clauses.",
+      "Arbitration is generally faster and less costly than court litigation."
+    ],
+    "translations": [
+      "การอนุญาโตตุลาการ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "discrimination",
+    "word": "discrimination",
+    "meaning": "การเลือกปฏิบัติ",
+    "examples": [
+      "Discrimination in hiring based on race is illegal.",
+      "She filed a formal complaint about gender discrimination at work.",
+      "The law protects workers from discrimination in all its forms."
+    ],
+    "translations": [
+      "การเลือกปฏิบัติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "conservation",
+    "word": "conservation",
+    "meaning": "การอนุรักษ์",
+    "examples": [
+      "Conservation efforts have helped restore the forest ecosystem.",
+      "She dedicated her career to wildlife conservation.",
+      "Water conservation is increasingly important in drought-prone regions."
+    ],
+    "translations": [
+      "การอนุรักษ์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "imperiled",
+    "word": "imperiled",
+    "meaning": "ตกอยู่ในอันตราย",
+    "examples": [
+      "Several imperiled species are now protected under federal law.",
+      "Rapid habitat loss has imperiled dozens of native birds.",
+      "The imperiled river ecosystem requires immediate restoration efforts."
+    ],
+    "translations": [
+      "ตกอยู่ในอันตราย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "ecosystem",
+    "word": "ecosystem",
+    "meaning": "ระบบนิเวศ",
+    "examples": [
+      "Every organism plays a role in its ecosystem.",
+      "Deforestation can destroy an entire ecosystem within decades.",
+      "Protecting the coastal ecosystem benefits both wildlife and humans."
+    ],
+    "translations": [
+      "ระบบนิเวศ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "biodiversity",
+    "word": "biodiversity",
+    "meaning": "ความหลากหลายทางชีวภาพ",
+    "examples": [
+      "Tropical rainforests contain extraordinary biodiversity.",
+      "Human activity threatens global biodiversity at an unprecedented rate.",
+      "Biodiversity is essential for ecosystem resilience and stability."
+    ],
+    "translations": [
+      "ความหลากหลายทางชีวภาพ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "depletion",
+    "word": "depletion",
+    "meaning": "การลดลง / การหมดสิ้น",
+    "examples": [
+      "Depletion of natural resources poses a serious long-term threat.",
+      "The depletion of the ozone layer led to international agreements.",
+      "Groundwater depletion is a growing crisis in many regions."
+    ],
+    "translations": [
+      "การลดลง",
+      "การหมดสิ้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "habitat",
+    "word": "habitat",
+    "meaning": "ที่อยู่อาศัยตามธรรมชาติ",
+    "examples": [
+      "Deforestation destroys the natural habitat of countless species.",
+      "The polar bear's habitat is rapidly shrinking due to climate change.",
+      "Protecting habitat is the most effective way to prevent extinction."
+    ],
+    "translations": [
+      "ที่อยู่อาศัยตามธรรมชาติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "mitigation",
+    "word": "mitigation",
+    "meaning": "การบรรเทา / การลดความรุนแรง",
+    "examples": [
+      "Planting trees is one strategy for climate change mitigation.",
+      "The company invested in mitigation measures after the oil spill.",
+      "Mitigation of flood risk requires long-term infrastructure planning."
+    ],
+    "translations": [
+      "การบรรเทา",
+      "การลดความรุนแรง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "sustainability",
+    "word": "sustainability",
+    "meaning": "ความยั่งยืน",
+    "examples": [
+      "Sustainability requires balancing economic growth with environmental protection.",
+      "The organization adopted a sustainability plan to reduce its carbon footprint.",
+      "Long-term sustainability must be the goal of any development policy."
+    ],
+    "translations": [
+      "ความยั่งยืน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "degradation",
+    "word": "degradation",
+    "meaning": "การเสื่อมสภาพ / การทำให้แย่ลง",
+    "examples": [
+      "Soil degradation reduces agricultural productivity significantly.",
+      "The degradation of the coral reef threatens marine biodiversity.",
+      "Environmental degradation is accelerating in industrialized regions."
+    ],
+    "translations": [
+      "การเสื่อมสภาพ",
+      "การทำให้แย่ลง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "preservation",
+    "word": "preservation",
+    "meaning": "การรักษา / การอนุรักษ์",
+    "examples": [
+      "The preservation of historic buildings protects cultural heritage.",
+      "Preservation of wetlands prevents flooding and supports wildlife.",
+      "Food preservation techniques have been used for thousands of years."
+    ],
+    "translations": [
+      "การรักษา",
+      "การอนุรักษ์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "extinction",
+    "word": "extinction",
+    "meaning": "การสูญพันธุ์",
+    "examples": [
+      "Many species face extinction due to habitat destruction.",
+      "The extinction of the dinosaurs occurred approximately 66 million years ago.",
+      "Preventing extinction requires global cooperation and commitment."
+    ],
+    "translations": [
+      "การสูญพันธุ์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "hatchery",
+    "word": "hatchery",
+    "meaning": "โรงเพาะฟัก",
+    "examples": [
+      "The salmon hatchery releases millions of fish into the river each year.",
+      "A fish hatchery can help replenish depleted wild populations.",
+      "The hatchery program was a key part of the restoration plan."
+    ],
+    "translations": [
+      "โรงเพาะฟัก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "supplementation",
+    "word": "supplementation",
+    "meaning": "การเสริม / การเพิ่มเติม",
+    "examples": [
+      "Supplementation of wild fish populations helps prevent extinction.",
+      "Vitamin supplementation is recommended for people with certain deficiencies.",
+      "The program focused on supplementation rather than replacement of native species."
+    ],
+    "translations": [
+      "การเสริม",
+      "การเพิ่มเติม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "ecological",
+    "word": "ecological",
+    "meaning": "เกี่ยวกับนิเวศวิทยา",
+    "examples": [
+      "The oil spill caused significant ecological damage to the coastline.",
+      "Ecological balance is fragile and easily disrupted by human activity.",
+      "Researchers conducted an ecological survey of the protected zone."
+    ],
+    "translations": [
+      "เกี่ยวกับนิเวศวิทยา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "bode",
+    "word": "bode",
+    "meaning": "บ่งบอก / เป็นลางสัญญาณ",
+    "examples": [
+      "The declining bird population does not bode well for the ecosystem.",
+      "Early results bode well for the success of the new program.",
+      "Rising temperatures bode poorly for polar ice preservation."
+    ],
+    "translations": [
+      "บ่งบอก",
+      "เป็นลางสัญญาณ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "breach",
+    "word": "breach",
+    "meaning": "การละเมิด / การฝ่าฝืน",
+    "examples": [
+      "The company was fined for a serious breach of environmental regulations.",
+      "A breach of contract can result in significant legal consequences.",
+      "The data breach exposed the personal information of thousands of users."
+    ],
+    "translations": [
+      "การละเมิด",
+      "การฝ่าฝืน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "adversely",
+    "word": "adversely",
+    "meaning": "อย่างเป็นผลเสีย",
+    "examples": [
+      "Pollution adversely affects the health of nearby communities.",
+      "The drought adversely impacted agricultural output for three years.",
+      "The decision adversely affected workers in the manufacturing sector."
+    ],
+    "translations": [
+      "อย่างเป็นผลเสีย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "proliferation",
+    "word": "proliferation",
+    "meaning": "การแพร่กระจาย / การขยายตัว",
+    "examples": [
+      "The proliferation of invasive species threatens native biodiversity.",
+      "Nuclear proliferation remains one of the world's greatest security threats.",
+      "The proliferation of misinformation online is a growing concern."
+    ],
+    "translations": [
+      "การแพร่กระจาย",
+      "การขยายตัว"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "indigenous",
+    "word": "indigenous",
+    "meaning": "พื้นเมือง / ท้องถิ่น",
+    "examples": [
+      "Indigenous communities often have deep knowledge of local ecosystems.",
+      "The government violated the rights of indigenous peoples.",
+      "Indigenous plants are better adapted to local environmental conditions."
+    ],
+    "translations": [
+      "พื้นเมือง",
+      "ท้องถิ่น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "vulnerable",
+    "word": "vulnerable",
+    "meaning": "เปราะบาง / ได้รับผลกระทบได้ง่าย",
+    "examples": [
+      "Children and the elderly are most vulnerable during heat waves.",
+      "Vulnerable ecosystems require special legal protections.",
+      "The policy aims to protect the most vulnerable members of society."
+    ],
+    "translations": [
+      "เปราะบาง",
+      "ได้รับผลกระทบได้ง่าย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "exploitation",
+    "word": "exploitation",
+    "meaning": "การแสวงหาประโยชน์ / การใช้ประโยชน์",
+    "examples": [
+      "The exploitation of natural resources must be regulated carefully.",
+      "Workers spoke out against the exploitation of underpaid labor.",
+      "Economic exploitation of developing nations remains a global concern."
+    ],
+    "translations": [
+      "การแสวงหาประโยชน์",
+      "การใช้ประโยชน์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "internship",
+    "word": "internship",
+    "meaning": "การฝึกงาน",
+    "examples": [
+      "She completed a summer internship at a leading law firm.",
+      "Many companies offer internships to recruit future full-time employees.",
+      "Unpaid internships raise serious questions about labor fairness."
+    ],
+    "translations": [
+      "การฝึกงาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "remuneration",
+    "word": "remuneration",
+    "meaning": "ค่าตอบแทน / ค่าจ้าง",
+    "examples": [
+      "The position offers generous remuneration and benefits.",
+      "Fair remuneration is essential for attracting and retaining skilled workers.",
+      "The union negotiated higher remuneration for all employees."
+    ],
+    "translations": [
+      "ค่าตอบแทน",
+      "ค่าจ้าง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "unregulated",
+    "word": "unregulated",
+    "meaning": "ไม่มีการควบคุม",
+    "examples": [
+      "Unregulated industries often cause greater harm to workers and consumers.",
+      "The unregulated market led to dangerous working conditions.",
+      "Critics argue that unregulated technology companies pose serious risks."
+    ],
+    "translations": [
+      "ไม่มีการควบคุม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "proponent",
+    "word": "proponent",
+    "meaning": "ผู้สนับสนุน / ผู้เสนอ",
+    "examples": [
+      "She is a leading proponent of criminal justice reform.",
+      "Proponents of the policy argue it will reduce inequality.",
+      "He became a vocal proponent of renewable energy solutions."
+    ],
+    "translations": [
+      "ผู้สนับสนุน",
+      "ผู้เสนอ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "prevalent",
+    "word": "prevalent",
+    "meaning": "แพร่หลาย / พบได้บ่อย",
+    "examples": [
+      "Income inequality is increasingly prevalent in developed nations.",
+      "Misinformation is prevalent on social media platforms.",
+      "A prevalent view among researchers is that prevention is more effective than cure."
+    ],
+    "translations": [
+      "แพร่หลาย",
+      "พบได้บ่อย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "corporate",
+    "word": "corporate",
+    "meaning": "เกี่ยวกับบริษัท / องค์กร",
+    "examples": [
+      "Corporate social responsibility has become a major business priority.",
+      "The scandal exposed widespread corporate corruption.",
+      "She climbed the corporate ladder through talent and dedication."
+    ],
+    "translations": [
+      "เกี่ยวกับบริษัท",
+      "องค์กร"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "lucrative",
+    "word": "lucrative",
+    "meaning": "ทำกำไรได้มาก / มีรายได้ดี",
+    "examples": [
+      "Real estate investment can be extremely lucrative in growing cities.",
+      "She found a lucrative career in the technology sector.",
+      "The deal turned out to be far more lucrative than expected."
+    ],
+    "translations": [
+      "ทำกำไรได้มาก",
+      "มีรายได้ดี"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "exempt",
+    "word": "exempt",
+    "meaning": "ยกเว้น / ได้รับการยกเว้น",
+    "examples": [
+      "Small businesses may be exempt from certain labor regulations.",
+      "Nonprofit organizations are often exempt from paying income tax.",
+      "The regulation exempts companies with fewer than ten employees."
+    ],
+    "translations": [
+      "ยกเว้น",
+      "ได้รับการยกเว้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "coercion",
+    "word": "coercion",
+    "meaning": "การบังคับ / การข่มขู่",
+    "examples": [
+      "The confession was obtained through coercion and is therefore invalid.",
+      "Coercion in the workplace violates employees' fundamental rights.",
+      "The agreement was signed under coercion and later challenged in court."
+    ],
+    "translations": [
+      "การบังคับ",
+      "การข่มขู่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "laborious",
+    "word": "laborious",
+    "meaning": "ยากลำบาก / ต้องใช้ความพยายามมาก",
+    "examples": [
+      "The data collection process was laborious and time-consuming.",
+      "Reforming a complex legal system is a laborious undertaking.",
+      "She completed the laborious task without complaint."
+    ],
+    "translations": [
+      "ยากลำบาก",
+      "ต้องใช้ความพยายามมาก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "negotiate",
+    "word": "negotiate",
+    "meaning": "เจรจาต่อรอง",
+    "examples": [
+      "Workers have the legal right to negotiate their wages collectively.",
+      "The two parties negotiated for weeks before reaching an agreement.",
+      "She successfully negotiated a better contract for her team."
+    ],
+    "translations": [
+      "เจรจาต่อรอง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "entitled",
+    "word": "entitled",
+    "meaning": "มีสิทธิ์ / ได้รับสิทธิ์",
+    "examples": [
+      "Every worker is entitled to a safe working environment.",
+      "Citizens are entitled to equal protection under the law.",
+      "She felt entitled to the promotion after years of dedicated service."
+    ],
+    "translations": [
+      "มีสิทธิ์",
+      "ได้รับสิทธิ์"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "mandate",
+    "word": "mandate",
+    "meaning": "อำนาจ / คำสั่งที่มีผลผูกมัด",
+    "examples": [
+      "The new law mandates paid family leave for all workers.",
+      "The agency received a clear mandate to regulate emissions.",
+      "A mandate from voters gave the party authority to implement change."
+    ],
+    "translations": [
+      "อำนาจ",
+      "คำสั่งที่มีผลผูกมัด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "discretion",
+    "word": "discretion",
+    "meaning": "ดุลยพินิจ / การตัดสินใจ",
+    "examples": [
+      "Judges use discretion when determining appropriate sentences.",
+      "Managers must exercise discretion when handling confidential information.",
+      "The decision was left to the discretion of the committee."
+    ],
+    "translations": [
+      "ดุลยพินิจ",
+      "การตัดสินใจ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "jurisprudence",
+    "word": "jurisprudence",
+    "meaning": "นิติศาสตร์ / หลักกฎหมาย",
+    "examples": [
+      "Constitutional jurisprudence evolves through court decisions over time.",
+      "Her expertise in labor jurisprudence made her a leading authority.",
+      "This case will have a lasting impact on environmental jurisprudence."
+    ],
+    "translations": [
+      "นิติศาสตร์",
+      "หลักกฎหมาย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "compliance",
+    "word": "compliance",
+    "meaning": "การปฏิบัติตามกฎ",
+    "examples": [
+      "The company achieved full compliance with safety regulations.",
+      "Compliance with environmental standards is legally required.",
+      "Regular audits ensure ongoing compliance across all departments."
+    ],
+    "translations": [
+      "การปฏิบัติตามกฎ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "standardization",
+    "word": "standardization",
+    "meaning": "การกำหนดมาตรฐาน",
+    "examples": [
+      "Standardization of testing procedures improves reliability.",
+      "The industry called for standardization of safety protocols.",
+      "Standardization allows different systems to work together effectively."
+    ],
+    "translations": [
+      "การกำหนดมาตรฐาน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "violation",
+    "word": "violation",
+    "meaning": "การละเมิด",
+    "examples": [
+      "The company was fined for a serious safety violation.",
+      "Voting rights violations were documented in several states.",
+      "A violation of the agreement would result in immediate penalties."
+    ],
+    "translations": [
+      "การละเมิด"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "recompense",
+    "word": "recompense",
+    "meaning": "การชดเชย / ค่าตอบแทน",
+    "examples": [
+      "She sought recompense for the damage caused by the company's negligence.",
+      "The court ordered full recompense for all affected workers.",
+      "A formal apology was offered as recompense for the error."
+    ],
+    "translations": [
+      "การชดเชย",
+      "ค่าตอบแทน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "automation",
+    "word": "automation",
+    "meaning": "การทำงานอัตโนมัติ",
+    "examples": [
+      "Automation has replaced many routine manufacturing jobs.",
+      "The automation of customer service reduced costs significantly.",
+      "Workers are concerned about the impact of automation on employment."
+    ],
+    "translations": [
+      "การทำงานอัตโนมัติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "obsolescence",
+    "word": "obsolescence",
+    "meaning": "การล้าสมัย",
+    "examples": [
+      "Rapid technological change accelerates product obsolescence.",
+      "Planned obsolescence encourages consumers to buy new products regularly.",
+      "The obsolescence of certain skills requires workers to retrain constantly."
+    ],
+    "translations": [
+      "การล้าสมัย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "productivity",
+    "word": "productivity",
+    "meaning": "ผลผลิต / ประสิทธิภาพการผลิต",
+    "examples": [
+      "New software increased the team's productivity by thirty percent.",
+      "Employee well-being is closely linked to workplace productivity.",
+      "Automation can boost productivity while reducing labor costs."
+    ],
+    "translations": [
+      "ผลผลิต",
+      "ประสิทธิภาพการผลิต"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "implementation",
+    "word": "implementation",
+    "meaning": "การนำไปปฏิบัติ",
+    "examples": [
+      "Successful policy depends on careful implementation.",
+      "The implementation of the new system took longer than expected.",
+      "Challenges in implementation often undermine well-designed policies."
+    ],
+    "translations": [
+      "การนำไปปฏิบัติ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "precision",
+    "word": "precision",
+    "meaning": "ความแม่นยำ",
+    "examples": [
+      "The surgeon operated with extraordinary precision.",
+      "Precision is essential in scientific measurement and reporting.",
+      "She delivered her argument with clarity and precision."
+    ],
+    "translations": [
+      "ความแม่นยำ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "integration",
+    "word": "integration",
+    "meaning": "การบูรณาการ / การรวมกัน",
+    "examples": [
+      "The integration of new technology improved workflow significantly.",
+      "Social integration promotes cohesion in diverse communities.",
+      "The successful integration of the two departments improved communication."
+    ],
+    "translations": [
+      "การบูรณาการ",
+      "การรวมกัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "efficiency",
+    "word": "efficiency",
+    "meaning": "ประสิทธิภาพ",
+    "examples": [
+      "Streamlining the process improved overall efficiency.",
+      "Fuel efficiency is a key factor for consumers choosing a car.",
+      "Greater efficiency in government reduces waste and saves taxpayer money."
+    ],
+    "translations": [
+      "ประสิทธิภาพ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "backlash",
+    "word": "backlash",
+    "meaning": "ปฏิกิริยาต่อต้าน",
+    "examples": [
+      "The new policy faced a significant backlash from workers.",
+      "Social media amplified the public backlash against the decision.",
+      "The company suffered a backlash after the controversial advertisement."
+    ],
+    "translations": [
+      "ปฏิกิริยาต่อต้าน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "disruption",
+    "word": "disruption",
+    "meaning": "การรบกวน / การเปลี่ยนแปลงอย่างรุนแรง",
+    "examples": [
+      "Technological disruption is transforming entire industries.",
+      "The strike caused major disruption to public transportation.",
+      "Innovation often creates disruption before it delivers lasting benefit."
+    ],
+    "translations": [
+      "การรบกวน",
+      "การเปลี่ยนแปลงอย่างรุนแรง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "redundancy",
+    "word": "redundancy",
+    "meaning": "ความซ้ำซ้อน / การถูกเลิกจ้าง",
+    "examples": [
+      "Automation has led to significant redundancy in the manufacturing sector.",
+      "The company offered generous packages to workers facing redundancy.",
+      "Redundancy in a system can actually improve resilience and reliability."
+    ],
+    "translations": [
+      "ความซ้ำซ้อน",
+      "การถูกเลิกจ้าง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "feasibility",
+    "word": "feasibility",
+    "meaning": "ความเป็นไปได้",
+    "examples": [
+      "A feasibility study was conducted before approving the project.",
+      "The feasibility of the proposal depends on available funding.",
+      "Experts questioned the feasibility of meeting the aggressive deadline."
+    ],
+    "translations": [
+      "ความเป็นไปได้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "augment",
+    "word": "augment",
+    "meaning": "เพิ่มเติม / ขยาย",
+    "examples": [
+      "Technology can augment human capabilities rather than replace them.",
+      "The program aims to augment workers' skills for the digital economy.",
+      "She sought to augment her income through freelance work."
+    ],
+    "translations": [
+      "เพิ่มเติม",
+      "ขยาย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "hybrid",
+    "word": "hybrid",
+    "meaning": "ลูกผสม / รูปแบบผสม",
+    "examples": [
+      "Many companies now offer hybrid work models combining remote and office days.",
+      "Hybrid vehicles use both electric and gasoline power.",
+      "The hybrid approach combines the best elements of two methods."
+    ],
+    "translations": [
+      "ลูกผสม",
+      "รูปแบบผสม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "unprecedented",
+    "word": "unprecedented",
+    "meaning": "ไม่เคยมีมาก่อน",
+    "examples": [
+      "The pandemic caused unprecedented disruption to the global economy.",
+      "Unemployment reached unprecedented levels during the financial crisis.",
+      "The technology represents an unprecedented leap forward in computing."
+    ],
+    "translations": [
+      "ไม่เคยมีมาก่อน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "displacement",
+    "word": "displacement",
+    "meaning": "การแทนที่ / การพลัดถิ่น",
+    "examples": [
+      "Automation has caused widespread job displacement in manufacturing.",
+      "The war led to the displacement of millions of civilians.",
+      "Economic displacement requires government support for retraining programs."
+    ],
+    "translations": [
+      "การแทนที่",
+      "การพลัดถิ่น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "obsolete",
+    "word": "obsolete",
+    "meaning": "ล้าสมัย",
+    "examples": [
+      "Fax machines have become largely obsolete in the digital age.",
+      "Skills that were once valuable can quickly become obsolete.",
+      "The outdated software was declared obsolete and replaced."
+    ],
+    "translations": [
+      "ล้าสมัย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "capital-intensive",
+    "word": "capital-intensive",
+    "meaning": "ต้องใช้เงินทุนสูง",
+    "examples": [
+      "Nuclear energy is a capital-intensive technology with high upfront costs.",
+      "Manufacturing semiconductors is one of the most capital-intensive industries.",
+      "Capital-intensive projects require long-term financial planning and commitment."
+    ],
+    "translations": [
+      "ต้องใช้เงินทุนสูง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "moratorium",
+    "word": "moratorium",
+    "meaning": "การพักชำระหนี้ / การระงับชั่วคราว",
+    "examples": [
+      "The government declared a moratorium on new oil drilling permits.",
+      "A moratorium on debt repayments was granted to struggling nations.",
+      "Environmental groups called for a moratorium on deep-sea mining."
+    ],
+    "translations": [
+      "การพักชำระหนี้",
+      "การระงับชั่วคราว"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "competitiveness",
+    "word": "competitiveness",
+    "meaning": "ความสามารถในการแข่งขัน",
+    "examples": [
+      "Investing in education improves a nation's long-term competitiveness.",
+      "The company's global competitiveness depends on innovation.",
+      "Wage growth must be balanced with maintaining economic competitiveness."
+    ],
+    "translations": [
+      "ความสามารถในการแข่งขัน"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "retrain",
+    "word": "retrain",
+    "meaning": "ฝึกทักษะใหม่ / อบรมใหม่",
+    "examples": [
+      "Workers displaced by automation need opportunities to retrain.",
+      "The government funded programs to retrain unemployed factory workers.",
+      "She chose to retrain as a data analyst after her industry declined."
+    ],
+    "translations": [
+      "ฝึกทักษะใหม่",
+      "อบรมใหม่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "accelerating",
+    "word": "accelerating",
+    "meaning": "เพิ่มความรุนแรง / เร่งขึ้น",
+    "examples": [
+      "The report asserts that climate change is accelerating.",
+      "Technology is accelerating at an unprecedented rate.",
+      "The accelerating pace of change challenges traditional systems."
+    ],
+    "translations": [
+      "เพิ่มความรุนแรง",
+      "เร่งขึ้น"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "alarming",
+    "word": "alarming",
+    "meaning": "น่าตกใจ / น่าเป็นห่วง",
+    "examples": [
+      "The rate of deforestation is alarming.",
+      "Scientists have found alarming levels of pollution in the ocean.",
+      "The alarming statistics prompted immediate government action."
+    ],
+    "translations": [
+      "น่าตกใจ",
+      "น่าเป็นห่วง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "irreplaceable",
+    "word": "irreplaceable",
+    "meaning": "ทดแทนไม่ได้",
+    "examples": [
+      "These ancient forests are irreplaceable.",
+      "She was an irreplaceable member of the team.",
+      "Once lost, this biodiversity is irreplaceable."
+    ],
+    "translations": [
+      "ทดแทนไม่ได้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "severe",
+    "word": "severe",
+    "meaning": "รุนแรง",
+    "examples": [
+      "The drought had severe consequences for local farmers.",
+      "Severe weather conditions disrupted travel across the region.",
+      "The patient suffered severe side effects from the treatment."
+    ],
+    "translations": [
+      "รุนแรง"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "threats",
+    "word": "threats",
+    "meaning": "ภัยคุกคาม",
+    "examples": [
+      "Pollution and overfishing are major threats to marine life.",
+      "The report identified three key threats to national security.",
+      "Climate change poses serious threats to global food supplies."
+    ],
+    "translations": [
+      "ภัยคุกคาม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "efforts",
+    "word": "efforts",
+    "meaning": "ความพยายาม",
+    "examples": [
+      "Despite efforts to reduce emissions, pollution levels remain high.",
+      "Conservation efforts have helped increase the tiger population.",
+      "Her efforts to improve education inspired the whole community."
+    ],
+    "translations": [
+      "ความพยายาม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "preserving",
+    "word": "preserving",
+    "meaning": "อนุรักษ์ไว้",
+    "examples": [
+      "Preserving natural habitats is essential for biodiversity.",
+      "The museum is dedicated to preserving cultural heritage.",
+      "Local communities play a key role in preserving traditions."
+    ],
+    "translations": [
+      "อนุรักษ์ไว้"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "considered",
+    "word": "considered",
+    "meaning": "ถือว่า / ได้รับการพิจารณา",
+    "examples": [
+      "Coral reefs are considered among the most diverse ecosystems.",
+      "She is considered one of the greatest scientists of her time.",
+      "This region is considered a biodiversity hotspot."
+    ],
+    "translations": [
+      "ถือว่า",
+      "ได้รับการพิจารณา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "trends",
+    "word": "trends",
+    "meaning": "แนวโน้ม",
+    "examples": [
+      "Current trends suggest that temperatures will continue to rise.",
+      "Researchers identified troubling trends in public health data.",
+      "Economic trends indicate a slowdown in growth."
+    ],
+    "translations": [
+      "แนวโน้ม"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "remains",
+    "word": "remains",
+    "meaning": "สิ่งที่เหลืออยู่",
+    "examples": [
+      "Much of the rainforest remains untouched by human activity.",
+      "The question of funding remains unresolved.",
+      "Only a fraction of the original population remains."
+    ],
+    "translations": [
+      "สิ่งที่เหลืออยู่"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "diversity",
+    "word": "diversity",
+    "meaning": "ความหลากหลาย",
+    "examples": [
+      "The Amazon rainforest is known for its incredible diversity.",
+      "Diversity in the workplace leads to more creative solutions.",
+      "Species diversity is a key indicator of ecosystem health."
+    ],
+    "translations": [
+      "ความหลากหลาย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "extraordinary",
+    "word": "extraordinary",
+    "meaning": "ยอดเยี่ยม / ไม่ธรรมดา",
+    "examples": [
+      "Coral reefs support an extraordinary variety of marine life.",
+      "She showed extraordinary courage under pressure.",
+      "The discovery was an extraordinary breakthrough in medicine."
+    ],
+    "translations": [
+      "ยอดเยี่ยม",
+      "ไม่ธรรมดา"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "marine",
+    "word": "marine",
+    "meaning": "เกี่ยวกับทะเล",
+    "examples": [
+      "Marine biologists study life in the ocean.",
+      "Plastic pollution threatens marine ecosystems worldwide.",
+      "The government established a marine protected area."
+    ],
+    "translations": [
+      "เกี่ยวกับทะเล"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "bleaching",
+    "word": "bleaching",
+    "meaning": "การฟอกขาว",
+    "examples": [
+      "Rising ocean temperatures cause coral bleaching.",
+      "Bleaching events have increased in frequency over the past decade.",
+      "Severe bleaching can kill entire reef systems."
+    ],
+    "translations": [
+      "การฟอกขาว"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "expel",
+    "word": "expel",
+    "meaning": "ขับออก / ไล่ออก",
+    "examples": [
+      "Stressed coral expels the algae living in its tissues.",
+      "The student was expelled for violating school rules.",
+      "The body expels toxins through sweat and urine."
+    ],
+    "translations": [
+      "ขับออก",
+      "ไล่ออก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "algae",
+    "word": "algae",
+    "meaning": "สาหร่าย",
+    "examples": [
+      "Coral reefs depend on algae for nutrition and color.",
+      "Algae blooms can deplete oxygen in the water.",
+      "Some species of algae are used as a food source."
+    ],
+    "translations": [
+      "สาหร่าย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "tissues",
+    "word": "tissues",
+    "meaning": "เนื้อเยื่อ",
+    "examples": [
+      "The algae live within the coral's tissues.",
+      "Damaged tissues require time and nutrients to heal.",
+      "Scientists studied the tissues under a microscope."
+    ],
+    "translations": [
+      "เนื้อเยื่อ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "suffocate",
+    "word": "suffocate",
+    "meaning": "ทำให้หายใจไม่ออก",
+    "examples": [
+      "Agricultural runoff causes algae blooms that suffocate marine life.",
+      "The thick smoke suffocated the firefighters.",
+      "Plants can suffocate if their roots are completely submerged."
+    ],
+    "translations": [
+      "ทำให้หายใจไม่ออก"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "resistant",
+    "word": "resistant",
+    "meaning": "ทนทานต่อ",
+    "examples": [
+      "Some coral species are more resistant to bleaching than others.",
+      "The bacteria became resistant to antibiotics.",
+      "Researchers are developing heat-resistant crop varieties."
+    ],
+    "translations": [
+      "ทนทานต่อ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "repeated",
+    "word": "repeated",
+    "meaning": "ซ้ำๆ",
+    "examples": [
+      "Repeated bleaching events prevent coral from recovering.",
+      "She made repeated attempts to contact the organization.",
+      "Repeated exposure to stress can harm mental health."
+    ],
+    "translations": [
+      "ซ้ำๆ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "stretching",
+    "word": "stretching",
+    "meaning": "ทอดยาว / ขยาย",
+    "examples": [
+      "The Great Barrier Reef stretches over 2,300 kilometers.",
+      "The desert is stretching further each year due to climate change.",
+      "A long highway stretching across the plains came into view."
+    ],
+    "translations": [
+      "ทอดยาว",
+      "ขยาย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "mollusk",
+    "word": "mollusk",
+    "meaning": "หอย",
+    "examples": [
+      "The octopus is a type of mollusk.",
+      "Mollusks such as clams and oysters filter water naturally.",
+      "Scientists discovered a new species of deep-sea mollusk."
+    ],
+    "translations": [
+      "หอย"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  },
+  {
+    "id": "able",
+    "word": "able",
+    "meaning": "สามารถ",
+    "examples": [
+      "Some coral species are able to recover if conditions improve.",
+      "She was able to complete the project ahead of schedule.",
+      "Not all students are able to access quality education."
+    ],
+    "translations": [
+      "สามารถ"
+    ],
+    "tags": [
+      "academic",
+      "reading"
+    ]
+  }
 ]
