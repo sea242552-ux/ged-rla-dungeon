@@ -52,6 +52,7 @@ export function createDefaultStat() {
     fastTrack: false,
     userId: 'local_user',
     source: 'ged_rla',
+    activeTranslation: null,
   };
 }
 

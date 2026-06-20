@@ -9,12 +9,17 @@
       "What does the author imply in the final paragraph?"
     ],
     "translations": [
-      "บ่งบอก",
-      "สื่อความหมายโดยนัย"
+      {
+        "meaning": "บ่งบอก / สื่อความหมายโดยนัย",
+        "example": "Her silence implied that she disagreed with the proposal.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -27,12 +32,17 @@
       "What can you infer about the character's motivation?"
     ],
     "translations": [
-      "อนุมาน",
-      "ตีความ"
+      {
+        "meaning": "อนุมาน / ตีความ",
+        "example": "We can infer from the passage that the author supports reform.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -45,11 +55,17 @@
       "Evidence from the second study directly contradicts the first."
     ],
     "translations": [
-      "ขัดแย้ง"
+      {
+        "meaning": "ขัดแย้ง",
+        "example": "His actions contradict his earlier statements.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -62,11 +78,17 @@
       "She cited three studies as evidence for her claim."
     ],
     "translations": [
-      "หลักฐาน"
+      {
+        "meaning": "หลักฐาน",
+        "example": "The author provides strong evidence to support the argument.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -79,11 +101,17 @@
       "Her perspective changed after reading the article."
     ],
     "translations": [
-      "มุมมอง"
+      {
+        "meaning": "มุมมอง",
+        "example": "Consider the issue from multiple perspectives.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -96,12 +124,17 @@
       "He asserted that the evidence was inconclusive."
     ],
     "translations": [
-      "ยืนยัน",
-      "กล่าวอ้างอย่างมั่นใจ"
+      {
+        "meaning": "ยืนยัน / กล่าวอ้างอย่างมั่นใจ",
+        "example": "The report asserts that climate change is accelerating.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -114,12 +147,17 @@
       "We need to evaluate the evidence before drawing conclusions."
     ],
     "translations": [
-      "ประเมิน",
-      "วิจารณ์"
+      {
+        "meaning": "ประเมิน / วิจารณ์",
+        "example": "Evaluate the strength of the author's argument.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -132,12 +170,17 @@
       "Without solid data, the claim has little validity."
     ],
     "translations": [
-      "ความถูกต้อง",
-      "ความสมเหตุสมผล"
+      {
+        "meaning": "ความถูกต้อง / ความสมเหตุสมผล",
+        "example": "Question the validity of arguments lacking evidence.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -150,12 +193,17 @@
       "His assumption that everyone agreed turned out to be wrong."
     ],
     "translations": [
-      "ข้อสมมุติฐาน",
-      "การสันนิษฐาน"
+      {
+        "meaning": "ข้อสมมุติฐาน / การสันนิษฐาน",
+        "example": "The argument rests on a faulty assumption.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -168,11 +216,17 @@
       "Doctors assess patients before recommending treatment."
     ],
     "translations": [
-      "ประเมิน"
+      {
+        "meaning": "ประเมิน",
+        "example": "We must assess the risks before making a decision.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -185,13 +239,17 @@
       "We need to determine the best course of action."
     ],
     "translations": [
-      "ระบุ",
-      "ตัดสิน",
-      "กำหนด"
+      {
+        "meaning": "ระบุ / ตัดสิน / กำหนด",
+        "example": "Scientists are trying to determine the cause of the disease.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -204,12 +262,17 @@
       "Be explicit about your expectations from the beginning."
     ],
     "translations": [
-      "ชัดเจน",
-      "ระบุตรงๆ"
+      {
+        "meaning": "ชัดเจน / ระบุตรงๆ",
+        "example": "The instructions were explicit and easy to follow.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -222,12 +285,17 @@
       "His approval was implicit rather than openly stated."
     ],
     "translations": [
-      "โดยนัย",
-      "ไม่ได้พูดตรงๆ"
+      {
+        "meaning": "โดยนัย / ไม่ได้พูดตรงๆ",
+        "example": "There was an implicit warning in the author's tone.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -240,11 +308,17 @@
       "Is this amount of data sufficient for the analysis?"
     ],
     "translations": [
-      "เพียงพอ"
+      {
+        "meaning": "เพียงพอ",
+        "example": "One example is not sufficient to prove a general point.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -257,11 +331,17 @@
       "Breaking with precedent requires careful justification."
     ],
     "translations": [
-      "บรรทัดฐาน"
+      {
+        "meaning": "บรรทัดฐาน",
+        "example": "The court's ruling set an important legal precedent.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -274,11 +354,17 @@
       "The lawyer offered a different interpretation of the law."
     ],
     "translations": [
-      "การตีความ"
+      {
+        "meaning": "การตีความ",
+        "example": "Her interpretation of the poem differed from the teacher's.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -291,12 +377,17 @@
       "A consistent writing style makes an essay easier to follow."
     ],
     "translations": [
-      "สอดคล้อง",
-      "สม่ำเสมอ"
+      {
+        "meaning": "สอดคล้อง / สม่ำเสมอ",
+        "example": "The results were consistent across all three studies.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -309,11 +400,17 @@
       "His stance shifted after reviewing the new evidence."
     ],
     "translations": [
-      "จุดยืน"
+      {
+        "meaning": "จุดยืน",
+        "example": "What is the author's stance on environmental policy?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -326,12 +423,17 @@
       "The documentary portrays the struggles of migrant workers."
     ],
     "translations": [
-      "แสดงภาพ",
-      "พรรณนา"
+      {
+        "meaning": "แสดงภาพ / พรรณนา",
+        "example": "The article portrays the community in a negative light.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -344,11 +446,17 @@
       "The government failed to justify the new restrictions."
     ],
     "translations": [
-      "แสดงเหตุผลสนับสนุน"
+      {
+        "meaning": "แสดงเหตุผลสนับสนุน",
+        "example": "Justify your answer with evidence from the text.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -361,12 +469,17 @@
       "Even critics concede that the policy had some benefits."
     ],
     "translations": [
-      "ยอมรับ",
-      "ยินยอม"
+      {
+        "meaning": "ยอมรับ / ยินยอม",
+        "example": "The author concedes that the evidence is not conclusive.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -379,12 +492,17 @@
       "The conclusion restates the thesis with new insight."
     ],
     "translations": [
-      "กล่าวซ้ำ",
-      "อธิบายใหม่"
+      {
+        "meaning": "กล่าวซ้ำ / อธิบายใหม่",
+        "example": "Restate the main argument in your own words.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -397,11 +515,17 @@
       "She cited three studies to support her claim."
     ],
     "translations": [
-      "อ้างอิง"
+      {
+        "meaning": "อ้างอิง",
+        "example": "Always cite your sources in academic writing.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -414,12 +538,17 @@
       "Good writing conveys complex ideas clearly."
     ],
     "translations": [
-      "สื่อสาร",
-      "ถ่ายทอด"
+      {
+        "meaning": "สื่อสาร / ถ่ายทอด",
+        "example": "The poem conveys a deep sense of loss.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -432,12 +561,17 @@
       "Confirmation bias leads people to seek only supporting evidence."
     ],
     "translations": [
-      "อคติ",
-      "ความลำเอียง"
+      {
+        "meaning": "อคติ / ความลำเอียง",
+        "example": "The report showed a clear bias toward one side.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -450,11 +584,17 @@
       "Choose examples that have direct relevance to your claim."
     ],
     "translations": [
-      "ความเกี่ยวข้อง"
+      {
+        "meaning": "ความเกี่ยวข้อง",
+        "example": "Make sure all your evidence has relevance to the topic.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -467,11 +607,17 @@
       "The author distinguishes two seemingly similar ideas."
     ],
     "translations": [
-      "แยกแยะ"
+      {
+        "meaning": "แยกแยะ",
+        "example": "Can you distinguish between fact and opinion in this passage?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -484,12 +630,17 @@
       "Corruption undermines public trust in institutions."
     ],
     "translations": [
-      "บั่นทอน",
-      "ทำให้อ่อนแอ"
+      {
+        "meaning": "บั่นทอน / ทำให้อ่อนแอ",
+        "example": "The new evidence undermines the original claim.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -502,11 +653,17 @@
       "The study's findings reinforce earlier research conclusions."
     ],
     "translations": [
-      "เสริมความแข็งแกร่ง"
+      {
+        "meaning": "เสริมความแข็งแกร่ง",
+        "example": "This example reinforces the author's central argument.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -519,12 +676,17 @@
       "Please elaborate your answer with specific examples."
     ],
     "translations": [
-      "ขยายความ",
-      "อธิบายเพิ่มเติม"
+      {
+        "meaning": "ขยายความ / อธิบายเพิ่มเติม",
+        "example": "Could you elaborate on that point?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -537,12 +699,17 @@
       "There has been a significant shift in how we view education."
     ],
     "translations": [
-      "เปลี่ยนแปลง",
-      "เปลี่ยนทิศทาง"
+      {
+        "meaning": "เปลี่ยนแปลง / เปลี่ยนทิศทาง",
+        "example": "The author's tone shifts in the final paragraph.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -555,12 +722,17 @@
       "The problem is primarily caused by lack of communication."
     ],
     "translations": [
-      "เป็นหลัก",
-      "ส่วนใหญ่"
+      {
+        "meaning": "เป็นหลัก / ส่วนใหญ่",
+        "example": "The article is aimed primarily at young voters.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -573,12 +745,17 @@
       "A strong counterargument refutes the opposing view directly."
     ],
     "translations": [
-      "หักล้าง",
-      "โต้แย้ง"
+      {
+        "meaning": "หักล้าง / โต้แย้ง",
+        "example": "The scientist refuted the hypothesis with new data.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -591,12 +768,17 @@
       "She substantiated her argument with multiple peer-reviewed studies."
     ],
     "translations": [
-      "พิสูจน์",
-      "สนับสนุนด้วยหลักฐาน"
+      {
+        "meaning": "พิสูจน์ / สนับสนุนด้วยหลักฐาน",
+        "example": "Can you substantiate that claim with evidence?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -609,12 +791,17 @@
       "Avoid generalizing without sufficient evidence."
     ],
     "translations": [
-      "สรุปภาพรวม",
-      "ด่วนสรุป"
+      {
+        "meaning": "สรุปภาพรวม / ด่วนสรุป",
+        "example": "It is dangerous to generalize based on a single case.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -627,12 +814,17 @@
       "Can you find another source to corroborate this claim?"
     ],
     "translations": [
-      "ยืนยัน",
-      "สนับสนุนด้วยหลักฐาน"
+      {
+        "meaning": "ยืนยัน / สนับสนุนด้วยหลักฐาน",
+        "example": "The witness's testimony corroborated the physical evidence.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -645,12 +837,17 @@
       "She characterized his behavior as irresponsible."
     ],
     "translations": [
-      "บ่งบอกลักษณะ",
-      "พรรณนา"
+      {
+        "meaning": "บ่งบอกลักษณะ / พรรณนา",
+        "example": "How does the author characterize the role of government?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -663,11 +860,17 @@
       "A writer's credibility depends on the evidence they provide."
     ],
     "translations": [
-      "ความน่าเชื่อถือ"
+      {
+        "meaning": "ความน่าเชื่อถือ",
+        "example": "Citing expert sources increases your credibility.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -680,12 +883,17 @@
       "This discrepancy in the data needs to be explained."
     ],
     "translations": [
-      "ความไม่สอดคล้อง",
-      "ความแตกต่าง"
+      {
+        "meaning": "ความไม่สอดคล้อง / ความแตกต่าง",
+        "example": "There is a discrepancy between the two reports.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -698,12 +906,17 @@
       "He gave a plausible account of what happened."
     ],
     "translations": [
-      "น่าเชื่อถือ",
-      "เป็นไปได้"
+      {
+        "meaning": "น่าเชื่อถือ / เป็นไปได้",
+        "example": "The author offers a plausible explanation for the trend.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -716,11 +929,17 @@
       "Her hypothesis was that stress causes memory loss."
     ],
     "translations": [
-      "สมมุติฐาน"
+      {
+        "meaning": "สมมุติฐาน",
+        "example": "The scientist tested the hypothesis through experiments.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -733,12 +952,17 @@
       "He is a well-known advocate for criminal justice reform."
     ],
     "translations": [
-      "สนับสนุน",
-      "ผู้สนับสนุน"
+      {
+        "meaning": "สนับสนุน / ผู้สนับสนุน",
+        "example": "She advocates for stronger environmental protections.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -751,12 +975,17 @@
       "It is difficult to reconcile his words with his actions."
     ],
     "translations": [
-      "ประสานความขัดแย้ง",
-      "ทำให้สอดคล้อง"
+      {
+        "meaning": "ประสานความขัดแย้ง / ทำให้สอดคล้อง",
+        "example": "How can we reconcile these two contradictory findings?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -769,11 +998,17 @@
       "She could not differentiate between the two very similar arguments."
     ],
     "translations": [
-      "แยกแยะความแตกต่าง"
+      {
+        "meaning": "แยกแยะความแตกต่าง",
+        "example": "Differentiate between the author's opinion and stated facts.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -786,11 +1021,17 @@
       "She carefully analyzed the author's rhetorical strategies."
     ],
     "translations": [
-      "วิเคราะห์"
+      {
+        "meaning": "วิเคราะห์",
+        "example": "Analyze the evidence before drawing any conclusions.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -803,11 +1044,17 @@
       "He concluded his argument with a powerful call to action."
     ],
     "translations": [
-      "สรุป"
+      {
+        "meaning": "สรุป",
+        "example": "The author concludes that reform is urgently needed.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -820,11 +1067,17 @@
       "She used three examples to support her argument."
     ],
     "translations": [
-      "สนับสนุน"
+      {
+        "meaning": "สนับสนุน",
+        "example": "This evidence supports the author's central claim.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -837,11 +1090,17 @@
       "The essay contrasts urban and rural experiences of poverty."
     ],
     "translations": [
-      "เปรียบเทียบความต่าง"
+      {
+        "meaning": "เปรียบเทียบความต่าง",
+        "example": "Contrast the two characters' views on justice.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -854,11 +1113,17 @@
       "When you compare the data, the trend becomes clear."
     ],
     "translations": [
-      "เปรียบเทียบ"
+      {
+        "meaning": "เปรียบเทียบ",
+        "example": "Compare the two authors' approaches to the same topic.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -871,12 +1136,17 @@
       "The data indicates a strong link between poverty and crime."
     ],
     "translations": [
-      "บ่งชี้",
-      "แสดงให้เห็น"
+      {
+        "meaning": "บ่งชี้ / แสดงให้เห็น",
+        "example": "The graph indicates a steady rise in temperatures.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -889,11 +1159,17 @@
       "Bold text is used to emphasize key terms in the passage."
     ],
     "translations": [
-      "เน้นย้ำ"
+      {
+        "meaning": "เน้นย้ำ",
+        "example": "The author emphasizes the importance of early education.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -906,12 +1182,17 @@
       "She addressed the audience's questions directly."
     ],
     "translations": [
-      "กล่าวถึง",
-      "จัดการ"
+      {
+        "meaning": "กล่าวถึง / จัดการ",
+        "example": "The article addresses concerns about income inequality.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -924,12 +1205,17 @@
       "She clarified her position after the misunderstanding."
     ],
     "translations": [
-      "ชี้แจง",
-      "อธิบายให้ชัดเจน"
+      {
+        "meaning": "ชี้แจง / อธิบายให้ชัดเจน",
+        "example": "Can you clarify what you mean by that term?",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -942,11 +1228,17 @@
       "A close reading reveals the hidden meaning in the text."
     ],
     "translations": [
-      "เปิดเผย"
+      {
+        "meaning": "เปิดเผย",
+        "example": "The investigation revealed widespread corruption.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -959,12 +1251,17 @@
       "The committee examined each proposal in detail."
     ],
     "translations": [
-      "ตรวจสอบ",
-      "พิจารณา"
+      {
+        "meaning": "ตรวจสอบ / พิจารณา",
+        "example": "The essay examines the causes of the financial crisis.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -977,12 +1274,17 @@
       "She claimed the policy was unconstitutional."
     ],
     "translations": [
-      "ข้ออ้าง",
-      "กล่าวอ้าง"
+      {
+        "meaning": "ข้ออ้าง / กล่าวอ้าง",
+        "example": "The author's main claim is that education reduces inequality.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -995,12 +1297,17 @@
       "His commitment demonstrates his dedication to the cause."
     ],
     "translations": [
-      "แสดงให้เห็น",
-      "พิสูจน์"
+      {
+        "meaning": "แสดงให้เห็น / พิสูจน์",
+        "example": "The experiment demonstrated that the hypothesis was correct.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1013,12 +1320,17 @@
       "The story illustrates the consequences of moral compromise."
     ],
     "translations": [
-      "แสดงตัวอย่าง",
-      "อธิบายด้วยภาพ"
+      {
+        "meaning": "แสดงตัวอย่าง / อธิบายด้วยภาพ",
+        "example": "Use specific examples to illustrate your argument.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1031,12 +1343,17 @@
       "If the premise is false, the entire argument collapses."
     ],
     "translations": [
-      "ข้อสมมุติฐาน",
-      "หลักการเริ่มต้น"
+      {
+        "meaning": "ข้อสมมุติฐาน / หลักการเริ่มต้น",
+        "example": "The argument is built on a faulty premise.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1049,12 +1366,17 @@
       "The author acknowledges the limitations of the study."
     ],
     "translations": [
-      "ยอมรับ",
-      "รับรู้"
+      {
+        "meaning": "ยอมรับ / รับรู้",
+        "example": "A strong essay acknowledges opposing viewpoints.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1067,12 +1389,17 @@
       "She grew cynical after repeated disappointments."
     ],
     "translations": [
-      "มองโลกในแง่ร้าย",
-      "ไม่เชื่อในความดีของคน"
+      {
+        "meaning": "มองโลกในแง่ร้าย / ไม่เชื่อในความดีของคน",
+        "example": "He had a cynical view of politics after years of corruption.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1085,12 +1412,17 @@
       "Try to be objective when evaluating both sides of the argument."
     ],
     "translations": [
-      "เป็นกลาง",
-      "ปราศจากอคติ"
+      {
+        "meaning": "เป็นกลาง / ปราศจากอคติ",
+        "example": "The report aims to present an objective analysis.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1103,12 +1435,17 @@
       "Scientists are trained to be skeptical of untested claims."
     ],
     "translations": [
-      "สงสัย",
-      "ไม่เชื่อง่าย"
+      {
+        "meaning": "สงสัย / ไม่เชื่อง่าย",
+        "example": "She was skeptical about the new study's conclusions.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1121,12 +1458,17 @@
       "She gave an impartial assessment of both candidates."
     ],
     "translations": [
-      "ไม่ลำเอียง",
-      "เป็นกลาง"
+      {
+        "meaning": "ไม่ลำเอียง / เป็นกลาง",
+        "example": "Judges must remain impartial throughout the trial.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1139,11 +1481,17 @@
       "His ambivalent response suggested he had not decided."
     ],
     "translations": [
-      "รู้สึกสองจิตสองใจ"
+      {
+        "meaning": "รู้สึกสองจิตสองใจ",
+        "example": "She felt ambivalent about accepting the promotion.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1156,12 +1504,17 @@
       "The comedian's satirical sketch mocked government incompetence."
     ],
     "translations": [
-      "เสียดสี",
-      "ล้อเลียน"
+      {
+        "meaning": "เสียดสี / ล้อเลียน",
+        "example": "The article uses a satirical tone to criticize politicians.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1174,12 +1527,17 @@
       "His nostalgic writing romanticizes a simpler past."
     ],
     "translations": [
-      "คิดถึงอดีต",
-      "โหยหาอดีต"
+      {
+        "meaning": "คิดถึงอดีต / โหยหาอดีต",
+        "example": "The essay has a nostalgic tone about life before technology.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1192,12 +1550,17 @@
       "His melancholic mood was reflected in his writing."
     ],
     "translations": [
-      "เศร้าโศก",
-      "หดหู่"
+      {
+        "meaning": "เศร้าโศก / หดหู่",
+        "example": "The poem has a melancholic tone throughout.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1210,11 +1573,17 @@
       "He grew indignant when his honesty was questioned."
     ],
     "translations": [
-      "โกรธแค้น (เพราะไม่ยุติธรรม)"
+      {
+        "meaning": "โกรธแค้น (เพราะไม่ยุติธรรม)",
+        "example": "She was indignant at the unfair treatment she received.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1227,12 +1596,17 @@
       "The study was criticized for its biased sample selection."
     ],
     "translations": [
-      "มีอคติ",
-      "ลำเอียง"
+      {
+        "meaning": "มีอคติ / ลำเอียง",
+        "example": "A biased source weakens any argument that relies on it.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1245,11 +1619,17 @@
       "His sarcastic comments did not help the conversation."
     ],
     "translations": [
-      "ประชดประชัน"
+      {
+        "meaning": "ประชดประชัน",
+        "example": "Her sarcastic remark masked her true frustration.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1262,11 +1642,17 @@
       "An optimistic tone suggests belief in a positive future."
     ],
     "translations": [
-      "มองโลกในแง่ดี"
+      {
+        "meaning": "มองโลกในแง่ดี",
+        "example": "The author's optimistic conclusion inspires hope for change.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1279,11 +1665,17 @@
       "A pessimistic tone can suggest futility or despair."
     ],
     "translations": [
-      "มองโลกในแง่ร้าย"
+      {
+        "meaning": "มองโลกในแง่ร้าย",
+        "example": "The report takes a pessimistic view of economic recovery.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1296,11 +1688,17 @@
       "Formal language avoids slang and casual expressions."
     ],
     "translations": [
-      "เป็นทางการ"
+      {
+        "meaning": "เป็นทางการ",
+        "example": "Academic essays require a formal writing style.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1313,11 +1711,17 @@
       "She chose an informal style to connect with young readers."
     ],
     "translations": [
-      "ไม่เป็นทางการ"
+      {
+        "meaning": "ไม่เป็นทางการ",
+        "example": "The blog uses an informal, conversational tone.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1330,12 +1734,17 @@
       "His apathetic response disappointed his supporters."
     ],
     "translations": [
-      "ไม่แยแส",
-      "เฉยเมย"
+      {
+        "meaning": "ไม่แยแส / เฉยเมย",
+        "example": "The apathetic tone suggests the narrator has given up hope.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1348,11 +1757,17 @@
       "A sympathetic narrator helps readers connect with characters."
     ],
     "translations": [
-      "เห็นอกเห็นใจ"
+      {
+        "meaning": "เห็นอกเห็นใจ",
+        "example": "The author takes a sympathetic view of the refugees.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1365,12 +1780,17 @@
       "He made a solemn promise to protect the community."
     ],
     "translations": [
-      "เคร่งขรึม",
-      "จริงจัง"
+      {
+        "meaning": "เคร่งขรึม / จริงจัง",
+        "example": "The speaker delivered a solemn message about climate change.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1383,12 +1803,17 @@
       "The essay is didactic in its approach to civic responsibility."
     ],
     "translations": [
-      "มุ่งสอน",
-      "ให้คติสอนใจ"
+      {
+        "meaning": "มุ่งสอน / ให้คติสอนใจ",
+        "example": "The novel has a didactic purpose to teach moral lessons.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1401,12 +1826,17 @@
       "The letter was earnest in its request for reform."
     ],
     "translations": [
-      "จริงจัง",
-      "ตั้งใจจริง"
+      {
+        "meaning": "จริงจัง / ตั้งใจจริง",
+        "example": "Her earnest plea for change moved the audience.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1419,12 +1849,17 @@
       "His reverent attitude toward tradition shapes his argument."
     ],
     "translations": [
-      "เคารพนับถือ",
-      "ยำเกรง"
+      {
+        "meaning": "เคารพนับถือ / ยำเกรง",
+        "example": "The author writes about nature in a reverent tone.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1437,12 +1872,17 @@
       "She wrote an irreverent satire of political institutions."
     ],
     "translations": [
-      "ไม่เคารพ",
-      "ดูหมิ่น"
+      {
+        "meaning": "ไม่เคารพ / ดูหมิ่น",
+        "example": "The article's irreverent tone challenges traditional authority.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1455,12 +1895,17 @@
       "Avoid a condescending tone when explaining complex ideas."
     ],
     "translations": [
-      "วางท่าอวดดี",
-      "ดูถูก"
+      {
+        "meaning": "วางท่าอวดดี / ดูถูก",
+        "example": "His condescending tone suggested he thought little of his audience.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1473,12 +1918,17 @@
       "He became belligerent when his position was challenged."
     ],
     "translations": [
-      "ก้าวร้าว",
-      "ชอบทะเลาะ"
+      {
+        "meaning": "ก้าวร้าว / ชอบทะเลาะ",
+        "example": "The politician's belligerent speech alienated many voters.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1491,12 +1941,17 @@
       "The speech was deliberately provocative to stir public anger."
     ],
     "translations": [
-      "ยั่วยุ",
-      "กระตุ้นให้เกิดปฏิกิริยา"
+      {
+        "meaning": "ยั่วยุ / กระตุ้นให้เกิดปฏิกิริยา",
+        "example": "The author uses provocative questions to challenge readers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1509,12 +1964,17 @@
       "She wrote a compassionate account of the refugees' journey."
     ],
     "translations": [
-      "มีความเมตตา",
-      "สงสาร"
+      {
+        "meaning": "มีความเมตตา / สงสาร",
+        "example": "The author's compassionate tone reflects deep concern for the poor.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1527,12 +1987,17 @@
       "A laudatory tone can sometimes obscure honest criticism."
     ],
     "translations": [
-      "ยกย่อง",
-      "สรรเสริญ"
+      {
+        "meaning": "ยกย่อง / สรรเสริญ",
+        "example": "The review was laudatory, praising every aspect of the book.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1545,12 +2010,17 @@
       "The author takes a speculative approach to the future of AI."
     ],
     "translations": [
-      "เป็นการคาดเดา",
-      "ไม่มีหลักฐานแน่ชัด"
+      {
+        "meaning": "เป็นการคาดเดา / ไม่มีหลักฐานแน่ชัด",
+        "example": "The article is speculative, offering little concrete evidence.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1563,12 +2033,17 @@
       "His pragmatic tone suggests a preference for practical solutions."
     ],
     "translations": [
-      "เป็นไปในทางปฏิบัติ",
-      "จริงจัง"
+      {
+        "meaning": "เป็นไปในทางปฏิบัติ / จริงจัง",
+        "example": "She took a pragmatic approach to solving the budget crisis.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1581,12 +2056,17 @@
       "A detached writing style can feel clinical or impersonal."
     ],
     "translations": [
-      "ไม่ผูกพัน",
-      "เป็นกลาง"
+      {
+        "meaning": "ไม่ผูกพัน / เป็นกลาง",
+        "example": "The narrator's detached tone creates an objective perspective.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1599,12 +2079,17 @@
       "She was apologetic but firm in her decision."
     ],
     "translations": [
-      "ขอโทษ",
-      "รู้สึกเสียใจ"
+      {
+        "meaning": "ขอโทษ / รู้สึกเสียใจ",
+        "example": "The company issued an apologetic statement after the incident.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1617,12 +2102,17 @@
       "A hostile work environment reduces productivity."
     ],
     "translations": [
-      "เป็นปฏิปักษ์",
-      "ไม่เป็นมิตร"
+      {
+        "meaning": "เป็นปฏิปักษ์ / ไม่เป็นมิตร",
+        "example": "The hostile tone of the article undermines its credibility.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1635,12 +2125,17 @@
       "She was philosophical about the setbacks she encountered."
     ],
     "translations": [
-      "เชิงปรัชญา",
-      "ยอมรับสิ่งที่เกิดขึ้น"
+      {
+        "meaning": "เชิงปรัชญา / ยอมรับสิ่งที่เกิดขึ้น",
+        "example": "He took a philosophical approach to the question of justice.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1653,11 +2148,17 @@
       "She was cautious in her claims, acknowledging uncertainty."
     ],
     "translations": [
-      "ระมัดระวัง"
+      {
+        "meaning": "ระมัดระวัง",
+        "example": "The author is cautious about drawing conclusions from limited data.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1670,12 +2171,17 @@
       "She made her point in a confident, assertive manner."
     ],
     "translations": [
-      "มั่นใจในตัวเอง",
-      "กล้าแสดงออก"
+      {
+        "meaning": "มั่นใจในตัวเอง / กล้าแสดงออก",
+        "example": "The author's assertive tone leaves no room for doubt.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1688,11 +2194,17 @@
       "The letter conveyed an urgent need for policy reform."
     ],
     "translations": [
-      "เร่งด่วน"
+      {
+        "meaning": "เร่งด่วน",
+        "example": "The report uses urgent language to call for immediate action.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1705,12 +2217,17 @@
       "She used a mocking style to dismiss the opponent's logic."
     ],
     "translations": [
-      "เยาะเย้ย",
-      "ล้อเลียน"
+      {
+        "meaning": "เยาะเย้ย / ล้อเลียน",
+        "example": "The author's mocking tone ridicules the opposition's arguments.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1723,12 +2240,17 @@
       "A defensive argument often signals insecurity in one's position."
     ],
     "translations": [
-      "ป้องกันตัว",
-      "ตั้งรับ"
+      {
+        "meaning": "ป้องกันตัว / ตั้งรับ",
+        "example": "His defensive tone suggested he felt attacked by the criticism.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1741,12 +2263,17 @@
       "A candid tone builds trust with the reader."
     ],
     "translations": [
-      "พูดตรงไปตรงมา",
-      "ซื่อสัตย์"
+      {
+        "meaning": "พูดตรงไปตรงมา / ซื่อสัตย์",
+        "example": "She gave a candid assessment of the program's failures.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1759,12 +2286,17 @@
       "She wrote a critical analysis of the novel's themes."
     ],
     "translations": [
-      "วิจารณ์",
-      "ตำหนิ"
+      {
+        "meaning": "วิจารณ์ / ตำหนิ",
+        "example": "The review was highly critical of the government's response.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1777,12 +2309,17 @@
       "The poem ends on a wistful note, full of gentle regret."
     ],
     "translations": [
-      "คิดถึงด้วยความอาลัย",
-      "เศร้าอาลัย"
+      {
+        "meaning": "คิดถึงด้วยความอาลัย / เศร้าอาลัย",
+        "example": "Her wistful tone conveys longing for a lost era.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1795,12 +2332,17 @@
       "The law is ambiguous on this particular issue."
     ],
     "translations": [
-      "กำกวม",
-      "ไม่ชัดเจน"
+      {
+        "meaning": "กำกวม / ไม่ชัดเจน",
+        "example": "The author's conclusion is ambiguous and open to interpretation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1813,12 +2355,17 @@
       "An apprehensive mood pervades the opening chapter."
     ],
     "translations": [
-      "กังวล",
-      "กลัว"
+      {
+        "meaning": "กังวล / กลัว",
+        "example": "The narrator's apprehensive tone reflects fear of the unknown.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1831,12 +2378,17 @@
       "The community felt resigned to living with the problem."
     ],
     "translations": [
-      "ยอมรับชะตากรรม",
-      "ยอมจำนน"
+      {
+        "meaning": "ยอมรับชะตากรรม / ยอมจำนน",
+        "example": "His resigned tone suggests he has given up hope for change.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1849,12 +2401,17 @@
       "A defiant tone signals refusal to yield under pressure."
     ],
     "translations": [
-      "ท้าทาย",
-      "ดื้อรั้น"
+      {
+        "meaning": "ท้าทาย / ดื้อรั้น",
+        "example": "Her defiant response challenged the authority of the committee.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1867,11 +2424,17 @@
       "She made a facetious comment that offended the grieving family."
     ],
     "translations": [
-      "ตลกขบขัน (ไม่เหมาะกับสถานการณ์)"
+      {
+        "meaning": "ตลกขบขัน (ไม่เหมาะกับสถานการณ์)",
+        "example": "His facetious remarks during the debate frustrated many listeners.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1884,12 +2447,17 @@
       "She dismissed the complaint with a flippant wave of her hand."
     ],
     "translations": [
-      "พูดเล่น",
-      "ไม่จริงจัง"
+      {
+        "meaning": "พูดเล่น / ไม่จริงจัง",
+        "example": "His flippant reply showed he did not take the issue seriously.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1902,12 +2470,17 @@
       "He was incredulous that the plan had actually succeeded."
     ],
     "translations": [
-      "ไม่เชื่อ",
-      "งงงวย"
+      {
+        "meaning": "ไม่เชื่อ / งงงวย",
+        "example": "She looked at him with an incredulous expression.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1920,12 +2493,17 @@
       "A patronizing attitude damages relationships and trust."
     ],
     "translations": [
-      "วางท่าดูถูก",
-      "ทำราวกับว่าอีกฝ่ายด้อยกว่า"
+      {
+        "meaning": "วางท่าดูถูก / ทำราวกับว่าอีกฝ่ายด้อยกว่า",
+        "example": "The article's patronizing tone assumes readers cannot think for themselves.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1938,12 +2516,17 @@
       "The author uses colloquial phrases to appeal to everyday readers."
     ],
     "translations": [
-      "ภาษาพูดทั่วไป",
-      "ภาษาปาก"
+      {
+        "meaning": "ภาษาพูดทั่วไป / ภาษาปาก",
+        "example": "Colloquial language makes the article feel casual and accessible.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1956,11 +2539,17 @@
       "However, not everyone agreed with the final decision."
     ],
     "translations": [
-      "อย่างไรก็ตาม"
+      {
+        "meaning": "อย่างไรก็ตาม",
+        "example": "The plan seemed sound; however, it failed in practice.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1973,11 +2562,17 @@
       "Nevertheless, the results offered some encouraging signs."
     ],
     "translations": [
-      "อย่างไรก็ตาม"
+      {
+        "meaning": "อย่างไรก็ตาม",
+        "example": "The task was difficult; nevertheless, they completed it on time.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -1990,12 +2585,17 @@
       "Consequently, the project was delayed by several months."
     ],
     "translations": [
-      "ดังนั้น",
-      "เป็นผลให้"
+      {
+        "meaning": "ดังนั้น / เป็นผลให้",
+        "example": "She studied every night; consequently, she passed with high marks.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2008,11 +2608,17 @@
       "She is highly skilled; furthermore, she works exceptionally hard."
     ],
     "translations": [
-      "ยิ่งกว่านั้น"
+      {
+        "meaning": "ยิ่งกว่านั้น",
+        "example": "The policy reduces costs; furthermore, it improves morale.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2025,11 +2631,17 @@
       "More rules do not always improve safety; conversely, they can create confusion."
     ],
     "translations": [
-      "ในทางกลับกัน"
+      {
+        "meaning": "ในทางกลับกัน",
+        "example": "He prefers action movies; conversely, she enjoys documentaries.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2042,11 +2654,17 @@
       "Therefore, we must take immediate action."
     ],
     "translations": [
-      "ดังนั้น"
+      {
+        "meaning": "ดังนั้น",
+        "example": "The evidence is conclusive; therefore, the case is closed.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2059,11 +2677,17 @@
       "He is talented; moreover, he brings a positive attitude to the team."
     ],
     "translations": [
-      "ยิ่งกว่านั้น"
+      {
+        "meaning": "ยิ่งกว่านั้น",
+        "example": "The product is affordable; moreover, it is highly effective.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2076,11 +2700,17 @@
       "The policy saves money; on the other hand, it reduces services."
     ],
     "translations": [
-      "ในทางกลับกัน"
+      {
+        "meaning": "ในทางกลับกัน",
+        "example": "Urban life is exciting; on the other hand, it can be stressful.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2093,11 +2723,17 @@
       "Treat others with respect; likewise, you will receive respect."
     ],
     "translations": [
-      "ในทำนองเดียวกัน"
+      {
+        "meaning": "ในทำนองเดียวกัน",
+        "example": "She smiled warmly; likewise, he responded with kindness.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2110,11 +2746,17 @@
       "Similarly, other nations face the same environmental challenge."
     ],
     "translations": [
-      "เช่นเดียวกัน"
+      {
+        "meaning": "เช่นเดียวกัน",
+        "example": "Similarly, the second group showed significant improvement.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2127,11 +2769,17 @@
       "He disagreed with the ruling; nonetheless, he respected it."
     ],
     "translations": [
-      "อย่างไรก็ตาม"
+      {
+        "meaning": "อย่างไรก็ตาม",
+        "example": "The challenge was immense; nonetheless, they succeeded.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2144,11 +2792,17 @@
       "Hence, we decided to revise our entire strategy."
     ],
     "translations": [
-      "เพราะฉะนั้น"
+      {
+        "meaning": "เพราะฉะนั้น",
+        "example": "The data was unreliable; hence, the results were questioned.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2161,12 +2815,17 @@
       "Thus, we can conclude that the hypothesis was supported."
     ],
     "translations": [
-      "ดังนั้น",
-      "ด้วยวิธีนี้"
+      {
+        "meaning": "ดังนั้น / ด้วยวิธีนี้",
+        "example": "He saved money carefully and thus bought a house.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2179,12 +2838,17 @@
       "Accordingly, the committee revised its original decision."
     ],
     "translations": [
-      "ตามนั้น",
-      "ดังนั้น"
+      {
+        "meaning": "ตามนั้น / ดังนั้น",
+        "example": "The rules changed; act accordingly.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2197,11 +2861,17 @@
       "The law was passed and subsequently enforced nationwide."
     ],
     "translations": [
-      "ต่อมา"
+      {
+        "meaning": "ต่อมา",
+        "example": "He was arrested and subsequently charged with fraud.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2214,11 +2884,17 @@
       "He studied late into the night; meanwhile, the rest of the household slept."
     ],
     "translations": [
-      "ในขณะเดียวกัน"
+      {
+        "meaning": "ในขณะเดียวกัน",
+        "example": "She worked on the report; meanwhile, her colleague set up the presentation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2231,11 +2907,17 @@
       "As a result of the new policy, unemployment fell significantly."
     ],
     "translations": [
-      "เป็นผลให้"
+      {
+        "meaning": "เป็นผลให้",
+        "example": "The drought destroyed crops; as a result, food prices soared.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2248,11 +2930,17 @@
       "In addition to reducing costs, the plan also improves efficiency."
     ],
     "translations": [
-      "นอกจากนี้"
+      {
+        "meaning": "นอกจากนี้",
+        "example": "In addition, the study found a strong link between diet and mood.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2265,11 +2953,17 @@
       "Despite the evidence, he refused to change his position."
     ],
     "translations": [
-      "ถึงแม้ว่า"
+      {
+        "meaning": "ถึงแม้ว่า",
+        "example": "Despite the rain, the outdoor event continued as planned.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2282,11 +2976,17 @@
       "In spite of limited resources, the team achieved impressive results."
     ],
     "translations": [
-      "ทั้งๆ ที่"
+      {
+        "meaning": "ทั้งๆ ที่",
+        "example": "In spite of the criticism, the author stood by her argument.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2299,11 +2999,17 @@
       "Although evidence was limited, the findings were suggestive."
     ],
     "translations": [
-      "แม้ว่า"
+      {
+        "meaning": "แม้ว่า",
+        "example": "Although the task was difficult, she completed it ahead of schedule.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2316,11 +3022,17 @@
       "She faced enormous criticism; even so, she pressed forward."
     ],
     "translations": [
-      "แม้กระนั้น"
+      {
+        "meaning": "แม้กระนั้น",
+        "example": "The argument has weaknesses; even so, the core claim is valid.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2333,11 +3045,17 @@
       "She did not give up; on the contrary, she redoubled her efforts."
     ],
     "translations": [
-      "ตรงกันข้าม"
+      {
+        "meaning": "ตรงกันข้าม",
+        "example": "He is not lazy; on the contrary, he works harder than anyone.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2350,11 +3068,17 @@
       "Consider solar power; alternatively, invest in wind energy."
     ],
     "translations": [
-      "หรืออีกทางหนึ่ง"
+      {
+        "meaning": "หรืออีกทางหนึ่ง",
+        "example": "You can take the train; alternatively, you can drive.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2367,12 +3091,17 @@
       "Urban areas grew rapidly, whereas rural regions declined."
     ],
     "translations": [
-      "ในขณะที่",
-      "แต่ว่า"
+      {
+        "meaning": "ในขณะที่ / แต่ว่า",
+        "example": "She prefers reading, whereas he enjoys outdoor activities.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2385,11 +3114,17 @@
       "He specifically mentioned the need for longer deadlines."
     ],
     "translations": [
-      "โดยเฉพาะ"
+      {
+        "meaning": "โดยเฉพาะ",
+        "example": "Specifically, the report focuses on air quality in urban areas.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2402,11 +3137,17 @@
       "Consider the role of technology; for instance, social media changed communication."
     ],
     "translations": [
-      "ยกตัวอย่างเช่น"
+      {
+        "meaning": "ยกตัวอย่างเช่น",
+        "example": "Many factors contribute to success; for instance, hard work matters greatly.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2419,12 +3160,17 @@
       "Notwithstanding her fear, she gave a powerful speech."
     ],
     "translations": [
-      "ทั้งๆ ที่",
-      "แม้กระนั้น"
+      {
+        "meaning": "ทั้งๆ ที่ / แม้กระนั้น",
+        "example": "Notwithstanding the difficulties, they completed the project on time.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2437,12 +3183,17 @@
       "Further, the data suggests a long-term trend, not a temporary one."
     ],
     "translations": [
-      "นอกจากนี้",
-      "ยิ่งกว่านั้น"
+      {
+        "meaning": "นอกจากนี้ / ยิ่งกว่านั้น",
+        "example": "Further research is needed to confirm these findings.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2455,11 +3206,17 @@
       "Granted that the task is hard, we still need to attempt it."
     ],
     "translations": [
-      "ยอมรับว่า"
+      {
+        "meaning": "ยอมรับว่า",
+        "example": "Granted, the solution is imperfect, but it is better than nothing.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2472,11 +3229,17 @@
       "We canceled the event because of dangerous weather conditions."
     ],
     "translations": [
-      "เพราะว่า"
+      {
+        "meaning": "เพราะว่า",
+        "example": "She succeeded because she worked consistently every day.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2489,11 +3252,17 @@
       "The project was delayed, so the deadline was extended."
     ],
     "translations": [
-      "ดังนั้น"
+      {
+        "meaning": "ดังนั้น",
+        "example": "The evidence was overwhelming, so the jury reached a verdict quickly.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2506,11 +3275,17 @@
       "He lacked the required qualifications; for this reason, he was not hired."
     ],
     "translations": [
-      "ด้วยเหตุนี้"
+      {
+        "meaning": "ด้วยเหตุนี้",
+        "example": "The data was incomplete; for this reason, the study was retracted.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2523,11 +3298,17 @@
       "Yet, some experts remain unconvinced by the evidence."
     ],
     "translations": [
-      "แต่ถึงกระนั้น"
+      {
+        "meaning": "แต่ถึงกระนั้น",
+        "example": "The task was enormous, yet the team completed it on time.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2540,11 +3321,17 @@
       "Still, the author's main argument deserves consideration."
     ],
     "translations": [
-      "แต่ก็ยังคง"
+      {
+        "meaning": "แต่ก็ยังคง",
+        "example": "The problem was identified years ago; still, little has changed.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2557,12 +3344,17 @@
       "Reading improves vocabulary; it also builds critical thinking."
     ],
     "translations": [
-      "ด้วย",
-      "เช่นกัน"
+      {
+        "meaning": "ด้วย / เช่นกัน",
+        "example": "The law reduces inequality; it also promotes economic growth.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2575,11 +3367,17 @@
       "He has many skills; besides, he is a natural leader."
     ],
     "translations": [
-      "นอกจากนี้"
+      {
+        "meaning": "นอกจากนี้",
+        "example": "Besides being highly qualified, she has years of experience.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2592,11 +3390,17 @@
       "If the evidence is weak, the argument cannot stand."
     ],
     "translations": [
-      "ถ้าหาก"
+      {
+        "meaning": "ถ้าหาก",
+        "example": "If you study consistently, you will improve your score.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2609,11 +3413,17 @@
       "He will not change his mind unless presented with new data."
     ],
     "translations": [
-      "ยกเว้นว่า"
+      {
+        "meaning": "ยกเว้นว่า",
+        "example": "The project will fail unless we address the funding gap.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2626,11 +3436,17 @@
       "Provided that conditions improve, we will continue the program."
     ],
     "translations": [
-      "โดยมีเงื่อนไขว่า"
+      {
+        "meaning": "โดยมีเงื่อนไขว่า",
+        "example": "You may take time off, provided that your work is complete.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2643,11 +3459,17 @@
       "First, consider the long-term impact of the policy."
     ],
     "translations": [
-      "ประการแรก"
+      {
+        "meaning": "ประการแรก",
+        "example": "First, gather all the evidence before drawing conclusions.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2660,11 +3482,17 @@
       "Then, the committee voted on the final proposal."
     ],
     "translations": [
-      "จากนั้น"
+      {
+        "meaning": "จากนั้น",
+        "example": "First, analyze the data; then, draw your conclusions.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2677,11 +3505,17 @@
       "She finished the report and went home afterward."
     ],
     "translations": [
-      "หลังจากนั้น"
+      {
+        "meaning": "หลังจากนั้น",
+        "example": "He graduated; afterward, he found a job within two weeks.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2694,12 +3528,17 @@
       "Activists lobbied for stronger environmental legislation."
     ],
     "translations": [
-      "กฎหมาย",
-      "การออกกฎหมาย"
+      {
+        "meaning": "กฎหมาย / การออกกฎหมาย",
+        "example": "New legislation was passed to protect workers' rights.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2712,11 +3551,17 @@
       "The policy was accused of disenfranchising low-income voters."
     ],
     "translations": [
-      "ตัดสิทธิ์การเลือกตั้ง"
+      {
+        "meaning": "ตัดสิทธิ์การเลือกตั้ง",
+        "example": "New voter ID laws could disenfranchise minority communities.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2729,11 +3574,17 @@
       "Reformers sought to enfranchise all adult citizens."
     ],
     "translations": [
-      "ให้สิทธิ์เลือกตั้ง"
+      {
+        "meaning": "ให้สิทธิ์เลือกตั้ง",
+        "example": "The amendment enfranchised women for the first time.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2746,11 +3597,17 @@
       "The amendment was ratified by the required number of states."
     ],
     "translations": [
-      "การแก้ไขเพิ่มเติม (กฎหมาย)"
+      {
+        "meaning": "การแก้ไขเพิ่มเติม (กฎหมาย)",
+        "example": "The First Amendment protects freedom of speech.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2763,11 +3620,17 @@
       "The suffrage movement changed the course of American history."
     ],
     "translations": [
-      "สิทธิ์ออกเสียงเลือกตั้ง"
+      {
+        "meaning": "สิทธิ์ออกเสียงเลือกตั้ง",
+        "example": "Women fought for suffrage for more than seventy years.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2780,12 +3643,17 @@
       "Each constituency elects one representative to the legislature."
     ],
     "translations": [
-      "เขตเลือกตั้ง",
-      "กลุ่มผู้สนับสนุน"
+      {
+        "meaning": "เขตเลือกตั้ง / กลุ่มผู้สนับสนุน",
+        "example": "The senator regularly met with her constituency to listen to concerns.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2798,12 +3666,17 @@
       "Bipartisan cooperation is rare in today's divided political climate."
     ],
     "translations": [
-      "สองพรรคร่วม",
-      "ข้ามพรรค"
+      {
+        "meaning": "สองพรรคร่วม / ข้ามพรรค",
+        "example": "The bill passed with bipartisan support in the Senate.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2816,12 +3689,17 @@
       "The country was slow to ratify the international agreement."
     ],
     "translations": [
-      "ให้สัตยาบัน",
-      "รับรอง"
+      {
+        "meaning": "ให้สัตยาบัน / รับรอง",
+        "example": "The treaty must be ratified by two-thirds of the Senate.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2834,12 +3712,17 @@
       "His advocacy work helped change the law on workers' rights."
     ],
     "translations": [
-      "การสนับสนุน",
-      "การรณรงค์"
+      {
+        "meaning": "การสนับสนุน / การรณรงค์",
+        "example": "Her advocacy for education reform spanned three decades.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2852,11 +3735,17 @@
       "The school promotes civic responsibility through service learning."
     ],
     "translations": [
-      "เกี่ยวกับพลเมือง"
+      {
+        "meaning": "เกี่ยวกับพลเมือง",
+        "example": "Voting is a fundamental civic duty in a democracy.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2869,12 +3758,17 @@
       "Building a strong coalition is key to political success."
     ],
     "translations": [
-      "พันธมิตร",
-      "กลุ่มรวม"
+      {
+        "meaning": "พันธมิตร / กลุ่มรวม",
+        "example": "A broad coalition of groups supported the new legislation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2887,11 +3781,17 @@
       "Different laws apply depending on the jurisdiction."
     ],
     "translations": [
-      "เขตอำนาจศาล"
+      {
+        "meaning": "เขตอำนาจศาล",
+        "example": "The case falls under federal, not state, jurisdiction.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2904,11 +3804,17 @@
       "She advocated for evidence-based policy in public health."
     ],
     "translations": [
-      "นโยบาย"
+      {
+        "meaning": "นโยบาย",
+        "example": "The new policy aims to reduce income inequality.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2921,12 +3827,17 @@
       "Critics called the decision partisan rather than principled."
     ],
     "translations": [
-      "ฝักใฝ่พรรค",
-      "ลำเอียงทางการเมือง"
+      {
+        "meaning": "ฝักใฝ่พรรค / ลำเอียงทางการเมือง",
+        "example": "The debate became increasingly partisan over the years.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2939,12 +3850,17 @@
       "The mayor used her veto power to block the development plan."
     ],
     "translations": [
-      "ยับยั้ง",
-      "อำนาจยับยั้ง"
+      {
+        "meaning": "ยับยั้ง / อำนาจยับยั้ง",
+        "example": "The president threatened to veto the spending bill.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2957,11 +3873,17 @@
       "The referendum result surprised even the most experienced analysts."
     ],
     "translations": [
-      "การลงประชามติ"
+      {
+        "meaning": "การลงประชามติ",
+        "example": "The government called a referendum on independence.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2974,12 +3896,17 @@
       "Water is a key constituent of all living organisms."
     ],
     "translations": [
-      "ผู้มีสิทธิ์เลือกตั้ง",
-      "ส่วนประกอบ"
+      {
+        "meaning": "ผู้มีสิทธิ์เลือกตั้ง / ส่วนประกอบ",
+        "example": "Every constituent has the right to contact their representative.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -2992,12 +3919,17 @@
       "By royal decree, the law was suspended pending review."
     ],
     "translations": [
-      "พระราชกฤษฎีกา",
-      "คำสั่ง"
+      {
+        "meaning": "พระราชกฤษฎีกา / คำสั่ง",
+        "example": "The president issued a decree banning the practice.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3010,12 +3942,17 @@
       "She worked as a professional lobbyist in Washington D.C."
     ],
     "translations": [
-      "ล็อบบี้",
-      "กดดันทางการเมือง"
+      {
+        "meaning": "ล็อบบี้ / กดดันทางการเมือง",
+        "example": "Corporations spend millions to lobby Congress each year.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3028,12 +3965,17 @@
       "The contract was nullified because one party violated its terms."
     ],
     "translations": [
-      "ยกเลิก",
-      "ทำให้เป็นโมฆะ"
+      {
+        "meaning": "ยกเลิก / ทำให้เป็นโมฆะ",
+        "example": "The court ruled to nullify the unconstitutional law.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3046,12 +3988,17 @@
       "Congress passed a new statute to protect consumers from fraud."
     ],
     "translations": [
-      "กฎหมาย",
-      "พระราชบัญญัติ"
+      {
+        "meaning": "กฎหมาย / พระราชบัญญัติ",
+        "example": "The statute prohibits discrimination in public accommodations.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3064,11 +4011,17 @@
       "Understanding the limitations of the data is essential."
     ],
     "translations": [
-      "ข้อจำกัด"
+      {
+        "meaning": "ข้อจำกัด",
+        "example": "Every study has limitations that researchers must acknowledge.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3081,12 +4034,17 @@
       "The only recourse available was to file a formal complaint."
     ],
     "translations": [
-      "การใช้สิทธิ์",
-      "การพึ่งพา"
+      {
+        "meaning": "การใช้สิทธิ์ / การพึ่งพา",
+        "example": "Citizens have legal recourse if their rights are violated.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3099,12 +4057,17 @@
       "He feared retribution for speaking out against the corruption."
     ],
     "translations": [
-      "การลงโทษ",
-      "การตอบแทน"
+      {
+        "meaning": "การลงโทษ / การตอบแทน",
+        "example": "The victims sought retribution through the legal system.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3117,12 +4080,17 @@
       "Disparate outcomes for different groups suggest systemic inequality."
     ],
     "translations": [
-      "แตกต่างกันมาก",
-      "ไม่เหมือนกัน"
+      {
+        "meaning": "แตกต่างกันมาก / ไม่เหมือนกัน",
+        "example": "The two groups had disparate views on immigration policy.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3135,12 +4103,17 @@
       "She chose mediation over litigation to resolve the dispute."
     ],
     "translations": [
-      "การฟ้องร้อง",
-      "คดีความ"
+      {
+        "meaning": "การฟ้องร้อง / คดีความ",
+        "example": "The company faced costly litigation after the product recall.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3153,11 +4126,17 @@
       "As the plaintiff, she bore the burden of proving her case."
     ],
     "translations": [
-      "โจทก์"
+      {
+        "meaning": "โจทก์",
+        "example": "The plaintiff filed a lawsuit alleging workplace discrimination.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3170,11 +4149,17 @@
       "Under the law, every defendant is presumed innocent."
     ],
     "translations": [
-      "จำเลย"
+      {
+        "meaning": "จำเลย",
+        "example": "The defendant pleaded not guilty to all charges.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3187,12 +4172,17 @@
       "Prejudice stems from ignorance and fear of the unknown."
     ],
     "translations": [
-      "อคติ",
-      "ความลำเอียง"
+      {
+        "meaning": "อคติ / ความลำเอียง",
+        "example": "Racial prejudice continues to affect hiring decisions.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3205,12 +4195,17 @@
       "Racial equity in the workplace remains a significant challenge."
     ],
     "translations": [
-      "ความเป็นธรรม",
-      "ความเท่าเทียม"
+      {
+        "meaning": "ความเป็นธรรม / ความเท่าเทียม",
+        "example": "The policy aims to promote equity in access to education.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3223,12 +4218,17 @@
       "Addressing systemic inequality requires structural changes."
     ],
     "translations": [
-      "เกี่ยวกับระบบ",
-      "แพร่หลายในระบบ"
+      {
+        "meaning": "เกี่ยวกับระบบ / แพร่หลายในระบบ",
+        "example": "Systemic racism affects opportunity at every level of society.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3241,12 +4241,17 @@
       "The accrual of environmental damage cannot be easily reversed."
     ],
     "translations": [
-      "การสะสม",
-      "การเพิ่มพูน"
+      {
+        "meaning": "การสะสม / การเพิ่มพูน",
+        "example": "The accrual of debt over many years put the company at risk.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3259,12 +4264,17 @@
       "A negotiated settlement avoided a lengthy and costly trial."
     ],
     "translations": [
-      "การยุติ",
-      "ข้อตกลง"
+      {
+        "meaning": "การยุติ / ข้อตกลง",
+        "example": "The two companies reached a financial settlement out of court.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3277,12 +4287,17 @@
       "A fair grievance process is essential for workplace trust."
     ],
     "translations": [
-      "ข้อร้องเรียน",
-      "ความไม่พอใจ"
+      {
+        "meaning": "ข้อร้องเรียน / ความไม่พอใจ",
+        "example": "Workers filed a formal grievance against the management's decision.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3295,12 +4310,17 @@
       "The attack was widely seen as an act of retaliation."
     ],
     "translations": [
-      "การตอบโต้",
-      "การแก้แค้น"
+      {
+        "meaning": "การตอบโต้ / การแก้แค้น",
+        "example": "She feared retaliation for reporting the abuse to authorities.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3313,12 +4333,17 @@
       "Remedial action was taken after the environmental violation."
     ],
     "translations": [
-      "แก้ไข",
-      "บำบัด"
+      {
+        "meaning": "แก้ไข / บำบัด",
+        "example": "Remedial classes helped struggling students catch up.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3331,12 +4356,17 @@
       "Insidious misinformation spreads gradually without obvious signs."
     ],
     "translations": [
-      "แอบแฝง",
-      "ร้ายกาจโดยไม่เห็นได้ชัด"
+      {
+        "meaning": "แอบแฝง / ร้ายกาจโดยไม่เห็นได้ชัด",
+        "example": "Bias can be insidious, operating below the level of conscious awareness.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3349,12 +4379,17 @@
       "She sought compensation after the accident through legal channels."
     ],
     "translations": [
-      "ค่าตอบแทน",
-      "การชดเชย"
+      {
+        "meaning": "ค่าตอบแทน / การชดเชย",
+        "example": "Workers received compensation for injuries sustained on the job.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3367,11 +4402,17 @@
       "Arbitration is generally faster and less costly than court litigation."
     ],
     "translations": [
-      "การอนุญาโตตุลาการ"
+      {
+        "meaning": "การอนุญาโตตุลาการ",
+        "example": "The dispute was resolved through binding arbitration.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3384,11 +4425,17 @@
       "The law protects workers from discrimination in all its forms."
     ],
     "translations": [
-      "การเลือกปฏิบัติ"
+      {
+        "meaning": "การเลือกปฏิบัติ",
+        "example": "Discrimination in hiring based on race is illegal.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3401,11 +4448,17 @@
       "Water conservation is increasingly important in drought-prone regions."
     ],
     "translations": [
-      "การอนุรักษ์"
+      {
+        "meaning": "การอนุรักษ์",
+        "example": "Conservation efforts have helped restore the forest ecosystem.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3418,11 +4471,17 @@
       "The imperiled river ecosystem requires immediate restoration efforts."
     ],
     "translations": [
-      "ตกอยู่ในอันตราย"
+      {
+        "meaning": "ตกอยู่ในอันตราย",
+        "example": "Several imperiled species are now protected under federal law.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3435,11 +4494,17 @@
       "Protecting the coastal ecosystem benefits both wildlife and humans."
     ],
     "translations": [
-      "ระบบนิเวศ"
+      {
+        "meaning": "ระบบนิเวศ",
+        "example": "Every organism plays a role in its ecosystem.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3452,11 +4517,17 @@
       "Biodiversity is essential for ecosystem resilience and stability."
     ],
     "translations": [
-      "ความหลากหลายทางชีวภาพ"
+      {
+        "meaning": "ความหลากหลายทางชีวภาพ",
+        "example": "Tropical rainforests contain extraordinary biodiversity.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3469,12 +4540,17 @@
       "Groundwater depletion is a growing crisis in many regions."
     ],
     "translations": [
-      "การลดลง",
-      "การหมดสิ้น"
+      {
+        "meaning": "การลดลง / การหมดสิ้น",
+        "example": "Depletion of natural resources poses a serious long-term threat.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3487,11 +4563,17 @@
       "Protecting habitat is the most effective way to prevent extinction."
     ],
     "translations": [
-      "ที่อยู่อาศัยตามธรรมชาติ"
+      {
+        "meaning": "ที่อยู่อาศัยตามธรรมชาติ",
+        "example": "Deforestation destroys the natural habitat of countless species.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3504,12 +4586,17 @@
       "Mitigation of flood risk requires long-term infrastructure planning."
     ],
     "translations": [
-      "การบรรเทา",
-      "การลดความรุนแรง"
+      {
+        "meaning": "การบรรเทา / การลดความรุนแรง",
+        "example": "Planting trees is one strategy for climate change mitigation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3522,11 +4609,17 @@
       "Long-term sustainability must be the goal of any development policy."
     ],
     "translations": [
-      "ความยั่งยืน"
+      {
+        "meaning": "ความยั่งยืน",
+        "example": "Sustainability requires balancing economic growth with environmental protection.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3539,12 +4632,17 @@
       "Environmental degradation is accelerating in industrialized regions."
     ],
     "translations": [
-      "การเสื่อมสภาพ",
-      "การทำให้แย่ลง"
+      {
+        "meaning": "การเสื่อมสภาพ / การทำให้แย่ลง",
+        "example": "Soil degradation reduces agricultural productivity significantly.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3557,12 +4655,17 @@
       "Food preservation techniques have been used for thousands of years."
     ],
     "translations": [
-      "การรักษา",
-      "การอนุรักษ์"
+      {
+        "meaning": "การรักษา / การอนุรักษ์",
+        "example": "The preservation of historic buildings protects cultural heritage.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3575,11 +4678,17 @@
       "Preventing extinction requires global cooperation and commitment."
     ],
     "translations": [
-      "การสูญพันธุ์"
+      {
+        "meaning": "การสูญพันธุ์",
+        "example": "Many species face extinction due to habitat destruction.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3592,11 +4701,17 @@
       "The hatchery program was a key part of the restoration plan."
     ],
     "translations": [
-      "โรงเพาะฟัก"
+      {
+        "meaning": "โรงเพาะฟัก",
+        "example": "The salmon hatchery releases millions of fish into the river each year.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3609,12 +4724,17 @@
       "The program focused on supplementation rather than replacement of native species."
     ],
     "translations": [
-      "การเสริม",
-      "การเพิ่มเติม"
+      {
+        "meaning": "การเสริม / การเพิ่มเติม",
+        "example": "Supplementation of wild fish populations helps prevent extinction.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3627,11 +4747,17 @@
       "Researchers conducted an ecological survey of the protected zone."
     ],
     "translations": [
-      "เกี่ยวกับนิเวศวิทยา"
+      {
+        "meaning": "เกี่ยวกับนิเวศวิทยา",
+        "example": "The oil spill caused significant ecological damage to the coastline.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3644,12 +4770,17 @@
       "Rising temperatures bode poorly for polar ice preservation."
     ],
     "translations": [
-      "บ่งบอก",
-      "เป็นลางสัญญาณ"
+      {
+        "meaning": "บ่งบอก / เป็นลางสัญญาณ",
+        "example": "The declining bird population does not bode well for the ecosystem.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3662,12 +4793,17 @@
       "The data breach exposed the personal information of thousands of users."
     ],
     "translations": [
-      "การละเมิด",
-      "การฝ่าฝืน"
+      {
+        "meaning": "การละเมิด / การฝ่าฝืน",
+        "example": "The company was fined for a serious breach of environmental regulations.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3680,11 +4816,17 @@
       "The decision adversely affected workers in the manufacturing sector."
     ],
     "translations": [
-      "อย่างเป็นผลเสีย"
+      {
+        "meaning": "อย่างเป็นผลเสีย",
+        "example": "Pollution adversely affects the health of nearby communities.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3697,12 +4839,17 @@
       "The proliferation of misinformation online is a growing concern."
     ],
     "translations": [
-      "การแพร่กระจาย",
-      "การขยายตัว"
+      {
+        "meaning": "การแพร่กระจาย / การขยายตัว",
+        "example": "The proliferation of invasive species threatens native biodiversity.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3715,12 +4862,17 @@
       "Indigenous plants are better adapted to local environmental conditions."
     ],
     "translations": [
-      "พื้นเมือง",
-      "ท้องถิ่น"
+      {
+        "meaning": "พื้นเมือง / ท้องถิ่น",
+        "example": "Indigenous communities often have deep knowledge of local ecosystems.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3733,12 +4885,17 @@
       "The policy aims to protect the most vulnerable members of society."
     ],
     "translations": [
-      "เปราะบาง",
-      "ได้รับผลกระทบได้ง่าย"
+      {
+        "meaning": "เปราะบาง / ได้รับผลกระทบได้ง่าย",
+        "example": "Children and the elderly are most vulnerable during heat waves.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3751,12 +4908,17 @@
       "Economic exploitation of developing nations remains a global concern."
     ],
     "translations": [
-      "การแสวงหาประโยชน์",
-      "การใช้ประโยชน์"
+      {
+        "meaning": "การแสวงหาประโยชน์ / การใช้ประโยชน์",
+        "example": "The exploitation of natural resources must be regulated carefully.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3769,11 +4931,17 @@
       "Unpaid internships raise serious questions about labor fairness."
     ],
     "translations": [
-      "การฝึกงาน"
+      {
+        "meaning": "การฝึกงาน",
+        "example": "She completed a summer internship at a leading law firm.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3786,12 +4954,17 @@
       "The union negotiated higher remuneration for all employees."
     ],
     "translations": [
-      "ค่าตอบแทน",
-      "ค่าจ้าง"
+      {
+        "meaning": "ค่าตอบแทน / ค่าจ้าง",
+        "example": "The position offers generous remuneration and benefits.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3804,11 +4977,17 @@
       "Critics argue that unregulated technology companies pose serious risks."
     ],
     "translations": [
-      "ไม่มีการควบคุม"
+      {
+        "meaning": "ไม่มีการควบคุม",
+        "example": "Unregulated industries often cause greater harm to workers and consumers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3821,12 +5000,17 @@
       "He became a vocal proponent of renewable energy solutions."
     ],
     "translations": [
-      "ผู้สนับสนุน",
-      "ผู้เสนอ"
+      {
+        "meaning": "ผู้สนับสนุน / ผู้เสนอ",
+        "example": "She is a leading proponent of criminal justice reform.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3839,12 +5023,17 @@
       "A prevalent view among researchers is that prevention is more effective than cure."
     ],
     "translations": [
-      "แพร่หลาย",
-      "พบได้บ่อย"
+      {
+        "meaning": "แพร่หลาย / พบได้บ่อย",
+        "example": "Income inequality is increasingly prevalent in developed nations.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3857,12 +5046,17 @@
       "She climbed the corporate ladder through talent and dedication."
     ],
     "translations": [
-      "เกี่ยวกับบริษัท",
-      "องค์กร"
+      {
+        "meaning": "เกี่ยวกับบริษัท / องค์กร",
+        "example": "Corporate social responsibility has become a major business priority.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3875,12 +5069,17 @@
       "The deal turned out to be far more lucrative than expected."
     ],
     "translations": [
-      "ทำกำไรได้มาก",
-      "มีรายได้ดี"
+      {
+        "meaning": "ทำกำไรได้มาก / มีรายได้ดี",
+        "example": "Real estate investment can be extremely lucrative in growing cities.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3893,12 +5092,17 @@
       "The regulation exempts companies with fewer than ten employees."
     ],
     "translations": [
-      "ยกเว้น",
-      "ได้รับการยกเว้น"
+      {
+        "meaning": "ยกเว้น / ได้รับการยกเว้น",
+        "example": "Small businesses may be exempt from certain labor regulations.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3911,12 +5115,17 @@
       "The agreement was signed under coercion and later challenged in court."
     ],
     "translations": [
-      "การบังคับ",
-      "การข่มขู่"
+      {
+        "meaning": "การบังคับ / การข่มขู่",
+        "example": "The confession was obtained through coercion and is therefore invalid.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3929,12 +5138,17 @@
       "She completed the laborious task without complaint."
     ],
     "translations": [
-      "ยากลำบาก",
-      "ต้องใช้ความพยายามมาก"
+      {
+        "meaning": "ยากลำบาก / ต้องใช้ความพยายามมาก",
+        "example": "The data collection process was laborious and time-consuming.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3947,11 +5161,17 @@
       "She successfully negotiated a better contract for her team."
     ],
     "translations": [
-      "เจรจาต่อรอง"
+      {
+        "meaning": "เจรจาต่อรอง",
+        "example": "Workers have the legal right to negotiate their wages collectively.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3964,12 +5184,17 @@
       "She felt entitled to the promotion after years of dedicated service."
     ],
     "translations": [
-      "มีสิทธิ์",
-      "ได้รับสิทธิ์"
+      {
+        "meaning": "มีสิทธิ์ / ได้รับสิทธิ์",
+        "example": "Every worker is entitled to a safe working environment.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -3982,12 +5207,17 @@
       "A mandate from voters gave the party authority to implement change."
     ],
     "translations": [
-      "อำนาจ",
-      "คำสั่งที่มีผลผูกมัด"
+      {
+        "meaning": "อำนาจ / คำสั่งที่มีผลผูกมัด",
+        "example": "The new law mandates paid family leave for all workers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4000,12 +5230,17 @@
       "The decision was left to the discretion of the committee."
     ],
     "translations": [
-      "ดุลยพินิจ",
-      "การตัดสินใจ"
+      {
+        "meaning": "ดุลยพินิจ / การตัดสินใจ",
+        "example": "Judges use discretion when determining appropriate sentences.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4018,12 +5253,17 @@
       "This case will have a lasting impact on environmental jurisprudence."
     ],
     "translations": [
-      "นิติศาสตร์",
-      "หลักกฎหมาย"
+      {
+        "meaning": "นิติศาสตร์ / หลักกฎหมาย",
+        "example": "Constitutional jurisprudence evolves through court decisions over time.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4036,11 +5276,17 @@
       "Regular audits ensure ongoing compliance across all departments."
     ],
     "translations": [
-      "การปฏิบัติตามกฎ"
+      {
+        "meaning": "การปฏิบัติตามกฎ",
+        "example": "The company achieved full compliance with safety regulations.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4053,11 +5299,17 @@
       "Standardization allows different systems to work together effectively."
     ],
     "translations": [
-      "การกำหนดมาตรฐาน"
+      {
+        "meaning": "การกำหนดมาตรฐาน",
+        "example": "Standardization of testing procedures improves reliability.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4070,11 +5322,17 @@
       "A violation of the agreement would result in immediate penalties."
     ],
     "translations": [
-      "การละเมิด"
+      {
+        "meaning": "การละเมิด",
+        "example": "The company was fined for a serious safety violation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4087,12 +5345,17 @@
       "A formal apology was offered as recompense for the error."
     ],
     "translations": [
-      "การชดเชย",
-      "ค่าตอบแทน"
+      {
+        "meaning": "การชดเชย / ค่าตอบแทน",
+        "example": "She sought recompense for the damage caused by the company's negligence.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4105,11 +5368,17 @@
       "Workers are concerned about the impact of automation on employment."
     ],
     "translations": [
-      "การทำงานอัตโนมัติ"
+      {
+        "meaning": "การทำงานอัตโนมัติ",
+        "example": "Automation has replaced many routine manufacturing jobs.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4122,11 +5391,17 @@
       "The obsolescence of certain skills requires workers to retrain constantly."
     ],
     "translations": [
-      "การล้าสมัย"
+      {
+        "meaning": "การล้าสมัย",
+        "example": "Rapid technological change accelerates product obsolescence.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4139,12 +5414,17 @@
       "Automation can boost productivity while reducing labor costs."
     ],
     "translations": [
-      "ผลผลิต",
-      "ประสิทธิภาพการผลิต"
+      {
+        "meaning": "ผลผลิต / ประสิทธิภาพการผลิต",
+        "example": "New software increased the team's productivity by thirty percent.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4157,11 +5437,17 @@
       "Challenges in implementation often undermine well-designed policies."
     ],
     "translations": [
-      "การนำไปปฏิบัติ"
+      {
+        "meaning": "การนำไปปฏิบัติ",
+        "example": "Successful policy depends on careful implementation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4174,11 +5460,17 @@
       "She delivered her argument with clarity and precision."
     ],
     "translations": [
-      "ความแม่นยำ"
+      {
+        "meaning": "ความแม่นยำ",
+        "example": "The surgeon operated with extraordinary precision.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4191,12 +5483,17 @@
       "The successful integration of the two departments improved communication."
     ],
     "translations": [
-      "การบูรณาการ",
-      "การรวมกัน"
+      {
+        "meaning": "การบูรณาการ / การรวมกัน",
+        "example": "The integration of new technology improved workflow significantly.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4209,11 +5506,17 @@
       "Greater efficiency in government reduces waste and saves taxpayer money."
     ],
     "translations": [
-      "ประสิทธิภาพ"
+      {
+        "meaning": "ประสิทธิภาพ",
+        "example": "Streamlining the process improved overall efficiency.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4226,11 +5529,17 @@
       "The company suffered a backlash after the controversial advertisement."
     ],
     "translations": [
-      "ปฏิกิริยาต่อต้าน"
+      {
+        "meaning": "ปฏิกิริยาต่อต้าน",
+        "example": "The new policy faced a significant backlash from workers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4243,12 +5552,17 @@
       "Innovation often creates disruption before it delivers lasting benefit."
     ],
     "translations": [
-      "การรบกวน",
-      "การเปลี่ยนแปลงอย่างรุนแรง"
+      {
+        "meaning": "การรบกวน / การเปลี่ยนแปลงอย่างรุนแรง",
+        "example": "Technological disruption is transforming entire industries.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4261,12 +5575,17 @@
       "Redundancy in a system can actually improve resilience and reliability."
     ],
     "translations": [
-      "ความซ้ำซ้อน",
-      "การถูกเลิกจ้าง"
+      {
+        "meaning": "ความซ้ำซ้อน / การถูกเลิกจ้าง",
+        "example": "Automation has led to significant redundancy in the manufacturing sector.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4279,11 +5598,17 @@
       "Experts questioned the feasibility of meeting the aggressive deadline."
     ],
     "translations": [
-      "ความเป็นไปได้"
+      {
+        "meaning": "ความเป็นไปได้",
+        "example": "A feasibility study was conducted before approving the project.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4296,12 +5621,17 @@
       "She sought to augment her income through freelance work."
     ],
     "translations": [
-      "เพิ่มเติม",
-      "ขยาย"
+      {
+        "meaning": "เพิ่มเติม / ขยาย",
+        "example": "Technology can augment human capabilities rather than replace them.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4314,12 +5644,17 @@
       "The hybrid approach combines the best elements of two methods."
     ],
     "translations": [
-      "ลูกผสม",
-      "รูปแบบผสม"
+      {
+        "meaning": "ลูกผสม / รูปแบบผสม",
+        "example": "Many companies now offer hybrid work models combining remote and office days.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4332,11 +5667,17 @@
       "The technology represents an unprecedented leap forward in computing."
     ],
     "translations": [
-      "ไม่เคยมีมาก่อน"
+      {
+        "meaning": "ไม่เคยมีมาก่อน",
+        "example": "The pandemic caused unprecedented disruption to the global economy.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4349,12 +5690,17 @@
       "Economic displacement requires government support for retraining programs."
     ],
     "translations": [
-      "การแทนที่",
-      "การพลัดถิ่น"
+      {
+        "meaning": "การแทนที่ / การพลัดถิ่น",
+        "example": "Automation has caused widespread job displacement in manufacturing.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4367,11 +5713,17 @@
       "The outdated software was declared obsolete and replaced."
     ],
     "translations": [
-      "ล้าสมัย"
+      {
+        "meaning": "ล้าสมัย",
+        "example": "Fax machines have become largely obsolete in the digital age.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4384,11 +5736,17 @@
       "Capital-intensive projects require long-term financial planning and commitment."
     ],
     "translations": [
-      "ต้องใช้เงินทุนสูง"
+      {
+        "meaning": "ต้องใช้เงินทุนสูง",
+        "example": "Nuclear energy is a capital-intensive technology with high upfront costs.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4401,12 +5759,17 @@
       "Environmental groups called for a moratorium on deep-sea mining."
     ],
     "translations": [
-      "การพักชำระหนี้",
-      "การระงับชั่วคราว"
+      {
+        "meaning": "การพักชำระหนี้ / การระงับชั่วคราว",
+        "example": "The government declared a moratorium on new oil drilling permits.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4419,11 +5782,17 @@
       "Wage growth must be balanced with maintaining economic competitiveness."
     ],
     "translations": [
-      "ความสามารถในการแข่งขัน"
+      {
+        "meaning": "ความสามารถในการแข่งขัน",
+        "example": "Investing in education improves a nation's long-term competitiveness.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4436,12 +5805,17 @@
       "She chose to retrain as a data analyst after her industry declined."
     ],
     "translations": [
-      "ฝึกทักษะใหม่",
-      "อบรมใหม่"
+      {
+        "meaning": "ฝึกทักษะใหม่ / อบรมใหม่",
+        "example": "Workers displaced by automation need opportunities to retrain.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4454,12 +5828,17 @@
       "The accelerating pace of change challenges traditional systems."
     ],
     "translations": [
-      "เพิ่มความรุนแรง",
-      "เร่งขึ้น"
+      {
+        "meaning": "เพิ่มความรุนแรง / เร่งขึ้น",
+        "example": "The report asserts that climate change is accelerating.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4472,12 +5851,17 @@
       "The alarming statistics prompted immediate government action."
     ],
     "translations": [
-      "น่าตกใจ",
-      "น่าเป็นห่วง"
+      {
+        "meaning": "น่าตกใจ / น่าเป็นห่วง",
+        "example": "The rate of deforestation is alarming.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4490,11 +5874,17 @@
       "Once lost, this biodiversity is irreplaceable."
     ],
     "translations": [
-      "ทดแทนไม่ได้"
+      {
+        "meaning": "ทดแทนไม่ได้",
+        "example": "These ancient forests are irreplaceable.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4507,11 +5897,17 @@
       "The patient suffered severe side effects from the treatment."
     ],
     "translations": [
-      "รุนแรง"
+      {
+        "meaning": "รุนแรง",
+        "example": "The drought had severe consequences for local farmers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4524,11 +5920,17 @@
       "Climate change poses serious threats to global food supplies."
     ],
     "translations": [
-      "ภัยคุกคาม"
+      {
+        "meaning": "ภัยคุกคาม",
+        "example": "Pollution and overfishing are major threats to marine life.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4541,11 +5943,17 @@
       "Her efforts to improve education inspired the whole community."
     ],
     "translations": [
-      "ความพยายาม"
+      {
+        "meaning": "ความพยายาม",
+        "example": "Despite efforts to reduce emissions, pollution levels remain high.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4558,11 +5966,17 @@
       "Local communities play a key role in preserving traditions."
     ],
     "translations": [
-      "อนุรักษ์ไว้"
+      {
+        "meaning": "อนุรักษ์ไว้",
+        "example": "Preserving natural habitats is essential for biodiversity.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4575,12 +5989,17 @@
       "This region is considered a biodiversity hotspot."
     ],
     "translations": [
-      "ถือว่า",
-      "ได้รับการพิจารณา"
+      {
+        "meaning": "ถือว่า / ได้รับการพิจารณา",
+        "example": "Coral reefs are considered among the most diverse ecosystems.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4593,11 +6012,17 @@
       "Economic trends indicate a slowdown in growth."
     ],
     "translations": [
-      "แนวโน้ม"
+      {
+        "meaning": "แนวโน้ม",
+        "example": "Current trends suggest that temperatures will continue to rise.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4610,11 +6035,17 @@
       "Only a fraction of the original population remains."
     ],
     "translations": [
-      "สิ่งที่เหลืออยู่"
+      {
+        "meaning": "สิ่งที่เหลืออยู่",
+        "example": "Much of the rainforest remains untouched by human activity.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4627,11 +6058,17 @@
       "Species diversity is a key indicator of ecosystem health."
     ],
     "translations": [
-      "ความหลากหลาย"
+      {
+        "meaning": "ความหลากหลาย",
+        "example": "The Amazon rainforest is known for its incredible diversity.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4644,12 +6081,17 @@
       "The discovery was an extraordinary breakthrough in medicine."
     ],
     "translations": [
-      "ยอดเยี่ยม",
-      "ไม่ธรรมดา"
+      {
+        "meaning": "ยอดเยี่ยม / ไม่ธรรมดา",
+        "example": "Coral reefs support an extraordinary variety of marine life.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4662,11 +6104,17 @@
       "The government established a marine protected area."
     ],
     "translations": [
-      "เกี่ยวกับทะเล"
+      {
+        "meaning": "เกี่ยวกับทะเล",
+        "example": "Marine biologists study life in the ocean.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4679,11 +6127,17 @@
       "Severe bleaching can kill entire reef systems."
     ],
     "translations": [
-      "การฟอกขาว"
+      {
+        "meaning": "การฟอกขาว",
+        "example": "Rising ocean temperatures cause coral bleaching.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4696,12 +6150,17 @@
       "The body expels toxins through sweat and urine."
     ],
     "translations": [
-      "ขับออก",
-      "ไล่ออก"
+      {
+        "meaning": "ขับออก / ไล่ออก",
+        "example": "Stressed coral expels the algae living in its tissues.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4714,11 +6173,17 @@
       "Some species of algae are used as a food source."
     ],
     "translations": [
-      "สาหร่าย"
+      {
+        "meaning": "สาหร่าย",
+        "example": "Coral reefs depend on algae for nutrition and color.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4731,11 +6196,17 @@
       "Scientists studied the tissues under a microscope."
     ],
     "translations": [
-      "เนื้อเยื่อ"
+      {
+        "meaning": "เนื้อเยื่อ",
+        "example": "The algae live within the coral's tissues.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4748,11 +6219,17 @@
       "Plants can suffocate if their roots are completely submerged."
     ],
     "translations": [
-      "ทำให้หายใจไม่ออก"
+      {
+        "meaning": "ทำให้หายใจไม่ออก",
+        "example": "Agricultural runoff causes algae blooms that suffocate marine life.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4765,11 +6242,17 @@
       "Researchers are developing heat-resistant crop varieties."
     ],
     "translations": [
-      "ทนทานต่อ"
+      {
+        "meaning": "ทนทานต่อ",
+        "example": "Some coral species are more resistant to bleaching than others.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4782,11 +6265,17 @@
       "Repeated exposure to stress can harm mental health."
     ],
     "translations": [
-      "ซ้ำๆ"
+      {
+        "meaning": "ซ้ำๆ",
+        "example": "Repeated bleaching events prevent coral from recovering.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4799,12 +6288,17 @@
       "A long highway stretching across the plains came into view."
     ],
     "translations": [
-      "ทอดยาว",
-      "ขยาย"
+      {
+        "meaning": "ทอดยาว / ขยาย",
+        "example": "The Great Barrier Reef stretches over 2,300 kilometers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4817,11 +6311,17 @@
       "Scientists discovered a new species of deep-sea mollusk."
     ],
     "translations": [
-      "หอย"
+      {
+        "meaning": "หอย",
+        "example": "The octopus is a type of mollusk.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   },
   {
@@ -4834,11 +6334,17 @@
       "Not all students are able to access quality education."
     ],
     "translations": [
-      "สามารถ"
+      {
+        "meaning": "สามารถ",
+        "example": "Some coral species are able to recover if conditions improve.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
     ],
     "tags": [
-      "academic",
-      "reading"
+      "ged_rla"
     ]
   }
 ]
