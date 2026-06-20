@@ -19,6 +19,8 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [example, setExample] = useState('');
   const [timeLeft, setTimeLeft] = useState(10);
   const timerRef = useRef(null);
+  const [showEffect, setShowEffect] = useState(false);
+  const [effectData, setEffectData] = useState(null);
 
   const resetTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
@@ -113,35 +115,47 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     }
   }, [game.gameOver]);
 
+  const showEffectOverlay = (data) => {
+    setEffectData(data);
+    setShowEffect(true);
+    setTimeout(() => setShowEffect(false), GAME.EFFECT_DURATION_MS);
+  };
+
   const handleChoice = (idx) => {
     if (timerRef.current) clearInterval(timerRef.current);
     if (selectedIndex !== -1) return;
     setSelectedIndex(idx);
 
+    const oldRank = getRankFromStat(currentWord.stat);
+
     if (isInBoss) {
       // === BOSS LOGIC ===
       if (idx === correctIndex) {
-        const earned = game.handleCorrect(currentWord.stat.interval);
+        game.handleCorrect(currentWord.stat.interval);
         setFeedback('correct');
-
-        // เฉพาะ update lastSeen ของคำ (ไม่อัพ interval)
         updateStat(currentWord.word.id, {
           ...currentWord.stat,
           lastSeen: new Date().toISOString().split('T')[0]
+        });
+        showEffectOverlay({
+          type: 'correct',
+          word: currentWord.word.word,
+          icon: '⚔️',
+          message: 'Boss Hit!',
+          bgColor: 'rgba(0,0,0,0.85)',
+          rankColor: oldRank.color,
         });
 
         setBossHp(prev => {
           const newBossHp = prev - 1;
           if (newBossHp <= 0) {
-            // Boss ตาย → ไป floor ใหม่
             setTimeout(() => {
               setIsInBoss(false);
               setBossSkipped(false);
               game.nextRoom();
               pickNext();
-            }, 1200);
+            }, GAME.EFFECT_DURATION_MS);
           } else {
-            // Boss ยังไม่ตาย → คำใหม่ใน Boss เดียวกัน
             setTimeout(() => {
               const newBoss = selectBossWordFromAll(words, wordStats, getStat);
               if (newBoss) {
@@ -152,31 +166,59 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
                 setSelectedIndex(-1);
                 setFeedback(null);
               }
-            }, 1200);
+            }, GAME.EFFECT_DURATION_MS);
           }
           return newBossHp;
         });
       } else {
-        // ผิด → reset คำกลับไป 1 วัน + HP -1
         game.handleIncorrect(currentWord.word);
         setFeedback('wrong');
         const updated = onIncorrect(currentWord.stat);
         updateStat(currentWord.word.id, updated);
+        showEffectOverlay({
+          type: 'wrong',
+          word: currentWord.word.word,
+          icon: '💔',
+          message: 'กลับไป interval 1 วัน',
+          bgColor: 'rgba(100,0,0,0.85)',
+          rankColor: 'text-red-400',
+        });
       }
       return;
     }
 
     // === NORMAL LOGIC ===
     if (idx === correctIndex) {
-      const earned = game.handleCorrect(currentWord.stat.interval);
+      game.handleCorrect(currentWord.stat.interval);
       setFeedback('correct');
       const updated = onCorrect(currentWord.stat);
       updateStat(currentWord.word.id, updated);
+
+      const newRank = getRankFromStat(updated);
+      const rankChanged = oldRank.label !== newRank.label;
+      showEffectOverlay({
+        type: 'correct',
+        word: currentWord.word.word,
+        icon: rankChanged ? (newRank.icon || '✨') : '✓',
+        message: rankChanged ? `อัพระดับ! → ${newRank.label}` : 'ตอบถูก!',
+        bgColor: 'rgba(0,0,0,0.85)',
+        rankColor: newRank.color,
+      });
     } else {
       game.handleIncorrect(currentWord.word);
       setFeedback('wrong');
       const updated = onIncorrect(currentWord.stat);
       updateStat(currentWord.word.id, updated);
+
+      const wasLearning = ['new', 'learning'].includes(currentWord.stat.status);
+      showEffectOverlay({
+        type: 'wrong',
+        word: currentWord.word.word,
+        icon: '💔',
+        message: wasLearning ? 'ตอบผิด! ลองใหม่' : 'กลับไป interval 1 วัน',
+        bgColor: 'rgba(100,0,0,0.85)',
+        rankColor: 'text-red-400',
+      });
     }
   };
 
@@ -191,6 +233,20 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   return (
     <div className="min-h-screen flex flex-col p-4 font-mono">
+
+      {/* === EFFECT OVERLAY === */}
+      {showEffect && effectData && (
+        <div
+          className="fixed inset-0 flex flex-col items-center justify-center z-50 font-mono"
+          style={{ backgroundColor: effectData.bgColor }}
+        >
+          <div className={`text-3xl mb-4 ${effectData.rankColor}`}>
+            {effectData.word}
+          </div>
+          <div className="text-6xl mb-4">{effectData.icon}</div>
+          <div className="text-xl text-white">{effectData.message}</div>
+        </div>
+      )}
       {/* === TOP BAR === */}
       <div className="flex justify-between text-xs text-zinc-400 mb-4">
         <div>Floor {game.floor} — Room {game.room}/{GAME.ROOMS_PER_FLOOR}</div>

@@ -56,6 +56,7 @@ export const GAME = {
   BOSS_HP: 3,
   CHOICES_COUNT: 4,
   BOSS_MIN_INTERVAL: 7,  // คำที่ใช้เป็น boss ต้อง interval >= 7
+  EFFECT_DURATION_MS: 1200,
 };
 
 // ========== RANK DISPLAY ==========
