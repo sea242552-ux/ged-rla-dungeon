@@ -240,9 +240,6 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
           className="fixed inset-0 flex flex-col items-center justify-center z-50 font-mono"
           style={{ backgroundColor: effectData.bgColor }}
         >
-          <div className={`text-3xl mb-4 ${effectData.rankColor}`}>
-            {effectData.word}
-          </div>
           <div className="text-6xl mb-4">{effectData.icon}</div>
           <div className="text-xl text-white">{effectData.message}</div>
         </div>
