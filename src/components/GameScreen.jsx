@@ -3,7 +3,9 @@ import { GAME } from '../config/constants';
 import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
 import { selectNextWord, generateChoices, selectBossWordFromAll } from '../engine/wordSelector';
-import { onCorrect, onIncorrect } from '../engine/srs';
+import { onCorrect, onIncorrect, isDue } from '../engine/srs';
+import { calculateNewCardsAllowed } from '../engine/newCardGate';
+import { createDefaultStat } from '../data/storage';
 
 export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
   const game = useGameState();
@@ -21,6 +23,8 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const timerRef = useRef(null);
   const [showEffect, setShowEffect] = useState(false);
   const [effectData, setEffectData] = useState(null);
+  const [sessionComplete, setSessionComplete] = useState(false);
+  const [bossOnlyMode, setBossOnlyMode] = useState(false);
 
   const resetTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
@@ -42,6 +46,35 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     }, 1000);
   }, [currentWord, correctIndex]);
 
+  const isSessionComplete = (virtualStats) => {
+    let pressure = 0, newCount = 0;
+    for (const w of words) {
+      const stat = virtualStats[w.id] || createDefaultStat();
+      if (stat.status === 'learning') pressure++;
+      else if ((stat.status === 'review' || stat.status === 'relearning') && isDue(stat)) pressure++;
+      else if (stat.status === 'new') newCount++;
+    }
+    const newAllowed = calculateNewCardsAllowed(virtualStats);
+    return pressure === 0 && Math.min(newCount, newAllowed) === 0;
+  };
+
+  const pickNextBossOnly = useCallback(() => {
+    const boss = selectBossWordFromAll(words, wordStats, getStat);
+    if (!boss) {
+      setSessionComplete(true);
+      return;
+    }
+    setIsInBoss(true);
+    setBossHp(GAME.BOSS_HP);
+    setCurrentWord(boss);
+    const { choices, correctIndex } = generateChoices(boss.word, words);
+    setChoices(choices);
+    setCorrectIndex(correctIndex);
+    setSelectedIndex(-1);
+    setFeedback(null);
+    setExample(boss.word.examples[Math.floor(Math.random() * boss.word.examples.length)]);
+  }, [words, wordStats, getStat]);
+
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
     let next = selectNextWord(words, wordStats, getStat, recentWordIds.current);
@@ -62,6 +95,10 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   }, [words, wordStats, getStat]);
 
   const pickNext = useCallback(() => {
+    if (bossOnlyMode) {
+      pickNextBossOnly();
+      return;
+    }
     if (game.isBossRoom && !bossSkipped) {
       const boss = selectBossWordFromAll(words, wordStats, getStat);
       if (!boss) {
@@ -85,7 +122,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       return;
     }
     pickNextNormal();
-  }, [game.isBossRoom, bossSkipped, words, wordStats, getStat, pickNextNormal]);
+  }, [game.isBossRoom, bossSkipped, words, wordStats, getStat, pickNextNormal, bossOnlyMode, pickNextBossOnly]);
 
   useEffect(() => {
     if (currentWord) resetTimer();
@@ -204,6 +241,11 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         bgColor: 'rgba(0,0,0,0.85)',
         rankColor: newRank.color,
       });
+
+      const virtualStats = { ...wordStats, [currentWord.word.id]: updated };
+      if (!bossOnlyMode && isSessionComplete(virtualStats)) {
+        setTimeout(() => setSessionComplete(true), GAME.EFFECT_DURATION_MS + 300);
+      }
     } else {
       game.handleIncorrect(currentWord.word);
       setFeedback('wrong');
@@ -222,6 +264,22 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     }
   };
 
+  const handleEnterBossOnly = () => {
+    game.resetScore();
+    setBossOnlyMode(true);
+    setSessionComplete(false);
+    pickNextBossOnly();
+  };
+
+  const handleSessionEnd = () => {
+    onGameOver({
+      score: game.score,
+      floor: game.floor,
+      wordsLearned: game.wordsLearned,
+      wrongAnswers: game.wrongAnswers,
+    });
+  };
+
   // === Loading ===
   if (!currentWord) {
     return <div className="p-4 font-mono">Loading...</div>;
@@ -233,6 +291,31 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   return (
     <div className="min-h-screen flex flex-col p-4 font-mono">
+
+      {/* === SESSION COMPLETE OVERLAY === */}
+      {sessionComplete && (
+        <div className="fixed inset-0 flex flex-col items-center justify-center z-50 bg-black/90 font-mono px-6">
+          <div className="text-5xl mb-4">🎉</div>
+          <div className="text-xl text-white mb-2">ยินดีด้วย!</div>
+          <div className="text-sm text-zinc-400 mb-8 text-center">
+            คุณเรียนรู้คำครบของวันนี้แล้ว
+          </div>
+          <div className="flex flex-col gap-3 w-full max-w-xs">
+            <button
+              onClick={handleEnterBossOnly}
+              className="p-3 bg-red-900 hover:bg-red-800 rounded text-white"
+            >
+              ⚔️ เล่นต่อ (Boss Only Mode)
+            </button>
+            <button
+              onClick={handleSessionEnd}
+              className="p-3 bg-zinc-800 hover:bg-zinc-700 rounded text-zinc-300"
+            >
+              จบเกม
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* === EFFECT OVERLAY === */}
       {showEffect && effectData && (

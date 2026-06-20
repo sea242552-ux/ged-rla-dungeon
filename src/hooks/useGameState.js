@@ -67,6 +67,11 @@ export function useGameState() {
     setGameOver(false);
   }, []);
 
+  const resetScore = useCallback(() => {
+    setScore(0);
+    setCombo(0);
+  }, []);
+
   return {
     hp, score, combo, room, floor, wordsLearned, wrongAnswers, gameOver,
     isBossRoom,
@@ -74,6 +79,7 @@ export function useGameState() {
     handleIncorrect,
     nextRoom,
     reset,
+    resetScore,
     multiplier: getMultiplier(combo),
   };
 }
