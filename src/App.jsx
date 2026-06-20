@@ -5,7 +5,6 @@ import GameScreen from './components/GameScreen';
 import WordVault from './components/WordVault';
 import GameOverScreen from './components/GameOverScreen';
 import LeaderboardScreen from './components/LeaderboardScreen';
-import ConnectorMode from './components/ConnectorMode';
 
 function App() {
   const progress = useProgress();
@@ -34,10 +33,6 @@ function App() {
     return <LeaderboardScreen onBack={() => setScreen('home')} />;
   }
 
-  if (screen === 'connector') {
-    return <ConnectorMode onExit={() => setScreen('home')} />;
-  }
-
   if (screen === 'gameover') {
     return (
       <GameOverScreen
@@ -55,7 +50,6 @@ function App() {
       onStart={() => setScreen('game')}
       onVault={() => setScreen('vault')}
       onLeaderboard={() => setScreen('leaderboard')}
-      onConnector={() => setScreen('connector')}
       onReset={progress.resetAll}
     />
   );

@@ -4,7 +4,7 @@ import { calculateNewCardsAllowed } from '../engine/newCardGate';
 import { RANK_INFO } from '../config/constants';
 import { countFastTrack } from '../engine/fastTrack';
 
-export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset, onConnector }) {
+export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset }) {
   const stats = useMemo(() => {
     const buckets = {
       new: 0,
@@ -107,12 +107,6 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
             className="p-3 bg-zinc-900 hover:bg-zinc-800 rounded"
           >
             🏆 Leaderboard
-          </button>
-          <button
-            onClick={onConnector}
-            className="p-3 bg-zinc-900 hover:bg-zinc-800 rounded col-span-2"
-          >
-            🔗 Connector Practice
           </button>
         </div>
 
