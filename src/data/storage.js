@@ -92,6 +92,15 @@ export function addLeaderboardEntry(entry) {
   return top10;
 }
 
+// ========== Speech Setting ==========
+export function getSpeechEnabled() {
+  return read(STORAGE_KEYS.SPEECH_ENABLED, false);
+}
+
+export function saveSpeechEnabled(value) {
+  write(STORAGE_KEYS.SPEECH_ENABLED, value);
+}
+
 // ========== Reset ==========
 export function resetAllProgress() {
   localStorage.removeItem(STORAGE_KEYS.WORD_STATS);

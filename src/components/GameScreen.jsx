@@ -5,7 +5,8 @@ import { useGameState } from '../hooks/useGameState';
 import { selectNextWord, generateChoices, selectBossWordFromAll } from '../engine/wordSelector';
 import { onCorrect, onIncorrect, isDue } from '../engine/srs';
 import { calculateNewCardsAllowed } from '../engine/newCardGate';
-import { createDefaultStat } from '../data/storage';
+import { createDefaultStat, getSpeechEnabled, saveSpeechEnabled } from '../data/storage';
+import { speak } from '../utils/speech';
 
 export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
   const game = useGameState();
@@ -25,6 +26,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [effectData, setEffectData] = useState(null);
   const [sessionComplete, setSessionComplete] = useState(false);
   const [bossOnlyMode, setBossOnlyMode] = useState(false);
+  const [speechEnabled, setSpeechEnabled] = useState(getSpeechEnabled);
 
   const resetTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
@@ -128,6 +130,10 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     if (currentWord) resetTimer();
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
   }, [currentWord]);
+
+  useEffect(() => {
+    if (speechEnabled && currentWord) speak(currentWord.word.word);
+  }, [currentWord?.word.id, speechEnabled]);
 
   // เริ่มเกม: pick คำแรก
   useEffect(() => {
@@ -330,7 +336,21 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       {/* === TOP BAR === */}
       <div className="flex justify-between text-xs text-zinc-400 mb-4">
         <div>Floor {game.floor} — Room {game.room}/{GAME.ROOMS_PER_FLOOR}</div>
-        <div>Score: <span className="text-white">{game.score}</span></div>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => {
+              const next = !speechEnabled;
+              setSpeechEnabled(next);
+              saveSpeechEnabled(next);
+              if (next && currentWord) speak(currentWord.word.word);
+            }}
+            className="text-base"
+            title={speechEnabled ? 'ปิดเสียง' : 'เปิดเสียง'}
+          >
+            {speechEnabled ? '🔊' : '🔇'}
+          </button>
+          <div>Score: <span className="text-white">{game.score}</span></div>
+        </div>
       </div>
 
       {/* === BOSS BANNER === */}

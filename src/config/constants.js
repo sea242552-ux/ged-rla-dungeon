@@ -75,4 +75,5 @@ export const STORAGE_KEYS = {
   WORD_STATS: 'gedRlaDungeon_wordStats',
   PLAYER_STATS: 'gedRlaDungeon_playerStats',
   LEADERBOARD: 'gedRlaDungeon_leaderboard',
+  SPEECH_ENABLED: 'gedRlaDungeon_speechEnabled',
 };
