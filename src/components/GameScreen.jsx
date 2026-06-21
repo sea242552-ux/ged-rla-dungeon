@@ -393,8 +393,17 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         <div className="text-xs text-zinc-500 mb-2">
           {rank.icon} {rank.label}
         </div>
-        <div className={`text-4xl mb-2 ${rank.color}`}>
-          {currentWord.word.word}
+        <div className="flex items-center gap-2 mb-2">
+          <div className={`text-4xl ${rank.color}`}>
+            {currentWord.word.word}
+          </div>
+          <button
+            onClick={() => speak(currentWord.word.word)}
+            className="text-xl text-zinc-500 hover:text-white"
+            title="ออกเสียงอีกครั้ง"
+          >
+            🔉
+          </button>
         </div>
         <div className={`text-xs italic mb-8 text-center max-w-md transition-colors ${feedback ? 'text-zinc-300' : 'text-zinc-600'}`}>
           {example}
