@@ -1,4 +1,4 @@
-import { STORAGE_KEYS } from '../config/constants';
+import { STORAGE_KEYS, DAILY_LIMITS } from '../config/constants';
 
 // ========== Generic helpers ==========
 function read(key, defaultValue) {
@@ -57,14 +57,36 @@ export function createDefaultStat() {
 }
 
 // ========== Player Stats ==========
+const PLAYER_STATS_DEFAULT = {
+  streak: 0,
+  lastPlayed: null,
+  totalSeen: 0,
+  totalLearned: 0,
+  highScore: 0,
+  dailyDate: null,
+  dailyNewLimit: DAILY_LIMITS.NEW_DEFAULT,
+  dailyReviewLimit: DAILY_LIMITS.REVIEW_DEFAULT,
+  dailyNewSeen: [],
+  dailyReviewSeen: [],
+};
+
 export function getPlayerStats() {
-  return read(STORAGE_KEYS.PLAYER_STATS, {
-    streak: 0,
-    lastPlayed: null,
-    totalSeen: 0,
-    totalLearned: 0,
-    highScore: 0,
-  });
+  const saved = read(STORAGE_KEYS.PLAYER_STATS, {});
+  return { ...PLAYER_STATS_DEFAULT, ...saved };
+}
+
+// reset daily counters เมื่อข้ามวัน
+export function ensureDailyReset(playerStats) {
+  const today = todayISO();
+  if (playerStats.dailyDate !== today) {
+    return {
+      ...playerStats,
+      dailyDate: today,
+      dailyNewSeen: [],
+      dailyReviewSeen: [],
+    };
+  }
+  return playerStats;
 }
 
 export function savePlayerStats(stats) {

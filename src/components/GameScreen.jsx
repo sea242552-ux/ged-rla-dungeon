@@ -3,9 +3,8 @@ import { GAME, RECENT_WORDS_BUFFER } from '../config/constants';
 import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
 import { selectNextWord, generateChoices, selectBossWordFromAll } from '../engine/wordSelector';
-import { onCorrect, onIncorrect, isDue } from '../engine/srs';
-import { calculateNewCardsAllowed } from '../engine/newCardGate';
-import { createDefaultStat, getSpeechEnabled, saveSpeechEnabled } from '../data/storage';
+import { onCorrect, onIncorrect } from '../engine/srs';
+import { getSpeechEnabled, saveSpeechEnabled, todayISO } from '../data/storage';
 import { speak } from '../utils/speech';
 
 export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
@@ -48,18 +47,6 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     }, 1000);
   }, [currentWord, correctIndex]);
 
-  const isSessionComplete = (virtualStats) => {
-    let pressure = 0, newCount = 0;
-    for (const w of words) {
-      const stat = virtualStats[w.id] || createDefaultStat();
-      if (stat.status === 'learning') pressure++;
-      else if ((stat.status === 'review' || stat.status === 'relearning') && isDue(stat)) pressure++;
-      else if (stat.status === 'new') newCount++;
-    }
-    const newAllowed = calculateNewCardsAllowed(virtualStats);
-    return pressure === 0 && Math.min(newCount, newAllowed) === 0;
-  };
-
   const pickNextBossOnly = useCallback(() => {
     const boss = selectBossWordFromAll(words, wordStats, getStat);
     if (!boss) {
@@ -77,15 +64,44 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     setExample(boss.word.examples[Math.floor(Math.random() * boss.word.examples.length)]);
   }, [words, wordStats, getStat]);
 
+  // คำนวณ daily context (ทำ reset ถ้าข้ามวัน)
+  const buildDailyContext = () => {
+    const today = todayISO();
+    const sameDay = playerStats.dailyDate === today;
+    const newSeen = sameDay ? (playerStats.dailyNewSeen || []) : [];
+    const reviewSeen = sameDay ? (playerStats.dailyReviewSeen || []) : [];
+    return {
+      newSeen,
+      reviewSeen,
+      newRemaining: (playerStats.dailyNewLimit ?? 10) - newSeen.length,
+      reviewRemaining: (playerStats.dailyReviewLimit ?? 30) - reviewSeen.length,
+    };
+  };
+
+  // นับคำที่เพิ่งเห็นวันนี้ (ครั้งเดียวต่อคำต่อวัน)
+  const trackDailyWord = (wordId, originalStatus) => {
+    const today = todayISO();
+    const sameDay = playerStats.dailyDate === today;
+    const newSeen = sameDay ? (playerStats.dailyNewSeen || []) : [];
+    const reviewSeen = sameDay ? (playerStats.dailyReviewSeen || []) : [];
+    if (newSeen.includes(wordId) || reviewSeen.includes(wordId)) return;
+
+    if (originalStatus === 'new') {
+      updatePlayer({ dailyDate: today, dailyNewSeen: [...newSeen, wordId], dailyReviewSeen: reviewSeen });
+    } else {
+      updatePlayer({ dailyDate: today, dailyNewSeen: newSeen, dailyReviewSeen: [...reviewSeen, wordId] });
+    }
+  };
+
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
-    let next = selectNextWord(words, wordStats, getStat, recentWordIds.current);
+    const dailyContext = buildDailyContext();
+    const next = selectNextWord(words, wordStats, getStat, recentWordIds.current, dailyContext);
     if (!next) {
-      const available = words.filter(w => !recentWordIds.current.includes(w.id));
-      const pool = available.length > 0 ? available : words;
-      const fallback = pool[Math.floor(Math.random() * pool.length)];
-      next = { word: fallback, stat: getStat(fallback.id) };
+      setSessionComplete(true);
+      return;
     }
+    trackDailyWord(next.word.id, next.stat.status);
     setCurrentWord(next);
     recentWordIds.current = [...recentWordIds.current.slice(-(RECENT_WORDS_BUFFER - 1)), next.word.id];
     const { choices, correctIndex } = generateChoices(next.word, words);
@@ -94,7 +110,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     setSelectedIndex(-1);
     setFeedback(null);
     setExample(next.word.examples[Math.floor(Math.random() * next.word.examples.length)]);
-  }, [words, wordStats, getStat]);
+  }, [words, wordStats, getStat, playerStats]);
 
   const pickNext = useCallback(() => {
     if (bossOnlyMode) {
@@ -248,10 +264,6 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         rankColor: newRank.color,
       });
 
-      const virtualStats = { ...wordStats, [currentWord.word.id]: updated };
-      if (!bossOnlyMode && isSessionComplete(virtualStats)) {
-        setTimeout(() => setSessionComplete(true), GAME.EFFECT_DURATION_MS + 300);
-      }
     } else {
       game.handleIncorrect(currentWord.word);
       setFeedback('wrong');

@@ -1,10 +1,23 @@
 import { useMemo } from 'react';
 import { isDue } from '../engine/srs';
 import { calculateNewCardsAllowed } from '../engine/newCardGate';
-import { RANK_INFO } from '../config/constants';
+import { RANK_INFO, DAILY_LIMITS } from '../config/constants';
 import { countFastTrack } from '../engine/fastTrack';
+import { todayISO } from '../data/storage';
 
-export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset }) {
+export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset, updatePlayer }) {
+  const today = todayISO();
+  const sameDay = playerStats.dailyDate === today;
+  const newSeen = sameDay ? (playerStats.dailyNewSeen || []) : [];
+  const reviewSeen = sameDay ? (playerStats.dailyReviewSeen || []) : [];
+  const newLimit = playerStats.dailyNewLimit ?? DAILY_LIMITS.NEW_DEFAULT;
+  const reviewLimit = playerStats.dailyReviewLimit ?? DAILY_LIMITS.REVIEW_DEFAULT;
+
+  const adjustLimit = (field, delta, max) => {
+    const current = playerStats[field] ?? 0;
+    const next = Math.max(0, Math.min(max, current + delta));
+    updatePlayer({ [field]: next });
+  };
   const stats = useMemo(() => {
     const buckets = {
       new: 0,
@@ -62,6 +75,47 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
             <div>Due: <span className="text-white">{stats.due}</span></div>
             <div>Learning: <span className="text-white">{stats.learning}</span></div>
             <div>New: <span className="text-white">{Math.min(stats.new, newCardsAllowed)}</span></div>
+          </div>
+        </div>
+
+        {/* === DAILY LIMITS === */}
+        <div className="bg-zinc-900 rounded-lg p-3 mb-4">
+          <div className="text-xs text-zinc-500 mb-2">จำกัดต่อวัน</div>
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <div className="text-xs text-zinc-400 mb-1">คำใหม่</div>
+              <div className="flex items-center justify-between bg-zinc-950 rounded px-2 py-1">
+                <button
+                  onClick={() => adjustLimit('dailyNewLimit', -DAILY_LIMITS.STEP, DAILY_LIMITS.NEW_MAX)}
+                  className="text-zinc-400 hover:text-white px-2"
+                >−</button>
+                <div className="text-sm">
+                  <span className="text-white">{newSeen.length}</span>
+                  <span className="text-zinc-500">/{newLimit}</span>
+                </div>
+                <button
+                  onClick={() => adjustLimit('dailyNewLimit', DAILY_LIMITS.STEP, DAILY_LIMITS.NEW_MAX)}
+                  className="text-zinc-400 hover:text-white px-2"
+                >+</button>
+              </div>
+            </div>
+            <div>
+              <div className="text-xs text-zinc-400 mb-1">คำทบทวน</div>
+              <div className="flex items-center justify-between bg-zinc-950 rounded px-2 py-1">
+                <button
+                  onClick={() => adjustLimit('dailyReviewLimit', -DAILY_LIMITS.STEP, DAILY_LIMITS.REVIEW_MAX)}
+                  className="text-zinc-400 hover:text-white px-2"
+                >−</button>
+                <div className="text-sm">
+                  <span className="text-white">{reviewSeen.length}</span>
+                  <span className="text-zinc-500">/{reviewLimit}</span>
+                </div>
+                <button
+                  onClick={() => adjustLimit('dailyReviewLimit', DAILY_LIMITS.STEP, DAILY_LIMITS.REVIEW_MAX)}
+                  className="text-zinc-400 hover:text-white px-2"
+                >+</button>
+              </div>
+            </div>
           </div>
         </div>
 

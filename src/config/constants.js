@@ -18,6 +18,15 @@ export const WEIGHTS = {
 // ========== ANTI-REPEAT (กันคำเดิมโผล่ติดกัน) ==========
 export const RECENT_WORDS_BUFFER = 8;
 
+// ========== DAILY LIMITS (จำกัดคำต่อวัน) ==========
+export const DAILY_LIMITS = {
+  NEW_DEFAULT: 10,
+  REVIEW_DEFAULT: 30,
+  STEP: 5,
+  NEW_MAX: 100,
+  REVIEW_MAX: 200,
+};
+
 // ========== INTERVAL WEIGHTS (สำหรับ priority calculation) ==========
 export const INTERVAL_WEIGHTS = {
   1: 1, 3: 2, 7: 3, 14: 4, 30: 5, mastered: 6
