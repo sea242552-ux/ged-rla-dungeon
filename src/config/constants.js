@@ -6,13 +6,17 @@ export const RELEARNING_STEPS = 1;     // คำ relearn ต้องถูก 1
 // ========== WEIGHTS (ความน่าจะถูกสุ่มออกมา) ==========
 export const WEIGHTS = {
   new: 1.0,
-  learning_1: 1.5,        // ตอบถูก 1/3
-  learning_2: 1.2,        // ตอบถูก 2/3
+  learning_0: 2.5,        // เพิ่งตอบผิด / เริ่มเรียนรู้ใหม่
+  learning_1: 2.0,        // ตอบถูก 1/3
+  learning_2: 1.5,        // ตอบถูก 2/3 (ใกล้อัพ)
   review_due: 1.0,        // ถึงกำหนด review พอดี
   review_overdue_multiplier: 0.5,  // 1.0 + (0.5 × overdue_days)
-  relearning: 1.8,
+  relearning: 3.5,        // เคย mastered แล้วผิด — สำคัญสุด
   mastered: 0.1,
 };
+
+// ========== ANTI-REPEAT (กันคำเดิมโผล่ติดกัน) ==========
+export const RECENT_WORDS_BUFFER = 8;
 
 // ========== INTERVAL WEIGHTS (สำหรับ priority calculation) ==========
 export const INTERVAL_WEIGHTS = {

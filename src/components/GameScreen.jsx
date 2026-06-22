@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
-import { GAME } from '../config/constants';
+import { GAME, RECENT_WORDS_BUFFER } from '../config/constants';
 import { getRankFromStat } from '../engine/rank';
 import { useGameState } from '../hooks/useGameState';
 import { selectNextWord, generateChoices, selectBossWordFromAll } from '../engine/wordSelector';
@@ -87,7 +87,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
       next = { word: fallback, stat: getStat(fallback.id) };
     }
     setCurrentWord(next);
-    recentWordIds.current = [...recentWordIds.current.slice(-4), next.word.id];
+    recentWordIds.current = [...recentWordIds.current.slice(-(RECENT_WORDS_BUFFER - 1)), next.word.id];
     const { choices, correctIndex } = generateChoices(next.word, words);
     setChoices(choices);
     setCorrectIndex(correctIndex);

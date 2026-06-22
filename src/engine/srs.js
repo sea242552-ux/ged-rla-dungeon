@@ -80,7 +80,7 @@ export function calculateWeight(stat) {
   if (stat.status === 'learning') {
     if (stat.learningCount === 1) return WEIGHTS.learning_1;
     if (stat.learningCount === 2) return WEIGHTS.learning_2;
-    return WEIGHTS.new;
+    return WEIGHTS.learning_0;
   }
   if (stat.status === 'relearning') return WEIGHTS.relearning;
   if (stat.status === 'mastered') return WEIGHTS.mastered;
