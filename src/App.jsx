@@ -10,6 +10,7 @@ function App() {
   const progress = useProgress();
   const [screen, setScreen] = useState('home');
   const [gameResult, setGameResult] = useState(null);
+  const [startInBossOnly, setStartInBossOnly] = useState(false);
 
   if (progress.loading) return <div className="p-4 font-mono">Loading...</div>;
 
@@ -17,6 +18,7 @@ function App() {
     return (
       <GameScreen
         {...progress}
+        startInBossOnly={startInBossOnly}
         onGameOver={(result) => {
           setGameResult(result);
           setScreen('gameover');
@@ -38,7 +40,7 @@ function App() {
       <GameOverScreen
         result={gameResult}
         playerStats={progress.playerStats}
-        onPlayAgain={() => setScreen('game')}
+        onPlayAgain={() => { setStartInBossOnly(false); setScreen('game'); }}
         onHome={() => setScreen('home')}
       />
     );
@@ -47,7 +49,10 @@ function App() {
   return (
     <HomeScreen
       {...progress}
-      onStart={() => setScreen('game')}
+      onStart={(opts) => {
+        setStartInBossOnly(opts?.bossOnly === true);
+        setScreen('game');
+      }}
       onVault={() => setScreen('vault')}
       onLeaderboard={() => setScreen('leaderboard')}
       onReset={progress.resetAll}

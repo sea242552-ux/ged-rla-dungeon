@@ -50,6 +50,10 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
   const fastTrackCount = countFastTrack(wordStats);
   const todoCount = stats.due + stats.learning + Math.min(stats.new, newCardsAllowed);
 
+  // โควต้าหมดของวันหรือยัง?
+  const dailyQuotaFull = newSeen.length >= newLimit && reviewSeen.length >= reviewLimit;
+  const useBossOnly = dailyQuotaFull || todoCount === 0;
+
   const handleReset = () => {
     if (confirm('แน่ใจไหม? ข้อมูลทั้งหมดจะถูกลบ ไม่สามารถย้อนกลับได้')) {
       onReset();
@@ -121,11 +125,14 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
 
         {/* === START BUTTON === */}
         <button
-          onClick={onStart}
-          disabled={todoCount === 0}
-          className="w-full p-4 bg-amber-700 hover:bg-amber-600 disabled:bg-zinc-800 disabled:text-zinc-600 rounded-lg text-lg mb-4"
+          onClick={() => onStart({ bossOnly: useBossOnly })}
+          className={`w-full p-4 rounded-lg text-lg mb-4 ${
+            useBossOnly
+              ? 'bg-red-900 hover:bg-red-800 text-white'
+              : 'bg-amber-700 hover:bg-amber-600'
+          }`}
         >
-          ▶ Start Game
+          {useBossOnly ? '⚔️ Boss Only Mode' : '▶ Start Game'}
         </button>
 
         {/* === INTERVAL BAR === */}

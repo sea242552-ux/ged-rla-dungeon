@@ -7,7 +7,7 @@ import { onCorrect, onIncorrect } from '../engine/srs';
 import { getSpeechEnabled, saveSpeechEnabled, todayISO } from '../data/storage';
 import { speak } from '../utils/speech';
 
-export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
+export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver, startInBossOnly = false }) {
   const game = useGameState();
   const [currentWord, setCurrentWord] = useState(null);
   const [choices, setChoices] = useState([]);
@@ -24,7 +24,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [showEffect, setShowEffect] = useState(false);
   const [effectData, setEffectData] = useState(null);
   const [sessionComplete, setSessionComplete] = useState(false);
-  const [bossOnlyMode, setBossOnlyMode] = useState(false);
+  const [bossOnlyMode, setBossOnlyMode] = useState(startInBossOnly);
   const [speechEnabled, setSpeechEnabled] = useState(getSpeechEnabled);
 
   const resetTimer = useCallback(() => {
@@ -153,7 +153,11 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   // เริ่มเกม: pick คำแรก
   useEffect(() => {
-    pickNext();
+    if (startInBossOnly) {
+      pickNextBossOnly();
+    } else {
+      pickNext();
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
