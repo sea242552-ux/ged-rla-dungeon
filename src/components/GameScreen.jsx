@@ -7,7 +7,7 @@ import { onCorrect, onIncorrect } from '../engine/srs';
 import { getSpeechEnabled, saveSpeechEnabled, todayISO } from '../data/storage';
 import { speak } from '../utils/speech';
 
-export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver, startInBossOnly = false }) {
+export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
   const game = useGameState();
   const [currentWord, setCurrentWord] = useState(null);
   const [choices, setChoices] = useState([]);
@@ -24,7 +24,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
   const [showEffect, setShowEffect] = useState(false);
   const [effectData, setEffectData] = useState(null);
   const [sessionComplete, setSessionComplete] = useState(false);
-  const [bossOnlyMode, setBossOnlyMode] = useState(startInBossOnly);
+  const [bossOnlyMode, setBossOnlyMode] = useState(false);
   const [speechEnabled, setSpeechEnabled] = useState(getSpeechEnabled);
 
   const resetTimer = useCallback(() => {
@@ -64,21 +64,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     setExample(boss.word.examples[Math.floor(Math.random() * boss.word.examples.length)]);
   }, [words, wordStats, getStat]);
 
-  // คำนวณ daily context (ทำ reset ถ้าข้ามวัน)
-  const buildDailyContext = () => {
-    const today = todayISO();
-    const sameDay = playerStats.dailyDate === today;
-    const newSeen = sameDay ? (playerStats.dailyNewSeen || []) : [];
-    const reviewSeen = sameDay ? (playerStats.dailyReviewSeen || []) : [];
-    return {
-      newSeen,
-      reviewSeen,
-      newRemaining: (playerStats.dailyNewLimit ?? 10) - newSeen.length,
-      reviewRemaining: (playerStats.dailyReviewLimit ?? 30) - reviewSeen.length,
-    };
-  };
-
-  // นับคำที่เพิ่งเห็นวันนี้ (ครั้งเดียวต่อคำต่อวัน)
+  // นับคำที่เพิ่งเห็นวันนี้ (ครั้งเดียวต่อคำต่อวัน) — ใช้แค่แสดงผล ไม่จำกัด
   const trackDailyWord = (wordId, originalStatus) => {
     const today = todayISO();
     const sameDay = playerStats.dailyDate === today;
@@ -95,8 +81,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   const pickNextNormal = useCallback(() => {
     setIsInBoss(false);
-    const dailyContext = buildDailyContext();
-    const next = selectNextWord(words, wordStats, getStat, recentWordIds.current, dailyContext);
+    const next = selectNextWord(words, wordStats, getStat, recentWordIds.current);
     if (!next) {
       setSessionComplete(true);
       return;
@@ -153,11 +138,7 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
 
   // เริ่มเกม: pick คำแรก
   useEffect(() => {
-    if (startInBossOnly) {
-      pickNextBossOnly();
-    } else {
-      pickNext();
-    }
+    pickNext();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

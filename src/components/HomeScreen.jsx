@@ -1,23 +1,15 @@
 import { useMemo } from 'react';
 import { isDue } from '../engine/srs';
 import { calculateNewCardsAllowed } from '../engine/newCardGate';
-import { RANK_INFO, DAILY_LIMITS } from '../config/constants';
+import { RANK_INFO } from '../config/constants';
 import { countFastTrack } from '../engine/fastTrack';
 import { todayISO } from '../data/storage';
 
-export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset, updatePlayer }) {
+export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset }) {
   const today = todayISO();
   const sameDay = playerStats.dailyDate === today;
-  const newSeen = sameDay ? (playerStats.dailyNewSeen || []) : [];
-  const reviewSeen = sameDay ? (playerStats.dailyReviewSeen || []) : [];
-  const newLimit = playerStats.dailyNewLimit ?? DAILY_LIMITS.NEW_DEFAULT;
-  const reviewLimit = playerStats.dailyReviewLimit ?? DAILY_LIMITS.REVIEW_DEFAULT;
-
-  const adjustLimit = (field, delta, max) => {
-    const current = playerStats[field] ?? 0;
-    const next = Math.max(0, Math.min(max, current + delta));
-    updatePlayer({ [field]: next });
-  };
+  const newSeenCount = sameDay ? (playerStats.dailyNewSeen?.length || 0) : 0;
+  const reviewSeenCount = sameDay ? (playerStats.dailyReviewSeen?.length || 0) : 0;
   const stats = useMemo(() => {
     const buckets = {
       new: 0,
@@ -50,10 +42,6 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
   const fastTrackCount = countFastTrack(wordStats);
   const todoCount = stats.due + stats.learning + Math.min(stats.new, newCardsAllowed);
 
-  // โควต้าหมดของวันหรือยัง?
-  const dailyQuotaFull = newSeen.length >= newLimit && reviewSeen.length >= reviewLimit;
-  const useBossOnly = dailyQuotaFull || todoCount === 0;
-
   const handleReset = () => {
     if (confirm('แน่ใจไหม? ข้อมูลทั้งหมดจะถูกลบ ไม่สามารถย้อนกลับได้')) {
       onReset();
@@ -82,57 +70,28 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
           </div>
         </div>
 
-        {/* === DAILY LIMITS === */}
+        {/* === DAILY COUNTER === */}
         <div className="bg-zinc-900 rounded-lg p-3 mb-4">
-          <div className="text-xs text-zinc-500 mb-2">จำกัดต่อวัน</div>
-          <div className="grid grid-cols-2 gap-3">
-            <div>
+          <div className="text-xs text-zinc-500 mb-2">วันนี้เรียนไปแล้ว</div>
+          <div className="grid grid-cols-2 gap-3 text-sm">
+            <div className="bg-zinc-950 rounded px-3 py-2 text-center">
               <div className="text-xs text-zinc-400 mb-1">คำใหม่</div>
-              <div className="flex items-center justify-between bg-zinc-950 rounded px-2 py-1">
-                <button
-                  onClick={() => adjustLimit('dailyNewLimit', -DAILY_LIMITS.STEP, DAILY_LIMITS.NEW_MAX)}
-                  className="text-zinc-400 hover:text-white px-2"
-                >−</button>
-                <div className="text-sm">
-                  <span className="text-white">{newSeen.length}</span>
-                  <span className="text-zinc-500">/{newLimit}</span>
-                </div>
-                <button
-                  onClick={() => adjustLimit('dailyNewLimit', DAILY_LIMITS.STEP, DAILY_LIMITS.NEW_MAX)}
-                  className="text-zinc-400 hover:text-white px-2"
-                >+</button>
-              </div>
+              <div className="text-white text-lg">{newSeenCount}</div>
             </div>
-            <div>
+            <div className="bg-zinc-950 rounded px-3 py-2 text-center">
               <div className="text-xs text-zinc-400 mb-1">คำทบทวน</div>
-              <div className="flex items-center justify-between bg-zinc-950 rounded px-2 py-1">
-                <button
-                  onClick={() => adjustLimit('dailyReviewLimit', -DAILY_LIMITS.STEP, DAILY_LIMITS.REVIEW_MAX)}
-                  className="text-zinc-400 hover:text-white px-2"
-                >−</button>
-                <div className="text-sm">
-                  <span className="text-white">{reviewSeen.length}</span>
-                  <span className="text-zinc-500">/{reviewLimit}</span>
-                </div>
-                <button
-                  onClick={() => adjustLimit('dailyReviewLimit', DAILY_LIMITS.STEP, DAILY_LIMITS.REVIEW_MAX)}
-                  className="text-zinc-400 hover:text-white px-2"
-                >+</button>
-              </div>
+              <div className="text-white text-lg">{reviewSeenCount}</div>
             </div>
           </div>
         </div>
 
         {/* === START BUTTON === */}
         <button
-          onClick={() => onStart({ bossOnly: useBossOnly })}
-          className={`w-full p-4 rounded-lg text-lg mb-4 ${
-            useBossOnly
-              ? 'bg-red-900 hover:bg-red-800 text-white'
-              : 'bg-amber-700 hover:bg-amber-600'
-          }`}
+          onClick={onStart}
+          disabled={todoCount === 0}
+          className="w-full p-4 bg-amber-700 hover:bg-amber-600 disabled:bg-zinc-800 disabled:text-zinc-600 rounded-lg text-lg mb-4"
         >
-          {useBossOnly ? '⚔️ Boss Only Mode' : '▶ Start Game'}
+          ▶ Start Game
         </button>
 
         {/* === INTERVAL BAR === */}

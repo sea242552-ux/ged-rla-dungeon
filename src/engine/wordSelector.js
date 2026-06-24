@@ -19,29 +19,19 @@ function weightedRandom(items, getWeight) {
   return items[items.length - 1];
 }
 
-export function selectNextWord(words, wordStats, getStat, recentWordIds = [], dailyContext = null) {
+export function selectNextWord(words, wordStats, getStat, recentWordIds = []) {
   const all = combine(words, wordStats, getStat);
 
   const fastTrackPool = all.filter(({ stat }) => stat.fastTrack);
 
-  let duePool = all.filter(({ stat }) =>
+  const duePool = all.filter(({ stat }) =>
     !stat.fastTrack &&
     stat.status !== 'new' &&
     stat.status !== 'mastered' &&
     isDue(stat)
   );
 
-  let newPool = all.filter(({ stat }) => stat.status === 'new');
-
-  if (dailyContext) {
-    const { newRemaining, reviewRemaining, newSeen, reviewSeen } = dailyContext;
-    if (newRemaining <= 0) newPool = [];
-    if (reviewRemaining <= 0) {
-      duePool = duePool.filter(({ word }) =>
-        newSeen.includes(word.id) || reviewSeen.includes(word.id)
-      );
-    }
-  }
+  const newPool = all.filter(({ stat }) => stat.status === 'new');
 
   const eligiblePool = [...fastTrackPool, ...duePool, ...newPool];
 
