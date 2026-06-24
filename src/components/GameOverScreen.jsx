@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { addLeaderboardEntry, getPlayerStats, updatePlayerStats } from '../data/storage';
-import { submitScore, fetchOnlineLeaderboard } from '../lib/supabase';
+import { submitScore, fetchOnlineLeaderboard, getDisplayName } from '../lib/supabase';
 
-export default function GameOverScreen({ result, playerStats, onPlayAgain, onHome }) {
+export default function GameOverScreen({ result, playerStats, user, onPlayAgain, onHome }) {
   const [saved, setSaved] = useState(false);
   const [leaderboard, setLeaderboard] = useState([]);
-  const [name, setName] = useState('');
+  const [name, setName] = useState(() => getDisplayName(user) || '');
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [onlineBoard, setOnlineBoard] = useState([]);

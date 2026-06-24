@@ -4,8 +4,9 @@ import { calculateNewCardsAllowed } from '../engine/newCardGate';
 import { RANK_INFO } from '../config/constants';
 import { countFastTrack } from '../engine/fastTrack';
 import { todayISO } from '../data/storage';
+import { signOut, getDisplayName } from '../lib/supabase';
 
-export default function HomeScreen({ words, wordStats, playerStats, getStat, onStart, onVault, onLeaderboard, onReset }) {
+export default function HomeScreen({ words, wordStats, playerStats, getStat, user, onStart, onVault, onLeaderboard, onAuth, onReset }) {
   const today = todayISO();
   const sameDay = playerStats.dailyDate === today;
   const newSeenCount = sameDay ? (playerStats.dailyNewSeen?.length || 0) : 0;
@@ -51,6 +52,28 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, onS
   return (
     <div className="min-h-screen p-4 font-mono">
       <div className="max-w-md mx-auto">
+        {/* === AUTH STATUS === */}
+        <div className="flex justify-end items-center mb-2 text-xs">
+          {user ? (
+            <div className="flex items-center gap-2">
+              <span className="text-zinc-400">👤 {getDisplayName(user)}</span>
+              <button
+                onClick={() => signOut()}
+                className="text-zinc-500 hover:text-white"
+              >
+                ออก
+              </button>
+            </div>
+          ) : (
+            <button
+              onClick={onAuth}
+              className="text-amber-400 hover:text-amber-300"
+            >
+              เข้าสู่ระบบ →
+            </button>
+          )}
+        </div>
+
         {/* === TITLE === */}
         <h1 className="text-3xl text-center mb-2">⚔️</h1>
         <h2 className="text-xl text-center mb-6">GED RLA Dungeon</h2>
