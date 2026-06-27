@@ -100,6 +100,36 @@ export function useProgress(user) {
     setSyncing(false);
   }, [user]);
 
+  // ดึง cloud มาทับ local — สำหรับเปลี่ยนเครื่องโดยไม่ต้อง logout/login
+  const pullFromCloud = useCallback(async () => {
+    if (!user) return;
+    setSyncing(true);
+    const { data } = await downloadProgress(user.id);
+    if (data) {
+      const cloudWordStats = data.word_stats || {};
+      const cloudPlayerStats = data.player_stats || {};
+      const localScore = calculateProgressScore(storage.getWordStats());
+      const cloudScore = calculateProgressScore(cloudWordStats);
+      if (cloudScore > localScore) {
+        storage.saveWordStats(cloudWordStats);
+        storage.savePlayerStats({ ...storage.getPlayerStats(), ...cloudPlayerStats });
+        setWordStats(cloudWordStats);
+        setPlayerStats({ ...storage.getPlayerStats(), ...cloudPlayerStats });
+      }
+    }
+    setSyncing(false);
+  }, [user]);
+
+  // เมื่อ tab/app กลับมา visible → pull cloud
+  useEffect(() => {
+    if (!user) return;
+    const handleVisibility = () => {
+      if (document.visibilityState === 'visible') pullFromCloud();
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => document.removeEventListener('visibilitychange', handleVisibility);
+  }, [user, pullFromCloud]);
+
   return {
     words,
     wordStats,
@@ -111,5 +141,6 @@ export function useProgress(user) {
     updatePlayer,
     resetAll,
     syncToCloud,
+    pullFromCloud,
   };
 }

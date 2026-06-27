@@ -136,6 +136,13 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
     if (speechEnabled && currentWord) speak(currentWord.word.word);
   }, [currentWord?.word.id, speechEnabled]);
 
+  // sync ขึ้น cloud เมื่อออกจาก GameScreen
+  useEffect(() => {
+    return () => {
+      if (syncToCloud) syncToCloud();
+    };
+  }, [syncToCloud]);
+
   // เริ่มเกม: pick คำแรก
   useEffect(() => {
     pickNext();
