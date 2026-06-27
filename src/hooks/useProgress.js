@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import * as storage from '../data/storage';
-import { uploadProgress, downloadProgress, calculateProgressScore } from '../lib/supabase';
+import { uploadProgress, downloadProgress } from '../lib/supabase';
 
 export function useProgress(user) {
   const [words, setWords] = useState([]);
@@ -27,38 +27,36 @@ export function useProgress(user) {
     load();
   }, []);
 
-  // เมื่อ user login เปลี่ยน → sync
+  // helper: เอา cloud มาทับ local
+  const applyCloudData = (cloudWordStats, cloudPlayerStats) => {
+    const ws = cloudWordStats || {};
+    const ps = { ...storage.getPlayerStats(), ...(cloudPlayerStats || {}) };
+    storage.saveWordStats(ws);
+    storage.savePlayerStats(ps);
+    setWordStats(ws);
+    setPlayerStats(ps);
+  };
+
+  // เมื่อ user login → ถ้า cloud มีข้อมูล ใช้ cloud, ถ้าไม่มี upload local
   useEffect(() => {
     if (!user) {
       lastUserIdRef.current = null;
       return;
     }
-    if (lastUserIdRef.current === user.id) return; // sync แล้ว
+    if (lastUserIdRef.current === user.id) return;
     lastUserIdRef.current = user.id;
 
     async function sync() {
       setSyncing(true);
-      const localWordStats = storage.getWordStats();
-      const localPlayerStats = storage.getPlayerStats();
-      const localScore = calculateProgressScore(localWordStats);
-
       const { data } = await downloadProgress(user.id);
-      const cloudWordStats = data?.word_stats || {};
-      const cloudPlayerStats = data?.player_stats || {};
-      const cloudScore = calculateProgressScore(cloudWordStats);
+      const cloudHasData = data && data.word_stats && Object.keys(data.word_stats).length > 0;
 
-      if (cloudScore > localScore) {
-        // cloud ก้าวหน้ากว่า → ใช้ cloud
-        storage.saveWordStats(cloudWordStats);
-        storage.savePlayerStats({ ...localPlayerStats, ...cloudPlayerStats });
-        setWordStats(cloudWordStats);
-        setPlayerStats({ ...localPlayerStats, ...cloudPlayerStats });
-      } else if (localScore > cloudScore) {
-        // local ก้าวหน้ากว่า → upload
-        await uploadProgress(user.id, localWordStats, localPlayerStats);
-      } else if (!data) {
-        // ยังไม่มีข้อมูล cloud → upload local
-        await uploadProgress(user.id, localWordStats, localPlayerStats);
+      if (cloudHasData) {
+        // มีข้อมูล cloud → ใช้ cloud
+        applyCloudData(data.word_stats, data.player_stats);
+      } else {
+        // ครั้งแรก → upload local ขึ้น cloud
+        await uploadProgress(user.id, storage.getWordStats(), storage.getPlayerStats());
       }
       setSyncing(false);
     }
@@ -92,7 +90,7 @@ export function useProgress(user) {
     setPlayerStats(storage.getPlayerStats());
   }, []);
 
-  // ใช้เรียกตอน Game Over หรือก่อน Logout
+  // อัพโหลด local ขึ้น cloud (เรียกตอนออกจากเกม / logout)
   const syncToCloud = useCallback(async () => {
     if (!user) return;
     setSyncing(true);
@@ -100,27 +98,18 @@ export function useProgress(user) {
     setSyncing(false);
   }, [user]);
 
-  // ดึง cloud มาทับ local — สำหรับเปลี่ยนเครื่องโดยไม่ต้อง logout/login
+  // ดึง cloud มาทับ local — เผื่อมี update จากเครื่องอื่น
   const pullFromCloud = useCallback(async () => {
     if (!user) return;
     setSyncing(true);
     const { data } = await downloadProgress(user.id);
-    if (data) {
-      const cloudWordStats = data.word_stats || {};
-      const cloudPlayerStats = data.player_stats || {};
-      const localScore = calculateProgressScore(storage.getWordStats());
-      const cloudScore = calculateProgressScore(cloudWordStats);
-      if (cloudScore > localScore) {
-        storage.saveWordStats(cloudWordStats);
-        storage.savePlayerStats({ ...storage.getPlayerStats(), ...cloudPlayerStats });
-        setWordStats(cloudWordStats);
-        setPlayerStats({ ...storage.getPlayerStats(), ...cloudPlayerStats });
-      }
+    if (data && data.word_stats) {
+      applyCloudData(data.word_stats, data.player_stats);
     }
     setSyncing(false);
   }, [user]);
 
-  // เมื่อ tab/app กลับมา visible → pull cloud
+  // tab/app กลับมา visible → pull cloud
   useEffect(() => {
     if (!user) return;
     const handleVisibility = () => {

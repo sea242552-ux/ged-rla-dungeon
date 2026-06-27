@@ -36,12 +36,6 @@ export function getDisplayName(user) {
 }
 
 // ========== Progress Sync ==========
-// "ก้าวหน้า" = จำนวนคำที่ status ไม่ใช่ 'new'
-export function calculateProgressScore(wordStats) {
-  if (!wordStats) return 0;
-  return Object.values(wordStats).filter(s => s && s.status && s.status !== 'new').length;
-}
-
 export async function uploadProgress(userId, wordStats, playerStats) {
   const { error } = await supabase.from('user_data').upsert({
     user_id: userId,
