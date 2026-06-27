@@ -6,7 +6,11 @@ import { countFastTrack } from '../engine/fastTrack';
 import { todayISO } from '../data/storage';
 import { signOut, getDisplayName } from '../lib/supabase';
 
-export default function HomeScreen({ words, wordStats, playerStats, getStat, user, onStart, onVault, onLeaderboard, onAuth, onReset }) {
+export default function HomeScreen({ words, wordStats, playerStats, getStat, user, syncing, syncToCloud, onStart, onVault, onLeaderboard, onAuth, onReset }) {
+  const handleLogout = async () => {
+    if (syncToCloud) await syncToCloud();
+    await signOut();
+  };
   const today = todayISO();
   const sameDay = playerStats.dailyDate === today;
   const newSeenCount = sameDay ? (playerStats.dailyNewSeen?.length || 0) : 0;
@@ -53,13 +57,15 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, use
     <div className="min-h-screen p-4 font-mono">
       <div className="max-w-md mx-auto">
         {/* === AUTH STATUS === */}
-        <div className="flex justify-end items-center mb-2 text-xs">
+        <div className="flex justify-end items-center mb-2 text-xs gap-2">
+          {syncing && <span className="text-zinc-500">⟳ ซิงค์...</span>}
           {user ? (
             <div className="flex items-center gap-2">
               <span className="text-zinc-400">👤 {getDisplayName(user)}</span>
               <button
-                onClick={() => signOut()}
-                className="text-zinc-500 hover:text-white"
+                onClick={handleLogout}
+                disabled={syncing}
+                className="text-zinc-500 hover:text-white disabled:text-zinc-700"
               >
                 ออก
               </button>

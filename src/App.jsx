@@ -9,8 +9,8 @@ import LeaderboardScreen from './components/LeaderboardScreen';
 import AuthScreen from './components/AuthScreen';
 
 function App() {
-  const progress = useProgress();
   const auth = useAuth();
+  const progress = useProgress(auth.user);
   const [screen, setScreen] = useState('home');
   const [gameResult, setGameResult] = useState(null);
 

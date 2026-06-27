@@ -7,7 +7,7 @@ import { onCorrect, onIncorrect } from '../engine/srs';
 import { getSpeechEnabled, saveSpeechEnabled, todayISO } from '../data/storage';
 import { speak } from '../utils/speech';
 
-export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, onGameOver }) {
+export default function GameScreen({ words, wordStats, getStat, updateStat, updatePlayer, playerStats, syncToCloud, onGameOver }) {
   const game = useGameState();
   const [currentWord, setCurrentWord] = useState(null);
   const [choices, setChoices] = useState([]);
@@ -150,6 +150,8 @@ export default function GameScreen({ words, wordStats, getStat, updateStat, upda
         highScore: newHigh,
         totalSeen: playerStats.totalSeen + game.wordsLearned,
       });
+      // sync ขึ้น cloud (ไม่รอก็ได้ ไม่บล็อก UI)
+      if (syncToCloud) syncToCloud();
       onGameOver({
         score: game.score,
         floor: game.floor,
