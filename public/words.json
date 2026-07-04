@@ -6346,5 +6346,534 @@
     "tags": [
       "ged_rla"
     ]
+  },
+  {
+    "id": "improve-the-scores",
+    "word": "improve the scores",
+    "meaning": "ปรับปรุงคะแนน",
+    "examples": [
+      "Students study extra hours to improve the scores on standardized tests.",
+      "The tutor introduced methods that helped improve the scores of nearly every student.",
+      "New curriculum changes are expected to improve the scores nationwide."
+    ],
+    "translations": [
+      {
+        "meaning": "ปรับปรุงคะแนน",
+        "example": "Students study extra hours to improve the scores on standardized tests.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "achieved-an-average",
+    "word": "achieved an average",
+    "meaning": "ได้รับเฉลี่ย",
+    "examples": [
+      "The students achieved an average of 85 percent on the final exam.",
+      "Runners in the program achieved an average time under six minutes per mile.",
+      "The company achieved an average growth of 12 percent per year."
+    ],
+    "translations": [
+      {
+        "meaning": "ได้รับเฉลี่ย",
+        "example": "The students achieved an average of 85 percent on the final exam.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "encounter",
+    "word": "encounter",
+    "meaning": "เจอ / พบ",
+    "examples": [
+      "Researchers often encounter unexpected results in the field.",
+      "Students may encounter difficult vocabulary in academic passages.",
+      "You will encounter many perspectives when studying history."
+    ],
+    "translations": [
+      {
+        "meaning": "เจอ / พบ",
+        "example": "Researchers often encounter unexpected results in the field.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "simulate",
+    "word": "simulate",
+    "meaning": "จำลอง",
+    "examples": [
+      "The software can simulate real-world conditions for training purposes.",
+      "Scientists simulate climate changes to predict future outcomes.",
+      "The test is designed to simulate the actual exam environment."
+    ],
+    "translations": [
+      {
+        "meaning": "จำลอง",
+        "example": "The software can simulate real-world conditions for training purposes.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "significant-benefits",
+    "word": "significant benefits",
+    "meaning": "ประโยชน์สำคัญ",
+    "examples": [
+      "Regular exercise offers significant benefits for both mind and body.",
+      "The new policy is expected to bring significant benefits to small businesses.",
+      "Reading daily has significant benefits for language development."
+    ],
+    "translations": [
+      {
+        "meaning": "ประโยชน์สำคัญ",
+        "example": "Regular exercise offers significant benefits for both mind and body.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "statistical-data",
+    "word": "statistical data",
+    "meaning": "ข้อมูลทางสถิติ",
+    "examples": [
+      "The report is supported by extensive statistical data.",
+      "Analysts rely on statistical data to make informed predictions.",
+      "Statistical data shows a clear correlation between the two variables."
+    ],
+    "translations": [
+      {
+        "meaning": "ข้อมูลทางสถิติ",
+        "example": "The report is supported by extensive statistical data.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "comprehensive",
+    "word": "comprehensive",
+    "meaning": "ครอบคลุม / รอบด้าน",
+    "examples": [
+      "The report provides a comprehensive analysis of the issue.",
+      "Students need a comprehensive understanding of the subject.",
+      "The policy offers comprehensive coverage for all workers."
+    ],
+    "translations": [
+      {
+        "meaning": "ครอบคลุม / รอบด้าน",
+        "example": "The report provides a comprehensive analysis of the issue.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "counteract",
+    "word": "counteract",
+    "meaning": "ต่อต้าน / ลดผลกระทบ",
+    "examples": [
+      "New regulations aim to counteract the effects of pollution.",
+      "Exercise can counteract the negative impact of stress.",
+      "The vaccine helps counteract the spread of the disease."
+    ],
+    "translations": [
+      {
+        "meaning": "ต่อต้าน / ลดผลกระทบ",
+        "example": "New regulations aim to counteract the effects of pollution.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "chronic",
+    "word": "chronic",
+    "meaning": "เรื้อรัง",
+    "examples": [
+      "Chronic diseases require long-term management.",
+      "The region faces a chronic shortage of clean water.",
+      "She has been suffering from chronic pain for years."
+    ],
+    "translations": [
+      {
+        "meaning": "เรื้อรัง",
+        "example": "Chronic diseases require long-term management.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "inference",
+    "word": "inference",
+    "meaning": "การอนุมาน / ข้อสรุป",
+    "examples": [
+      "The inference drawn from the data supports the hypothesis.",
+      "Making an inference requires careful reading of the passage.",
+      "His inference about the cause was based on limited evidence."
+    ],
+    "translations": [
+      {
+        "meaning": "การอนุมาน / ข้อสรุป",
+        "example": "The inference drawn from the data supports the hypothesis.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "underlying-assumption",
+    "word": "underlying assumption",
+    "meaning": "ข้อสมมุติฐานพื้นฐาน",
+    "examples": [
+      "The underlying assumption of the theory is that all humans are rational.",
+      "Question the underlying assumption before accepting the argument.",
+      "An underlying assumption in the study was that participants were honest."
+    ],
+    "translations": [
+      {
+        "meaning": "ข้อสมมุติฐานพื้นฐาน",
+        "example": "The underlying assumption of the theory is that all humans are rational.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "in-contrast",
+    "word": "in contrast",
+    "meaning": "ในทางตรงข้าม",
+    "examples": [
+      "The city was busy; in contrast, the village was quiet.",
+      "In contrast to his brother, he is very outgoing.",
+      "The first study showed positive results; in contrast, the second found none."
+    ],
+    "translations": [
+      {
+        "meaning": "ในทางตรงข้าม",
+        "example": "The city was busy; in contrast, the village was quiet.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "cause-and-effect",
+    "word": "cause and effect",
+    "meaning": "เหตุและผล",
+    "examples": [
+      "The essay explores the cause and effect of climate change.",
+      "Understanding cause and effect is essential in scientific research.",
+      "The passage uses a cause-and-effect structure to explain events."
+    ],
+    "translations": [
+      {
+        "meaning": "เหตุและผล",
+        "example": "The essay explores the cause and effect of climate change.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "aloof",
+    "word": "aloof",
+    "meaning": "เย็นชา / เก็บตัว",
+    "examples": [
+      "He remained aloof from the group discussion.",
+      "Her aloof manner made it hard to approach her.",
+      "The character in the novel is portrayed as cold and aloof."
+    ],
+    "translations": [
+      {
+        "meaning": "เย็นชา / เก็บตัว",
+        "example": "He remained aloof from the group discussion.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "scorn",
+    "word": "scorn",
+    "meaning": "ดูถูก / เหยียดหยาม",
+    "examples": [
+      "She looked at him with scorn after his rude remark.",
+      "The critics greeted the film with scorn.",
+      "He scorned the idea of asking for help."
+    ],
+    "translations": [
+      {
+        "meaning": "ดูถูก / เหยียดหยาม",
+        "example": "She looked at him with scorn after his rude remark.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "eagerly",
+    "word": "eagerly",
+    "meaning": "อย่างกระตือรือร้น",
+    "examples": [
+      "The children eagerly awaited the start of the show.",
+      "She eagerly accepted the new opportunity.",
+      "Fans eagerly lined up hours before the event."
+    ],
+    "translations": [
+      {
+        "meaning": "อย่างกระตือรือร้น",
+        "example": "The children eagerly awaited the start of the show.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "enthusiastically",
+    "word": "enthusiastically",
+    "meaning": "อย่างกระตือรือร้น / อย่างมีความสุข",
+    "examples": [
+      "The audience enthusiastically applauded the performance.",
+      "She enthusiastically supported the new project.",
+      "Students participated enthusiastically in the debate."
+    ],
+    "translations": [
+      {
+        "meaning": "อย่างกระตือรือร้น / อย่างมีความสุข",
+        "example": "The audience enthusiastically applauded the performance.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "symptoms",
+    "word": "symptoms",
+    "meaning": "อาการ (ของโรค/ปัญหา)",
+    "examples": [
+      "Common symptoms include fever, cough, and fatigue.",
+      "Ignoring the symptoms can make the condition worse.",
+      "The symptoms of stress often appear in daily behavior."
+    ],
+    "translations": [
+      {
+        "meaning": "อาการ (ของโรค/ปัญหา)",
+        "example": "Common symptoms include fever, cough, and fatigue.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "exacerbate",
+    "word": "exacerbate",
+    "meaning": "ทำให้แย่ลง",
+    "examples": [
+      "Poor communication can exacerbate the conflict.",
+      "Lack of sleep exacerbates health problems.",
+      "The new policy may exacerbate income inequality."
+    ],
+    "translations": [
+      {
+        "meaning": "ทำให้แย่ลง",
+        "example": "Poor communication can exacerbate the conflict.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "worsen",
+    "word": "worsen",
+    "meaning": "แย่ลง / ทำให้แย่ลง",
+    "examples": [
+      "The situation began to worsen after the storm.",
+      "Untreated wounds can worsen quickly.",
+      "Air pollution continues to worsen in major cities."
+    ],
+    "translations": [
+      {
+        "meaning": "แย่ลง / ทำให้แย่ลง",
+        "example": "The situation began to worsen after the storm.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "well-being",
+    "word": "well-being",
+    "meaning": "ความเป็นอยู่ที่ดี / สุขภาวะ",
+    "examples": [
+      "Regular exercise contributes to overall well-being.",
+      "The government promotes the well-being of its citizens.",
+      "Mental well-being is just as important as physical health."
+    ],
+    "translations": [
+      {
+        "meaning": "ความเป็นอยู่ที่ดี / สุขภาวะ",
+        "example": "Regular exercise contributes to overall well-being.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "practitioner",
+    "word": "practitioner",
+    "meaning": "ผู้ประกอบวิชาชีพ / ผู้ปฏิบัติงาน",
+    "examples": [
+      "A medical practitioner should stay updated on new research.",
+      "The workshop was designed for practitioners in the field.",
+      "She is a respected practitioner of traditional medicine."
+    ],
+    "translations": [
+      {
+        "meaning": "ผู้ประกอบวิชาชีพ / ผู้ปฏิบัติงาน",
+        "example": "A medical practitioner should stay updated on new research.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "prevalence",
+    "word": "prevalence",
+    "meaning": "ความชุก / การแพร่หลาย",
+    "examples": [
+      "The prevalence of diabetes has increased in recent years.",
+      "Researchers studied the prevalence of the disease worldwide.",
+      "The prevalence of smartphones has changed daily life."
+    ],
+    "translations": [
+      {
+        "meaning": "ความชุก / การแพร่หลาย",
+        "example": "The prevalence of diabetes has increased in recent years.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
   }
 ]
