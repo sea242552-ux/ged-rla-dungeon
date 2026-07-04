@@ -6,12 +6,12 @@ export const RELEARNING_STEPS = 1;     // คำ relearn ต้องถูก 1
 // ========== WEIGHTS (ความน่าจะถูกสุ่มออกมา) ==========
 export const WEIGHTS = {
   new: 1.0,
-  learning_0: 2.5,        // เพิ่งตอบผิด / เริ่มเรียนรู้ใหม่
-  learning_1: 2.0,        // ตอบถูก 1/3
-  learning_2: 1.5,        // ตอบถูก 2/3 (ใกล้อัพ)
+  learning_0: 4.0,        // เพิ่งตอบผิด / เริ่มเรียนรู้ใหม่
+  learning_1: 3.0,        // ตอบถูก 1/3
+  learning_2: 2.0,        // ตอบถูก 2/3 (ใกล้อัพ)
   review_due: 1.0,        // ถึงกำหนด review พอดี
-  review_overdue_multiplier: 0.5,  // 1.0 + (0.5 × overdue_days)
-  relearning: 3.5,        // เคย mastered แล้วผิด — สำคัญสุด
+  review_overdue_multiplier: 0.3,  // 1.0 + (0.3 × overdue_days)
+  relearning: 6.0,        // เคย mastered แล้วผิด — สำคัญสุด
   mastered: 0.1,
 };
 
