@@ -6875,5 +6875,120 @@
     "tags": [
       "ged_rla"
     ]
+  },
+  {
+    "id": "neutral",
+    "word": "neutral",
+    "meaning": "เป็นกลาง (ไม่บวก ไม่ลบ)",
+    "examples": [
+      "The judge remained neutral throughout the debate.",
+      "She tried to stay neutral and not take sides.",
+      "The country declared itself neutral during the conflict."
+    ],
+    "translations": [
+      {
+        "meaning": "เป็นกลาง (ไม่บวก ไม่ลบ)",
+        "example": "The judge remained neutral throughout the debate.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "supplement",
+    "word": "supplement",
+    "meaning": "เสริม, เพิ่มเติม",
+    "examples": [
+      "She takes vitamins to supplement her diet.",
+      "The extra reading materials supplement the main textbook.",
+      "Additional funding will supplement the school budget."
+    ],
+    "translations": [
+      {
+        "meaning": "เสริม, เพิ่มเติม",
+        "example": "She takes vitamins to supplement her diet.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "enrich",
+    "word": "enrich",
+    "meaning": "ทำให้ดีขึ้น, เพิ่มคุณค่า",
+    "examples": [
+      "Traveling can enrich your understanding of other cultures.",
+      "The program is designed to enrich students' learning experience.",
+      "Adding vegetables can enrich the nutritional value of the meal."
+    ],
+    "translations": [
+      {
+        "meaning": "ทำให้ดีขึ้น, เพิ่มคุณค่า",
+        "example": "Traveling can enrich your understanding of other cultures.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "inhibit",
+    "word": "inhibit",
+    "meaning": "ยับยั้ง, ขัดขวาง",
+    "examples": [
+      "Fear can inhibit a person from taking risks.",
+      "The medication helps inhibit the growth of bacteria.",
+      "Strict rules may inhibit creativity in the workplace."
+    ],
+    "translations": [
+      {
+        "meaning": "ยับยั้ง, ขัดขวาง",
+        "example": "Fear can inhibit a person from taking risks.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "replicate",
+    "word": "replicate",
+    "meaning": "จำลอง, ทำซ้ำ",
+    "examples": [
+      "Scientists tried to replicate the results of the experiment.",
+      "The model was built to replicate real-world traffic patterns.",
+      "It is difficult to replicate the success of the original study."
+    ],
+    "translations": [
+      {
+        "meaning": "จำลอง, ทำซ้ำ",
+        "example": "Scientists tried to replicate the results of the experiment.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
   }
 ]
