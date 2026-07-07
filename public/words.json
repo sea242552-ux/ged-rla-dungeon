@@ -6990,5 +6990,166 @@
     "tags": [
       "ged_rla"
     ]
+  },
+  {
+    "id": "slighted",
+    "word": "slighted",
+    "meaning": "ถูกเมินเฉย, ถูกดูถูก",
+    "examples": [
+      "She felt slighted when no one invited her to the meeting.",
+      "He was slighted by his colleague's dismissive remark.",
+      "The employee felt slighted after being passed over for the promotion."
+    ],
+    "translations": [
+      {
+        "meaning": "ถูกเมินเฉย, ถูกดูถูก",
+        "example": "She felt slighted when no one invited her to the meeting.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "cordial",
+    "word": "cordial",
+    "meaning": "อบอุ่น, จริงใจ",
+    "examples": [
+      "The two leaders exchanged a cordial greeting.",
+      "Despite their disagreement, they remained cordial with each other.",
+      "The host gave a cordial welcome to all the guests."
+    ],
+    "translations": [
+      {
+        "meaning": "อบอุ่น, จริงใจ",
+        "example": "The two leaders exchanged a cordial greeting.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "disposition",
+    "word": "disposition",
+    "meaning": "อุปนิสัย",
+    "examples": [
+      "She has a cheerful disposition that makes her easy to be around.",
+      "His calm disposition helped him handle the crisis well.",
+      "A positive disposition can improve teamwork in the workplace."
+    ],
+    "translations": [
+      {
+        "meaning": "อุปนิสัย",
+        "example": "She has a cheerful disposition that makes her easy to be around.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "wit",
+    "word": "wit",
+    "meaning": "ไหวพริบ, ความฉลาดในการพูดตลก",
+    "examples": [
+      "Her quick wit made the audience laugh throughout the speech.",
+      "He used his wit to defuse the tense situation.",
+      "The comedian is known for his sharp wit."
+    ],
+    "translations": [
+      {
+        "meaning": "ไหวพริบ, ความฉลาดในการพูดตลก",
+        "example": "Her quick wit made the audience laugh throughout the speech.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "witty",
+    "word": "witty",
+    "meaning": "มีไหวพริบ, ตลกฉลาด",
+    "examples": [
+      "She gave a witty response that impressed everyone.",
+      "The novel is full of witty dialogue.",
+      "His witty remarks always lighten the mood."
+    ],
+    "translations": [
+      {
+        "meaning": "มีไหวพริบ, ตลกฉลาด",
+        "example": "She gave a witty response that impressed everyone.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "devastated",
+    "word": "devastated",
+    "meaning": "เสียใจอย่างหนัก, พังทลาย",
+    "examples": [
+      "The family was devastated by the loss of their home.",
+      "She felt devastated after failing the final exam.",
+      "The town was devastated by the earthquake."
+    ],
+    "translations": [
+      {
+        "meaning": "เสียใจอย่างหนัก, พังทลาย",
+        "example": "The family was devastated by the loss of their home.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "charmed",
+    "word": "charmed",
+    "meaning": "หลงเสน่ห์",
+    "examples": [
+      "The audience was charmed by her graceful performance.",
+      "He was charmed by the city's old architecture.",
+      "Everyone at the party was charmed by his friendly personality."
+    ],
+    "translations": [
+      {
+        "meaning": "หลงเสน่ห์",
+        "example": "The audience was charmed by her graceful performance.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
   }
 ]
