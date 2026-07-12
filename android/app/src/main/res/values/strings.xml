@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">GED RLA Dungeon</string>
+    <string name="title_activity_main">GED RLA Dungeon</string>
+    <string name="package_name">com.gedrla.dungeon</string>
+    <string name="custom_url_scheme">com.gedrla.dungeon</string>
+</resources>
