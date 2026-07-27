@@ -100,7 +100,7 @@ export const SM2 = {
 
 export const FLASHCARD_LIMITS = {
   NEW_PER_DAY_DEFAULT: 20,     // คำใหม่ต่อวัน (default)
-  REVIEWS_PER_DAY_DEFAULT: 100, // คำทบทวนต่อวัน (default)
+  REVIEWS_PER_DAY_DEFAULT: 30, // คำทบทวนต่อวัน (default)
   STEP: 5,                     // ปรับทีละ 5
   NEW_MAX: 200,
   REVIEWS_MAX: 500,
