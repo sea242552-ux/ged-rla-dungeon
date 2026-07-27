@@ -92,7 +92,11 @@ export const SM2 = {
   EASE_EASY_DELTA: 0.15,       // กด Easy → ease เพิ่ม 15%
   HARD_INTERVAL_MULTIPLIER: 1.2,  // Hard → interval × 1.2
   EASY_BONUS: 1.3,             // Easy → interval × ease × 1.3
-  LEARNING_STEPS: 2,           // คำใหม่ต้องกด Good 2 ครั้งก่อน graduate
+  // คำใหม่: กด Good ครั้งแรกรอ 1 นาที, ครั้งที่สอง graduate (หน่วยเป็นนาที)
+  LEARNING_STEPS_MINUTES: [1, 10],
+  // คำ review ที่กด Again → เรียนซ้ำ รอ 10 นาที
+  RELEARNING_STEPS_MINUTES: [10],
+  HARD_LEARNING_MINUTES: 6,    // กด Hard ระหว่าง learning → ค้าง step เดิม รอ 6 นาที
   GRADUATE_INTERVAL: 1,        // graduate แล้วเริ่มที่ 1 วัน
   EASY_GRADUATE_INTERVAL: 4,   // กด Easy ระหว่าง learning → ข้ามไป 4 วัน
   MAX_INTERVAL: 365,           // interval สูงสุด (วัน)

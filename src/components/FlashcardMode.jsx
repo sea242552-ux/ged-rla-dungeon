@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { FLASHCARD_LIMITS } from '../config/constants';
-import { RATINGS, rateCard, getIntervalPreview } from '../engine/sm2';
+import { RATINGS, rateCard, getIntervalPreview, totalStepsFor } from '../engine/sm2';
 import { selectNextFlashcard, countRemainingBeyondLimit } from '../engine/flashcardSelector';
 import {
   getFlashcardStats, updateFlashcardStat,
@@ -161,7 +161,7 @@ export default function FlashcardMode({ words, onExit }) {
       <div className="flex-1 flex flex-col justify-center items-center">
         <div className="text-xs text-zinc-600 mb-3">
           {stat.status === 'new' && '🆕 คำใหม่'}
-          {stat.status === 'learning' && `📖 กำลังเรียน (${stat.learningStep + 1}/2)`}
+          {stat.status === 'learning' && `📖 กำลังเรียน (${stat.learningStep + 1}/${totalStepsFor(stat)})`}
           {stat.status === 'relearning' && '🔁 เรียนซ้ำ'}
           {stat.status === 'review' && `📅 ทบทวน (${stat.interval} วัน)`}
         </div>
