@@ -83,10 +83,36 @@ export const RANK_INFO = {
   mastered:  { color: 'text-yellow-300',   icon: '⚔️',   label: 'Mastered' },
 };
 
+// ========== FLASHCARD MODE (SM-2 แบบ Anki) ==========
+export const SM2 = {
+  STARTING_EASE: 2.5,          // ease เริ่มต้นของทุกคำ (250%)
+  MIN_EASE: 1.3,               // ease ต่ำสุด (130%)
+  EASE_AGAIN_DELTA: -0.20,     // กด Again → ease ลด 20%
+  EASE_HARD_DELTA: -0.15,      // กด Hard → ease ลด 15%
+  EASE_EASY_DELTA: 0.15,       // กด Easy → ease เพิ่ม 15%
+  HARD_INTERVAL_MULTIPLIER: 1.2,  // Hard → interval × 1.2
+  EASY_BONUS: 1.3,             // Easy → interval × ease × 1.3
+  LEARNING_STEPS: 2,           // คำใหม่ต้องกด Good 2 ครั้งก่อน graduate
+  GRADUATE_INTERVAL: 1,        // graduate แล้วเริ่มที่ 1 วัน
+  EASY_GRADUATE_INTERVAL: 4,   // กด Easy ระหว่าง learning → ข้ามไป 4 วัน
+  MAX_INTERVAL: 365,           // interval สูงสุด (วัน)
+};
+
+export const FLASHCARD_LIMITS = {
+  NEW_PER_DAY_DEFAULT: 20,     // คำใหม่ต่อวัน (default)
+  REVIEWS_PER_DAY_DEFAULT: 100, // คำทบทวนต่อวัน (default)
+  STEP: 5,                     // ปรับทีละ 5
+  NEW_MAX: 200,
+  REVIEWS_MAX: 500,
+};
+
 // ========== STORAGE KEYS ==========
 export const STORAGE_KEYS = {
   WORD_STATS: 'gedRlaDungeon_wordStats',
   PLAYER_STATS: 'gedRlaDungeon_playerStats',
   LEADERBOARD: 'gedRlaDungeon_leaderboard',
   SPEECH_ENABLED: 'gedRlaDungeon_speechEnabled',
+  FLASHCARD_STATS: 'gedRlaDungeon_flashcardStats',
+  FLASHCARD_SETTINGS: 'gedRlaDungeon_flashcardSettings',
+  FLASHCARD_DAILY: 'gedRlaDungeon_flashcardDaily',
 };

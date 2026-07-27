@@ -7,6 +7,7 @@ import WordVault from './components/WordVault';
 import GameOverScreen from './components/GameOverScreen';
 import LeaderboardScreen from './components/LeaderboardScreen';
 import AuthScreen from './components/AuthScreen';
+import FlashcardMode from './components/FlashcardMode';
 
 function App() {
   const auth = useAuth();
@@ -30,6 +31,10 @@ function App() {
         }}
       />
     );
+  }
+
+  if (screen === 'flashcard') {
+    return <FlashcardMode words={progress.words} onExit={() => setScreen('home')} />;
   }
 
   if (screen === 'vault') {
@@ -59,6 +64,7 @@ function App() {
       onStart={() => setScreen('game')}
       onVault={() => setScreen('vault')}
       onLeaderboard={() => setScreen('leaderboard')}
+      onFlashcard={() => setScreen('flashcard')}
       onAuth={() => setScreen('auth')}
       onReset={progress.resetAll}
     />

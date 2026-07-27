@@ -6,7 +6,7 @@ import { countFastTrack } from '../engine/fastTrack';
 import { todayISO } from '../data/storage';
 import { signOut, getDisplayName } from '../lib/supabase';
 
-export default function HomeScreen({ words, wordStats, playerStats, getStat, user, syncing, syncToCloud, onStart, onVault, onLeaderboard, onAuth, onReset }) {
+export default function HomeScreen({ words, wordStats, playerStats, getStat, user, syncing, syncToCloud, onStart, onVault, onLeaderboard, onFlashcard, onAuth, onReset }) {
   const handleLogout = async () => {
     if (syncToCloud) await syncToCloud();
     await signOut();
@@ -156,6 +156,12 @@ export default function HomeScreen({ words, wordStats, playerStats, getStat, use
             className="p-3 bg-zinc-900 hover:bg-zinc-800 rounded"
           >
             🏆 Leaderboard
+          </button>
+          <button
+            onClick={onFlashcard}
+            className="p-3 bg-zinc-900 hover:bg-zinc-800 rounded col-span-2"
+          >
+            🃏 Flashcard (Anki Mode)
           </button>
         </div>
 
