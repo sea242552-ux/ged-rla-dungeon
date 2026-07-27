@@ -7151,5 +7151,948 @@
     "tags": [
       "ged_rla"
     ]
+  },
+  {
+    "id": "impervious",
+    "word": "impervious",
+    "meaning": "ไม่ซึมผ่าน / ไม่ได้รับผลกระทบ",
+    "examples": [
+      "Concrete surfaces are impervious, so rainwater cannot soak into the ground.",
+      "She remained impervious to criticism throughout the campaign.",
+      "The coating makes the fabric impervious to water."
+    ],
+    "translations": [
+      {
+        "meaning": "ไม่ซึมผ่าน / ไม่ได้รับผลกระทบ",
+        "example": "Concrete surfaces are impervious, so rainwater cannot soak into the ground.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "albedo",
+    "word": "albedo",
+    "meaning": "ค่าการสะท้อนแสงของพื้นผิว",
+    "examples": [
+      "Ice has a high albedo because it reflects most sunlight back into space.",
+      "As snow melts, the albedo of the region drops and warming accelerates.",
+      "Dark asphalt has a low albedo and absorbs a great deal of heat."
+    ],
+    "translations": [
+      {
+        "meaning": "ค่าการสะท้อนแสงของพื้นผิว",
+        "example": "Ice has a high albedo because it reflects most sunlight back into space.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "transpire",
+    "word": "transpire",
+    "meaning": "คายน้ำ (พืช) / เกิดขึ้น",
+    "examples": [
+      "Trees transpire water through their leaves, cooling the surrounding air.",
+      "No one knows exactly what will transpire at the meeting tomorrow.",
+      "A single mature tree can transpire hundreds of liters of water daily."
+    ],
+    "translations": [
+      {
+        "meaning": "คายน้ำ (พืช) / เกิดขึ้น",
+        "example": "Trees transpire water through their leaves, cooling the surrounding air.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "canopy",
+    "word": "canopy",
+    "meaning": "เรือนยอดไม้ / ร่มไม้",
+    "examples": [
+      "The forest canopy blocks sunlight from reaching the ground below.",
+      "Urban tree canopy can lower street temperatures by several degrees.",
+      "Many species live entirely within the rainforest canopy."
+    ],
+    "translations": [
+      {
+        "meaning": "เรือนยอดไม้ / ร่มไม้",
+        "example": "The forest canopy blocks sunlight from reaching the ground below.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "disproportionately",
+    "word": "disproportionately",
+    "meaning": "อย่างไม่ได้สัดส่วน / มากเกินสัดส่วน",
+    "examples": [
+      "Low-income neighborhoods are disproportionately affected by extreme heat.",
+      "The policy disproportionately burdens small businesses.",
+      "Older adults are disproportionately represented among heat-related deaths."
+    ],
+    "translations": [
+      {
+        "meaning": "อย่างไม่ได้สัดส่วน / มากเกินสัดส่วน",
+        "example": "Low-income neighborhoods are disproportionately affected by extreme heat.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "mitigate",
+    "word": "mitigate",
+    "meaning": "บรรเทา / ลดความรุนแรง",
+    "examples": [
+      "Planting trees can mitigate the effects of urban heat.",
+      "The government introduced measures to mitigate economic damage.",
+      "Nothing can fully mitigate the harm caused by the delay."
+    ],
+    "translations": [
+      {
+        "meaning": "บรรเทา / ลดความรุนแรง",
+        "example": "Planting trees can mitigate the effects of urban heat.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "permeable",
+    "word": "permeable",
+    "meaning": "ซึมผ่านได้",
+    "examples": [
+      "Permeable pavement allows rainwater to drain into the soil.",
+      "The membrane is permeable to water but not to salt.",
+      "Replacing concrete with permeable surfaces reduces flooding."
+    ],
+    "translations": [
+      {
+        "meaning": "ซึมผ่านได้",
+        "example": "Permeable pavement allows rainwater to drain into the soil.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "leach",
+    "word": "leach",
+    "meaning": "ชะล้างออกมา / ซึมออกมา",
+    "examples": [
+      "Chemicals can leach from plastic containers into food.",
+      "Heavy rain caused nutrients to leach out of the soil.",
+      "Older pipes may leach lead into drinking water."
+    ],
+    "translations": [
+      {
+        "meaning": "ชะล้างออกมา / ซึมออกมา",
+        "example": "Chemicals can leach from plastic containers into food.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "contaminant",
+    "word": "contaminant",
+    "meaning": "สารปนเปื้อน",
+    "examples": [
+      "Researchers tested the water for several common contaminants.",
+      "Microplastics act as a carrier for other contaminants.",
+      "The filter removes most contaminants from the supply."
+    ],
+    "translations": [
+      {
+        "meaning": "สารปนเปื้อน",
+        "example": "Researchers tested the water for several common contaminants.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "ingest",
+    "word": "ingest",
+    "meaning": "กลืนกิน / รับเข้าร่างกาย",
+    "examples": [
+      "Fish often ingest plastic fragments they mistake for food.",
+      "Humans may ingest microplastics through seafood and bottled water.",
+      "Children are more likely to ingest harmful substances accidentally."
+    ],
+    "translations": [
+      {
+        "meaning": "กลืนกิน / รับเข้าร่างกาย",
+        "example": "Fish often ingest plastic fragments they mistake for food.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "ingestion",
+    "word": "ingestion",
+    "meaning": "การกลืนกิน / การรับเข้าร่างกาย",
+    "examples": [
+      "The study measured the ingestion of microplastics by shellfish.",
+      "Long-term ingestion of these particles may cause inflammation.",
+      "Ingestion is only one of several possible exposure routes."
+    ],
+    "translations": [
+      {
+        "meaning": "การกลืนกิน / การรับเข้าร่างกาย",
+        "example": "The study measured the ingestion of microplastics by shellfish.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "filtration",
+    "word": "filtration",
+    "meaning": "การกรอง",
+    "examples": [
+      "Standard filtration systems cannot capture the smallest particles.",
+      "Water filtration reduced contaminant levels significantly.",
+      "The plant upgraded its filtration equipment last year."
+    ],
+    "translations": [
+      {
+        "meaning": "การกรอง",
+        "example": "Standard filtration systems cannot capture the smallest particles.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "correlate",
+    "word": "correlate",
+    "meaning": "มีความสัมพันธ์กัน",
+    "examples": [
+      "Plastic concentrations correlate with population density along the coast.",
+      "Test scores correlate strongly with hours spent reading.",
+      "Two variables may correlate without one causing the other."
+    ],
+    "translations": [
+      {
+        "meaning": "มีความสัมพันธ์กัน",
+        "example": "Plastic concentrations correlate with population density along the coast.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "biomagnification",
+    "word": "biomagnification",
+    "meaning": "การสะสมสารพิษเพิ่มขึ้นตามห่วงโซ่อาหาร",
+    "examples": [
+      "Biomagnification means predators accumulate more toxins than their prey.",
+      "Mercury levels rise through biomagnification in ocean food chains.",
+      "Biomagnification makes top predators especially vulnerable."
+    ],
+    "translations": [
+      {
+        "meaning": "การสะสมสารพิษเพิ่มขึ้นตามห่วงโซ่อาหาร",
+        "example": "Biomagnification means predators accumulate more toxins than their prey.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "threshold",
+    "word": "threshold",
+    "meaning": "เกณฑ์ / ขีดจำกัด",
+    "examples": [
+      "No safety threshold has been established for microplastic exposure.",
+      "Once pollution passes a certain threshold, the damage is irreversible.",
+      "The threshold for regulatory action has not been reached."
+    ],
+    "translations": [
+      {
+        "meaning": "เกณฑ์ / ขีดจำกัด",
+        "example": "No safety threshold has been established for microplastic exposure.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "fragments",
+    "word": "fragments",
+    "meaning": "เศษชิ้นส่วน",
+    "examples": [
+      "Larger plastics break down into tiny fragments over time.",
+      "Fragments of the container were found inside the fish.",
+      "The beach was covered with fragments of weathered plastic."
+    ],
+    "translations": [
+      {
+        "meaning": "เศษชิ้นส่วน",
+        "example": "Larger plastics break down into tiny fragments over time.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "debris",
+    "word": "debris",
+    "meaning": "เศษซาก / ขยะ",
+    "examples": [
+      "Ocean debris travels thousands of miles on currents.",
+      "Volunteers collected plastic debris from the shoreline.",
+      "The storm left debris scattered across the highway."
+    ],
+    "translations": [
+      {
+        "meaning": "เศษซาก / ขยะ",
+        "example": "Ocean debris travels thousands of miles on currents.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "synthetic-fabrics",
+    "word": "synthetic fabrics",
+    "meaning": "ผ้าใยสังเคราะห์",
+    "examples": [
+      "Washing synthetic fabrics releases microfibers into wastewater.",
+      "Synthetic fabrics such as polyester dominate fast fashion.",
+      "Unlike cotton, synthetic fabrics do not break down naturally."
+    ],
+    "translations": [
+      {
+        "meaning": "ผ้าใยสังเคราะห์",
+        "example": "Washing synthetic fabrics releases microfibers into wastewater.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "gradual",
+    "word": "gradual",
+    "meaning": "ค่อยเป็นค่อยไป",
+    "examples": [
+      "The breakdown of plastic is a gradual process lasting centuries.",
+      "Researchers observed a gradual increase in particle concentration.",
+      "Change was gradual rather than sudden."
+    ],
+    "translations": [
+      {
+        "meaning": "ค่อยเป็นค่อยไป",
+        "example": "The breakdown of plastic is a gradual process lasting centuries.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "originates",
+    "word": "originates",
+    "meaning": "มีต้นกำเนิดจาก",
+    "examples": [
+      "Much ocean plastic originates from land-based sources.",
+      "The tradition originates in the nineteenth century.",
+      "Scientists traced where the contamination originates."
+    ],
+    "translations": [
+      {
+        "meaning": "มีต้นกำเนิดจาก",
+        "example": "Much ocean plastic originates from land-based sources.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "pellet",
+    "word": "pellet",
+    "meaning": "เม็ดพลาสติกเล็กๆ",
+    "examples": [
+      "Plastic pellets are the raw material used to manufacture products.",
+      "Spilled pellets often wash up on nearby beaches.",
+      "Each pellet is smaller than a grain of rice."
+    ],
+    "translations": [
+      {
+        "meaning": "เม็ดพลาสติกเล็กๆ",
+        "example": "Plastic pellets are the raw material used to manufacture products.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "bypass",
+    "word": "bypass",
+    "meaning": "เลี่ยงผ่าน / ข้ามไป",
+    "examples": [
+      "The smallest particles bypass treatment filters entirely.",
+      "Some chemicals can bypass the body’s natural defenses.",
+      "Drivers use the new road to bypass the city center."
+    ],
+    "translations": [
+      {
+        "meaning": "เลี่ยงผ่าน / ข้ามไป",
+        "example": "The smallest particles bypass treatment filters entirely.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "membrane",
+    "word": "membrane",
+    "meaning": "เยื่อบาง / เยื่อกรอง",
+    "examples": [
+      "Tiny particles may cross the intestinal membrane into the bloodstream.",
+      "The filter uses a membrane with microscopic pores.",
+      "A thin membrane separates the two chambers."
+    ],
+    "translations": [
+      {
+        "meaning": "เยื่อบาง / เยื่อกรอง",
+        "example": "Tiny particles may cross the intestinal membrane into the bloodstream.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "capable",
+    "word": "capable",
+    "meaning": "สามารถ / มีความสามารถ",
+    "examples": [
+      "These particles are capable of carrying toxic chemicals.",
+      "The team is capable of finishing the project on time.",
+      "Few filters are capable of removing particles that small."
+    ],
+    "translations": [
+      {
+        "meaning": "สามารถ / มีความสามารถ",
+        "example": "These particles are capable of carrying toxic chemicals.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "accumulation",
+    "word": "accumulation",
+    "meaning": "การสะสม",
+    "examples": [
+      "The accumulation of plastic in the ocean has accelerated.",
+      "Gradual accumulation of evidence changed scientific opinion.",
+      "Researchers measured the accumulation of particles in fish tissue."
+    ],
+    "translations": [
+      {
+        "meaning": "การสะสม",
+        "example": "The accumulation of plastic in the ocean has accelerated.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "ironically",
+    "word": "ironically",
+    "meaning": "อย่างน่าขัน / ตรงข้ามกับที่คาด",
+    "examples": [
+      "Ironically, the material designed to last forever is now a major pollutant.",
+      "Ironically, the safety feature made the device more dangerous.",
+      "Ironically, efforts to reduce waste created new problems."
+    ],
+    "translations": [
+      {
+        "meaning": "อย่างน่าขัน / ตรงข้ามกับที่คาด",
+        "example": "Ironically, the material designed to last forever is now a major pollutant.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "fracture",
+    "word": "fracture",
+    "meaning": "แตกร้าว / การแตกหัก",
+    "examples": [
+      "Sunlight causes plastic to fracture into smaller pieces.",
+      "The bone suffered a clean fracture.",
+      "Repeated stress will eventually fracture the material."
+    ],
+    "translations": [
+      {
+        "meaning": "แตกร้าว / การแตกหัก",
+        "example": "Sunlight causes plastic to fracture into smaller pieces.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "absorb",
+    "word": "absorb",
+    "meaning": "ดูดซับ",
+    "examples": [
+      "Microplastics absorb toxic chemicals from surrounding water.",
+      "Plants absorb nutrients through their roots.",
+      "Dark surfaces absorb more heat than light ones."
+    ],
+    "translations": [
+      {
+        "meaning": "ดูดซับ",
+        "example": "Microplastics absorb toxic chemicals from surrounding water.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "preliminary",
+    "word": "preliminary",
+    "meaning": "เบื้องต้น / ขั้นต้น",
+    "examples": [
+      "Preliminary results suggest a link, but more research is needed.",
+      "The report is preliminary and may be revised.",
+      "Preliminary findings should not be treated as conclusive."
+    ],
+    "translations": [
+      {
+        "meaning": "เบื้องต้น / ขั้นต้น",
+        "example": "Preliminary results suggest a link, but more research is needed.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "distinct",
+    "word": "distinct",
+    "meaning": "ชัดเจน / แตกต่างชัด",
+    "examples": [
+      "There is a distinct difference between the two samples.",
+      "The author makes a distinct argument in the final paragraph.",
+      "Each region has its own distinct pattern of contamination."
+    ],
+    "translations": [
+      {
+        "meaning": "ชัดเจน / แตกต่างชัด",
+        "example": "There is a distinct difference between the two samples.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "occasional",
+    "word": "occasional",
+    "meaning": "เป็นครั้งคราว",
+    "examples": [
+      "Occasional exposure is unlikely to cause lasting harm.",
+      "The report notes occasional errors in the data.",
+      "She makes occasional visits to the research site."
+    ],
+    "translations": [
+      {
+        "meaning": "เป็นครั้งคราว",
+        "example": "Occasional exposure is unlikely to cause lasting harm.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "additives",
+    "word": "additives",
+    "meaning": "สารเติมแต่ง",
+    "examples": [
+      "Plastic additives can leach out and disrupt hormones.",
+      "Food additives must be listed on the label.",
+      "Some additives make plastic more flexible but less stable."
+    ],
+    "translations": [
+      {
+        "meaning": "สารเติมแต่ง",
+        "example": "Plastic additives can leach out and disrupt hormones.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "concentrations",
+    "word": "concentrations",
+    "meaning": "ความเข้มข้น (ของสาร)",
+    "examples": [
+      "Concentrations of microplastics were highest near urban rivers.",
+      "The study measured chemical concentrations in the water.",
+      "High concentrations of the substance proved harmful."
+    ],
+    "translations": [
+      {
+        "meaning": "ความเข้มข้น (ของสาร)",
+        "example": "Concentrations of microplastics were highest near urban rivers.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "inflammation",
+    "word": "inflammation",
+    "meaning": "การอักเสบ",
+    "examples": [
+      "Particles lodged in tissue may trigger inflammation.",
+      "Chronic inflammation is linked to several diseases.",
+      "The treatment reduces inflammation in the joints."
+    ],
+    "translations": [
+      {
+        "meaning": "การอักเสบ",
+        "example": "Particles lodged in tissue may trigger inflammation.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "established",
+    "word": "established",
+    "meaning": "ที่ได้รับการยอมรับ / ก่อตั้งไว้แล้ว",
+    "examples": [
+      "No established safety limit exists for these particles.",
+      "The theory is well established among researchers.",
+      "The organization was established in 1985."
+    ],
+    "translations": [
+      {
+        "meaning": "ที่ได้รับการยอมรับ / ก่อตั้งไว้แล้ว",
+        "example": "No established safety limit exists for these particles.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "regulatory",
+    "word": "regulatory",
+    "meaning": "เกี่ยวกับการกำกับดูแล",
+    "examples": [
+      "Regulatory agencies have been slow to respond to the issue.",
+      "The company faces regulatory pressure to reduce emissions.",
+      "Regulatory standards vary widely between countries."
+    ],
+    "translations": [
+      {
+        "meaning": "เกี่ยวกับการกำกับดูแล",
+        "example": "Regulatory agencies have been slow to respond to the issue.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "hazardous",
+    "word": "hazardous",
+    "meaning": "เป็นอันตราย",
+    "examples": [
+      "Some plastic additives are classified as hazardous.",
+      "Workers must wear protection when handling hazardous materials.",
+      "The road becomes hazardous during heavy rain."
+    ],
+    "translations": [
+      {
+        "meaning": "เป็นอันตราย",
+        "example": "Some plastic additives are classified as hazardous.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "mandatory",
+    "word": "mandatory",
+    "meaning": "ที่บังคับ / จำเป็นต้องทำ",
+    "examples": [
+      "Some countries have made filtration systems mandatory.",
+      "Attendance at the training session is mandatory.",
+      "Mandatory reporting would improve data quality."
+    ],
+    "translations": [
+      {
+        "meaning": "ที่บังคับ / จำเป็นต้องทำ",
+        "example": "Some countries have made filtration systems mandatory.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "comparable",
+    "word": "comparable",
+    "meaning": "เทียบเคียงได้",
+    "examples": [
+      "The two studies produced comparable results.",
+      "Bottled water contains comparable levels of particles to tap water.",
+      "No comparable data exist for freshwater systems."
+    ],
+    "translations": [
+      {
+        "meaning": "เทียบเคียงได้",
+        "example": "The two studies produced comparable results.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "municipal",
+    "word": "municipal",
+    "meaning": "เกี่ยวกับเทศบาล / ของเมือง",
+    "examples": [
+      "Municipal water treatment plants remove most large particles.",
+      "The municipal government approved the recycling program.",
+      "Municipal waste collection begins early each morning."
+    ],
+    "translations": [
+      {
+        "meaning": "เกี่ยวกับเทศบาล / ของเมือง",
+        "example": "Municipal water treatment plants remove most large particles.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
+  },
+  {
+    "id": "shedding",
+    "word": "shedding",
+    "meaning": "การหลุดร่วง / การปล่อยออก",
+    "examples": [
+      "Shedding of microfibers occurs every time clothes are washed.",
+      "Tire shedding contributes significantly to roadside pollution.",
+      "The shedding of old leaves happens each autumn."
+    ],
+    "translations": [
+      {
+        "meaning": "การหลุดร่วง / การปล่อยออก",
+        "example": "Shedding of microfibers occurs every time clothes are washed.",
+        "context": "standard",
+        "used_in": [
+          "ged_rla"
+        ]
+      }
+    ],
+    "tags": [
+      "ged_rla"
+    ]
   }
 ]
